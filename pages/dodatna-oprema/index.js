@@ -18,7 +18,7 @@ const Equipment = () => {
 
   return (
     <PageLayout
-      pageLayoutImageUrl={engineEquipment}
+      pageLayoutImageUrl={outboardEngineParts}
       pageLayoutHeading={t.common.additionalEquipment}
       pageLayoutHeadingText={t.pages.additionalEquipment.headingText}
     >
