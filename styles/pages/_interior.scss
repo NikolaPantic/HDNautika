@@ -1,0 +1,15 @@
+.interior {
+  min-height: 160vh;
+
+  @media only screen and (max-width: 1300px) {
+    min-height: 135vh;
+  }
+
+  @media only screen and (max-width: 900px) {
+    min-height: 115vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    min-height: 130vh;
+  }
+}

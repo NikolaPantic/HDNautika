@@ -1,0 +1,177 @@
+.section-boats {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary-dark, 0.7),
+        rgba($color-primary-dark, 0.7)
+      ),
+      url("../../public/assets/images/boats/sportstar22/sportstar-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+
+    @media only screen and (max-width: 900px) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__info {
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      padding: 6rem 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    &--carousel {
+      flex: 0 0 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 900px) {
+        width: 95%;
+      }
+    }
+
+    &--content {
+      flex: 0 0 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      & > h3 {
+        color: $color-primary-light;
+      }
+
+      &--text {
+        width: 90%;
+
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+        }
+      }
+
+      &--buttons {
+        margin: 2rem 0;
+        align-self: stretch;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 900px) {
+          width: 70%;
+          align-self: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        width: 70%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 95%;
+      }
+    }
+
+    &--specifications {
+      margin: 2rem 0;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (max-width: 900px) {
+        align-self: center;
+        width: 70%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 95%;
+      }
+    }
+
+    &--specifications-list {
+      border-radius: 5px;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--specification-card {
+      color: $color-black;
+      font-size: 0.9rem;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      background-color: rgba($color-white, 0.6);
+
+      &--heading {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: $color-primary-dark;
+      }
+
+      &--data {
+        flex: 0 0 15%;
+        color: $color-black;
+        text-align: right;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__other {
+    margin: 2rem auto;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--boats {
+      width: 100%;
+      display: flex;
+    }
+
+    &--single {
+      flex: 1;
+    }
+  }
+}
+
+.carousell {
+  height: 100%;
+  align-self: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}

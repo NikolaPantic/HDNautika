@@ -1,0 +1,48 @@
+.section-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary, 0.6),
+    rgba($color-primary-dark, 0.6)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+
+  @media screen and (max-width: 1300px) {
+    height: 90vh;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 80vh;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 90vh;
+  }
+
+  &__video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &__heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 1rem;
+  }
+
+  & > a {
+    animation: showUp 1s ease-in 6s;
+    animation-fill-mode: backwards;
+  }
+}

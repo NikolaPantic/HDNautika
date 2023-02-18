@@ -1,0 +1,13 @@
+.successful-field {
+  display: block;
+  text-align: center;
+  color: $color-green;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  &__hidden {
+    display: none;
+  }
+}

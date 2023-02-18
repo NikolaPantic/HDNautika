@@ -1,0 +1,87 @@
+.used-equipment {
+  color: $color-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  padding: 2rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary, 0.6),
+      rgba($color-primary-dark, 0.6)
+    ),
+    url("../../public/assets/images/engine.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  & > h2 {
+    color: $color-white;
+  }
+
+  &__cards {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--info {
+      flex: 0 0 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h3 {
+        color: $color-primary-light;
+      }
+
+      & ul {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        & li {
+          flex: 0 0 48%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: left;
+        }
+      }
+    }
+
+    &--images {
+      align-self: stretch;
+      display: flex;
+      justify-content: center;
+
+      @media only screen and (max-width: 900px) {
+        flex-wrap: wrap;
+      }
+
+      & img {
+        flex: 1;
+        max-width: 20%;
+        height: auto;
+        margin: 1%;
+
+        @media only screen and (max-width: 900px) {
+          max-width: none;
+          flex: none;
+          width: 40%;
+          margin: 2%;
+        }
+      }
+    }
+  }
+}

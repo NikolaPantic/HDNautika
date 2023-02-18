@@ -1,0 +1,80 @@
+.boat-card {
+  position: relative;
+  height: 50vh;
+  margin: 1%;
+  display: flex;
+  width: 80%;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    margin: 2%;
+  }
+
+  &__homemade {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+    transform: rotate(-30deg);
+    background-color: $color-yellow;
+    padding: 0.5rem 2rem;
+    animation: stick 0.8s;
+  }
+
+  & > div {
+    flex: 1;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__description {
+    @media only screen and (max-width: 900px) {
+      padding: 1rem 0;
+    }
+    & > h2 {
+      color: $color-primary-light;
+    }
+
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+
+    &--card {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--heading {
+        font-family: "Bebas Neue", cursive;
+      }
+
+      &--data {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &__buttons {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

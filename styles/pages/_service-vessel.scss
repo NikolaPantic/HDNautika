@@ -1,0 +1,23 @@
+.service-vessel {
+  min-height: 140vh;
+
+  @media only screen and (max-width: 1300px) {
+    min-height: 120vh;
+  }
+
+  @media only screen and (max-width: 900px) {
+    min-height: 110vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    min-height: 120vh;
+  }
+
+  &__carousel {
+    text-align: center;
+
+    @media only screen and (max-width: 900px) {
+      width: 90%;
+    }
+  }
+}

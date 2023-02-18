@@ -1,0 +1,123 @@
+.services {
+  padding: 2rem 0;
+  min-height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media only screen and (max-width: 1300px) {
+    min-height: 60vh;
+  }
+
+  @media only screen and (max-width: 900px) {
+    min-height: 70vh;
+    flex-wrap: wrap;
+  }
+
+  &__single-service {
+    align-self: stretch;
+    background-color: $color-primary-dark;
+    flex: 0 0 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.6),
+        rgba($color-primary-dark, 0.6)
+      ),
+      url("../../public/assets/images/engine.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: 900px) {
+      flex: 0 0 40%;
+      margin: 2%;
+      min-height: 50vh;
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex: 0 0 80%;
+      min-height: 40vh;
+    }
+
+    &--heading {
+      text-align: center;
+      color: $color-white;
+      align-self: stretch;
+      flex: 0 0 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+      @media only screen and (max-width: 900px) {
+        flex: 0 0 40%;
+      }
+
+      &--1 {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.1),
+            rgba($color-primary-dark, 0.1)
+          ),
+          url("../../public/assets/images/services/mechanic/mechanic.jpg");
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.1),
+            rgba($color-primary-dark, 0.1)
+          ),
+          url("../../public/assets/images/services/reparation/reparation-blue-after-2.jpg");
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.1),
+            rgba($color-primary-dark, 0.1)
+          ),
+          url("../../public/assets/images/services/interior/interior-1.jpg");
+      }
+
+      &--4 {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.1),
+            rgba($color-primary-dark, 0.1)
+          ),
+          url("../../public/assets/images/services/winter/winter.jpg");
+      }
+    }
+
+    &--list {
+      flex: 1;
+      width: 80%;
+
+      & > li {
+        align-self: stretch;
+        text-align: center;
+        color: $color-white;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-white;
+        }
+      }
+    }
+
+    & > a {
+      margin: 2rem 0;
+    }
+  }
+}

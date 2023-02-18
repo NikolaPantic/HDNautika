@@ -1,0 +1,94 @@
+.section-equipment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+
+  &__content {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.6),
+        rgba($color-primary, 0.6)
+      ),
+      url("../../public/assets/images/nautical-equipment.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+
+    @media only screen and (max-width: 600px) {
+      padding: 4rem 0;
+    }
+  }
+
+  &__cards {
+    padding: 3rem 0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 600px) {
+      padding: 5rem 0;
+    }
+
+    &--single-card {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      @media only screen and (max-width: 1300px) {
+        margin: 2%;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        &:nth-child(2n-1) {
+          flex-direction: column-reverse;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+      }
+
+      &--description {
+        color: $color-white;
+        background-color: $color-primary-dark;
+        transform: skew(-20deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        margin: 1% 0;
+        flex: 0 0 50%;
+
+        @media only screen and (max-width: 1300px) {
+          transform: none;
+          margin: 0;
+          align-self: center;
+          width: 100%;
+        }
+
+        & > p {
+          transform: skew(20deg);
+          width: 50%;
+
+          @media only screen and (max-width: 1300px) {
+            transform: none;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

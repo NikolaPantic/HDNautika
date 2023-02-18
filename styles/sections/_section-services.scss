@@ -1,0 +1,46 @@
+.section-services {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.6),
+        rgba($color-primary, 0.6)
+      ),
+      url("../../public/assets/images/engine.jpg");
+    background-attachment: fixed;
+
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  &__cards {
+    padding: 4rem 0;
+
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media only screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      min-height: 80vh;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 6rem 0;
+    }
+
+    &--card {
+      flex: 1;
+    }
+  }
+}

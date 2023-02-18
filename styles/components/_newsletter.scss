@@ -1,0 +1,51 @@
+.newsletter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__email-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & > label {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    & > input {
+      position: relative;
+      border: 1px solid $color-grey;
+      padding: 0.5rem;
+      outline: 1px solid transparent;
+      font-size: 1.2rem;
+
+      &::placeholder {
+        font-size: 1rem;
+      }
+    }
+
+    & > span {
+      @media only screen and (max-width: 1300px) {
+        bottom: -25%;
+      }
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+    background-color: $color-black;
+    border-radius: 5px;
+  }
+
+  & > span {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
