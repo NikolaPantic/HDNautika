@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import OvalButton from "../../components/OvalButton/OvalButton";
 import PageLayout from "../../layout/PageLayout/PageLayout";
 
@@ -36,70 +37,77 @@ const Services = () => {
     ],
   };
   return (
-    <PageLayout
-      pageLayoutImageUrl={reparation}
-      pageLayoutHeading={t.common.services}
-      pageLayoutHeadingText={t.pages.services.headingText}
-    >
-      <div className="services">
-        <div className="services__single-service">
-          <h2 className="services__single-service--heading services__single-service--heading--1">
-            {t.services.mechanicService.heading}
-          </h2>
-          <ul className="services__single-service--list">
-            {servicesData["mechanic"].map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-          <OvalButton
-            ovalButtonLabel={t.buttons.details}
-            ovalButtonPath="/usluge/mehanicarske-usluge"
-          />
+    <>
+      <Head>
+        <title>{t.common.services}</title>
+        <meta name="title" content={t.common.services} />
+        <meta name="description" content={t.pages.services.headingText} />
+      </Head>
+      <PageLayout
+        pageLayoutImageUrl={reparation}
+        pageLayoutHeading={t.common.services}
+        pageLayoutHeadingText={t.pages.services.headingText}
+      >
+        <div className="services">
+          <div className="services__single-service">
+            <h2 className="services__single-service--heading services__single-service--heading--1">
+              {t.services.mechanicService.heading}
+            </h2>
+            <ul className="services__single-service--list">
+              {servicesData["mechanic"].map((e) => (
+                <li key={e}>{e}</li>
+              ))}
+            </ul>
+            <OvalButton
+              ovalButtonLabel={t.buttons.details}
+              ovalButtonPath="/usluge/mehanicarske-usluge"
+            />
+          </div>
+          <div className="services__single-service">
+            <h2 className="services__single-service--heading services__single-service--heading--2">
+              {t.services.vesselService.heading}
+            </h2>
+            <ul className="services__single-service--list">
+              {servicesData["service"].map((e) => (
+                <li key={e}>{e}</li>
+              ))}
+            </ul>
+            <OvalButton
+              ovalButtonLabel={t.buttons.details}
+              ovalButtonPath="/usluge/servis-plovila"
+            />
+          </div>
+          <div className="services__single-service">
+            <h2 className="services__single-service--heading services__single-service--heading--3">
+              {t.services.interiorDesign.heading}
+            </h2>
+            <ul className="services__single-service--list">
+              {servicesData["interior"].map((e) => (
+                <li key={e}>{e}</li>
+              ))}
+            </ul>
+            <OvalButton
+              ovalButtonLabel={t.buttons.details}
+              ovalButtonPath="/usluge/izrada-enterijera"
+            />
+          </div>
+          <div className="services__single-service">
+            <h2 className="services__single-service--heading services__single-service--heading--4">
+              {t.services.winterLog.heading}
+            </h2>
+            <ul className="services__single-service--list">
+              {servicesData["winter"].map((e) => (
+                <li key={e}>{e}</li>
+              ))}
+            </ul>
+            <OvalButton
+              ovalButtonLabel={t.buttons.details}
+              ovalButtonPath="/usluge/zimovnik"
+            />
+          </div>
         </div>
-        <div className="services__single-service">
-          <h2 className="services__single-service--heading services__single-service--heading--2">
-            {t.services.vesselService.heading}
-          </h2>
-          <ul className="services__single-service--list">
-            {servicesData["service"].map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-          <OvalButton
-            ovalButtonLabel={t.buttons.details}
-            ovalButtonPath="/usluge/servis-plovila"
-          />
-        </div>
-        <div className="services__single-service">
-          <h2 className="services__single-service--heading services__single-service--heading--3">
-            {t.services.interiorDesign.heading}
-          </h2>
-          <ul className="services__single-service--list">
-            {servicesData["interior"].map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-          <OvalButton
-            ovalButtonLabel={t.buttons.details}
-            ovalButtonPath="/usluge/izrada-enterijera"
-          />
-        </div>
-        <div className="services__single-service">
-          <h2 className="services__single-service--heading services__single-service--heading--4">
-            {t.services.winterLog.heading}
-          </h2>
-          <ul className="services__single-service--list">
-            {servicesData["winter"].map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-          </ul>
-          <OvalButton
-            ovalButtonLabel={t.buttons.details}
-            ovalButtonPath="/usluge/zimovnik"
-          />
-        </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 };
 

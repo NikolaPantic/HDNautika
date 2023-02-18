@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import propeller from "../../public/assets/images/equipment/propeller.jpg";
 import propeller1 from "../../public/assets/images/equipment/propeller-1.jpg";
@@ -13,14 +14,21 @@ const Propellers = () => {
   const images = [propeller, propeller1, propeller2, propeller3];
   const text = t.pages.propellers.text;
   return (
-    <EquipmentLayout
-      equipmentLayoutBackgroundImage={propeller1}
-      equipmentLayoutImages={images}
-      equipmentLayoutHeading={t.common.propellers}
-      equipmentLayoutHeadingText={t.pages.propellers.headingText}
-      equipmentLayoutSubheading={t.pages.propellers.heading}
-      equipmentLayoutText={text}
-    />
+    <>
+      <Head>
+        <title>{t.common.propellers}</title>
+        <meta name="title" content={t.common.propellers} />
+        <meta name="description" content={t.pages.propellers.headingText} />
+      </Head>
+      <EquipmentLayout
+        equipmentLayoutBackgroundImage={propeller1}
+        equipmentLayoutImages={images}
+        equipmentLayoutHeading={t.common.propellers}
+        equipmentLayoutHeadingText={t.pages.propellers.headingText}
+        equipmentLayoutSubheading={t.pages.propellers.heading}
+        equipmentLayoutText={text}
+      />
+    </>
   );
 };
 

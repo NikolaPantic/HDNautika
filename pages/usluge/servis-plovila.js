@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import PageLayout from "../../layout/PageLayout/PageLayout";
 
@@ -50,48 +51,55 @@ const Service = () => {
   ];
 
   return (
-    <PageLayout
-      pageLayoutImageUrl={reparationBlue4}
-      pageLayoutHeading={t.services.vesselService.heading}
-      pageLayoutHeadingText={t.pages.vesselService.headingText}
-    >
-      <div className="service service-vessel">
-        <div className="service__content">
-          <div className="service__content--info">
-            <h2 className="secondary-heading">
-              {t.services.vesselService.heading}
-            </h2>
-            <p>{t.pages.vesselService.text1}</p>
-            <br />
-            <p>
-              {t.pages.vesselService.text2}{" "}
-              <Link href="tel:+381641234567" className="text-link">
-                {t.pages.vesselService.text3}{" "}
-              </Link>
-              {t.pages.vesselService.text4}{" "}
-              <Link href="" className="text-link" onClick={scrollToContact}>
-                {t.pages.vesselService.text5}
-              </Link>
-              .
-            </p>
+    <>
+      <Head>
+        <title>{t.services.vesselService.heading}</title>
+        <meta name="title" content={t.services.vesselService.heading} />
+        <meta name="description" content={t.pages.vesselService.headingText} />
+      </Head>
+      <PageLayout
+        pageLayoutImageUrl={reparationBlue4}
+        pageLayoutHeading={t.services.vesselService.heading}
+        pageLayoutHeadingText={t.pages.vesselService.headingText}
+      >
+        <div className="service service-vessel">
+          <div className="service__content">
+            <div className="service__content--info">
+              <h2 className="secondary-heading">
+                {t.services.vesselService.heading}
+              </h2>
+              <p>{t.pages.vesselService.text1}</p>
+              <br />
+              <p>
+                {t.pages.vesselService.text2}{" "}
+                <Link href="tel:+381641234567" className="text-link">
+                  {t.pages.vesselService.text3}{" "}
+                </Link>
+                {t.pages.vesselService.text4}{" "}
+                <Link href="" className="text-link" onClick={scrollToContact}>
+                  {t.pages.vesselService.text5}
+                </Link>
+                .
+              </p>
+            </div>
+            <figure>
+              <Image src={serviceImage} alt="HD Nautika servis plovila" />
+              <figcaption>{t.pages.vesselService.figcaption}</figcaption>
+            </figure>
           </div>
-          <figure>
-            <Image src={serviceImage} alt="HD Nautika servis plovila" />
-            <figcaption>{t.pages.vesselService.figcaption}</figcaption>
-          </figure>
+          <div className="service__carousel service-vessel__carousel">
+            <h2 className="secondary-heading">
+              {t.pages.vesselService.subheading}
+            </h2>
+            <Carousel
+              images={images}
+              shouldMaximizeOnClick={true}
+              hasMediaButton={false}
+            />
+          </div>
         </div>
-        <div className="service__carousel service-vessel__carousel">
-          <h2 className="secondary-heading">
-            {t.pages.vesselService.subheading}
-          </h2>
-          <Carousel
-            images={images}
-            shouldMaximizeOnClick={true}
-            hasMediaButton={false}
-          />
-        </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 };
 

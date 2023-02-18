@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import engine from "../../public/assets/images/equipment/engine-4.jpg";
 import engine1 from "../../public/assets/images/equipment/engine-1.jpg";
@@ -14,14 +15,21 @@ const Engines = () => {
   const images = [engine, engine1, engine2, engine3];
 
   return (
-    <EquipmentLayout
-      equipmentLayoutBackgroundImage={engine2}
-      equipmentLayoutImages={images}
-      equipmentLayoutHeading={t.common.outboardEngines}
-      equipmentLayoutHeadingText={t.pages.engines.headingText}
-      equipmentLayoutSubheading={t.common.outboardEngines}
-      equipmentLayoutText={t.pages.engines.text}
-    />
+    <>
+      <Head>
+        <title>{t.common.outboardEngines}</title>
+        <meta name="title" content={t.common.outboardEngines} />
+        <meta name="description" content={t.pages.engines.headingText} />
+      </Head>
+      <EquipmentLayout
+        equipmentLayoutBackgroundImage={engine2}
+        equipmentLayoutImages={images}
+        equipmentLayoutHeading={t.common.outboardEngines}
+        equipmentLayoutHeadingText={t.pages.engines.headingText}
+        equipmentLayoutSubheading={t.common.outboardEngines}
+        equipmentLayoutText={t.pages.engines.text}
+      />
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import sonar from "../../public/assets/images/equipment/sonar.jpg";
 import sonar1 from "../../public/assets/images/equipment/sonar-1.jpg";
@@ -14,14 +15,21 @@ const Sonars = () => {
   const images = [sonar, sonar1, sonar3, sonar2];
 
   return (
-    <EquipmentLayout
-      equipmentLayoutBackgroundImage={sonar1}
-      equipmentLayoutImages={images}
-      equipmentLayoutHeading={t.common.sonars}
-      equipmentLayoutHeadingText={t.pages.sonars.headingText}
-      equipmentLayoutSubheading={t.pages.sonars.heading}
-      equipmentLayoutText={t.pages.sonars.text}
-    />
+    <>
+      <Head>
+        <title>{t.common.sonars}</title>
+        <meta name="title" content={t.common.sonars} />
+        <meta name="description" content={t.pages.sonars.headingText} />
+      </Head>
+      <EquipmentLayout
+        equipmentLayoutBackgroundImage={sonar1}
+        equipmentLayoutImages={images}
+        equipmentLayoutHeading={t.common.sonars}
+        equipmentLayoutHeadingText={t.pages.sonars.headingText}
+        equipmentLayoutSubheading={t.pages.sonars.heading}
+        equipmentLayoutText={t.pages.sonars.text}
+      />
+    </>
   );
 };
 

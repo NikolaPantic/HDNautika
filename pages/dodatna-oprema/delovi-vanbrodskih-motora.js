@@ -1,5 +1,6 @@
-import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import { useRouter } from "next/router";
+import Head from "next/head";
+import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import outboardEngineParts from "../../public/assets/images/equipment/engine-equipment.jpg";
 import outboardEngineParts1 from "../../public/assets/images/equipment/engine-equipment-1.jpg";
 import outboardEngineParts2 from "../../public/assets/images/equipment/engine-equipment-2.jpg";
@@ -19,14 +20,24 @@ const NauticalEquipment = () => {
   ];
 
   return (
-    <EquipmentLayout
-      equipmentLayoutBackgroundImage={outboardEngineParts3}
-      equipmentLayoutImages={images}
-      equipmentLayoutHeading={t.common.outboardEngineParts}
-      equipmentLayoutHeadingText={t.pages.outboardEngineParts.headingText}
-      equipmentLayoutSubheading={t.common.outboardEngineParts}
-      equipmentLayoutText={t.pages.outboardEngineParts.text}
-    />
+    <>
+      <Head>
+        <title>{t.common.outboardEngineParts}</title>
+        <meta name="title" content={t.common.outboardEngineParts} />
+        <meta
+          name="description"
+          content={t.pages.outboardEngineParts.headingText}
+        />
+      </Head>
+      <EquipmentLayout
+        equipmentLayoutBackgroundImage={outboardEngineParts3}
+        equipmentLayoutImages={images}
+        equipmentLayoutHeading={t.common.outboardEngineParts}
+        equipmentLayoutHeadingText={t.pages.outboardEngineParts.headingText}
+        equipmentLayoutSubheading={t.common.outboardEngineParts}
+        equipmentLayoutText={t.pages.outboardEngineParts.text}
+      />
+    </>
   );
 };
 

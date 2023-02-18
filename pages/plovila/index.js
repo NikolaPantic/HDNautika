@@ -1,5 +1,5 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
-
 import BoatCard from "../../components/BoatCard/BoatCard";
 import PageLayout from "../../layout/PageLayout/PageLayout";
 
@@ -67,46 +67,53 @@ const Boats = () => {
   };
 
   return (
-    <PageLayout
-      pageLayoutHeadingText={t.pages.boats.headingText}
-      pageLayoutHeading={t.common.boats}
-      pageLayoutImageUrl={background}
-    >
-      <div className="boats">
-        <BoatCard
-          boatCardData={boatsData.superstarData}
-          boatCardImageURL={sportstar1}
-          boatCardBackgroundImageURL={sportstar}
-          boatCardHomemade={true}
-          boatCardLink="/plovila/sportstar-22"
-        />
-        <BoatCard
-          boatCardData={boatsData.cerionData}
-          boatCardBackgroundImageURL={cerion}
-          boatCardImageURL={cerion1}
-          boatCardLink="/plovila/cerion-27,7-wa"
-        />
-        <BoatCard
-          boatCardData={boatsData.eoloData}
-          boatCardBackgroundImageURL={eolo}
-          boatCardImageURL={eolo1}
-          boatCardLink="/plovila/eolo-710"
-        />
-        <BoatCard
-          boatCardData={boatsData.marinoData}
-          boatCardBackgroundImageURL={marino}
-          boatCardImageURL={marino1}
-          boatCardLink="/plovila/marino-gabry-550"
-        />
-        <BoatCard
-          boatCardData={boatsData.teoremaData}
-          boatCardBackgroundImageURL={teorema}
-          boatCardImageURL={teorema1}
-          boatCardLink="/plovila/teorema-20"
-        />
-      </div>
-      <Suggestions suggestionType="equipment" />
-    </PageLayout>
+    <>
+      <Head>
+        <title>{t.common.boats}</title>
+        <meta name="title" content={t.common.boats} />
+        <meta name="description" content={t.pages.boats.headingText} />
+      </Head>
+      <PageLayout
+        pageLayoutHeadingText={t.pages.boats.headingText}
+        pageLayoutHeading={t.common.boats}
+        pageLayoutImageUrl={background}
+      >
+        <div className="boats">
+          <BoatCard
+            boatCardData={boatsData.superstarData}
+            boatCardImageURL={sportstar1}
+            boatCardBackgroundImageURL={sportstar}
+            boatCardHomemade={true}
+            boatCardLink="/plovila/sportstar-22"
+          />
+          <BoatCard
+            boatCardData={boatsData.cerionData}
+            boatCardBackgroundImageURL={cerion}
+            boatCardImageURL={cerion1}
+            boatCardLink="/plovila/cerion-27,7-wa"
+          />
+          <BoatCard
+            boatCardData={boatsData.eoloData}
+            boatCardBackgroundImageURL={eolo}
+            boatCardImageURL={eolo1}
+            boatCardLink="/plovila/eolo-710"
+          />
+          <BoatCard
+            boatCardData={boatsData.marinoData}
+            boatCardBackgroundImageURL={marino}
+            boatCardImageURL={marino1}
+            boatCardLink="/plovila/marino-gabry-550"
+          />
+          <BoatCard
+            boatCardData={boatsData.teoremaData}
+            boatCardBackgroundImageURL={teorema}
+            boatCardImageURL={teorema1}
+            boatCardLink="/plovila/teorema-20"
+          />
+        </div>
+        <Suggestions suggestionType="equipment" />
+      </PageLayout>
+    </>
   );
 };
 

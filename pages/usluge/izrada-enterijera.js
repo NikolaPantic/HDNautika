@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
@@ -55,49 +56,56 @@ const Interior = () => {
   ];
 
   return (
-    <PageLayout
-      pageLayoutImageUrl={interior13}
-      pageLayoutHeading={t.services.interiorDesign.heading}
-      pageLayoutHeadingText={t.pages.interiorDesign.headingText}
-    >
-      <div className="service interior">
-        <div className="service__content">
-          <div className="service__content--info">
-            <h2 className="secondary-heading">
-              {t.services.interiorDesign.heading}
-            </h2>
-            <p>{t.pages.interiorDesign.text1}</p>
-            <br />
-            <p>
-              {t.pages.interiorDesign.text2}{" "}
-              <Link className="text-link" href="tel:+381641234567">
-                {t.pages.interiorDesign.text3}
-              </Link>{" "}
-              {t.pages.interiorDesign.text4}{" "}
-              <Link href="" className="text-link" onClick={scrollToContact}>
-                {t.pages.interiorDesign.text5}
-              </Link>
-              .
-            </p>
+    <>
+      <Head>
+        <title>{t.services.interiorDesign.heading}</title>
+        <meta name="title" content={t.services.interiorDesign.heading} />
+        <meta name="description" content={t.pages.interiorDesign.headingText} />
+      </Head>
+      <PageLayout
+        pageLayoutImageUrl={interior13}
+        pageLayoutHeading={t.services.interiorDesign.heading}
+        pageLayoutHeadingText={t.pages.interiorDesign.headingText}
+      >
+        <div className="service interior">
+          <div className="service__content">
+            <div className="service__content--info">
+              <h2 className="secondary-heading">
+                {t.services.interiorDesign.heading}
+              </h2>
+              <p>{t.pages.interiorDesign.text1}</p>
+              <br />
+              <p>
+                {t.pages.interiorDesign.text2}{" "}
+                <Link className="text-link" href="tel:+381641234567">
+                  {t.pages.interiorDesign.text3}
+                </Link>{" "}
+                {t.pages.interiorDesign.text4}{" "}
+                <Link href="" className="text-link" onClick={scrollToContact}>
+                  {t.pages.interiorDesign.text5}
+                </Link>
+                .
+              </p>
+            </div>
+            <figure>
+              <Image src={interior} alt="HD Nautika enterijer" />
+              <figcaption>{t.pages.interiorDesign.figcaption}</figcaption>
+            </figure>
           </div>
-          <figure>
-            <Image src={interior} alt="HD Nautika enterijer" />
-            <figcaption>{t.pages.interiorDesign.figcaption}</figcaption>
-          </figure>
+          <div className="service__carousel">
+            <h2 className="secondary-heading">
+              {t.pages.interiorDesign.subheading}
+            </h2>
+            <Carousel
+              images={images}
+              shouldMaximizeOnClick={true}
+              hasMediaButton={false}
+              className="carousel"
+            />
+          </div>
         </div>
-        <div className="service__carousel">
-          <h2 className="secondary-heading">
-            {t.pages.interiorDesign.subheading}
-          </h2>
-          <Carousel
-            images={images}
-            shouldMaximizeOnClick={true}
-            hasMediaButton={false}
-            className="carousel"
-          />
-        </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
-
 import cerion from "../../public/assets/images/boats/cerion27/cerion.jpg";
 import cerion1 from "../../public/assets/images/boats/cerion27/cerion-1.jpg";
 import cerion2 from "../../public/assets/images/boats/cerion27/cerion-2.jpg";
@@ -70,14 +70,22 @@ const Cerion = () => {
   };
 
   return (
-    <BoatLayout
-      boatDescription={description}
-      boatImages={images}
-      boatHeading="Cerion 27,7 WA"
-      boatAdditionalEquipment={equipment}
-      boatImageURL={cerion7}
-      boatData={data}
-    />
+    <>
+      <Head>
+        {" "}
+        <title>Cerion 27,7 WA</title>
+        <meta name="title" content="Cerion 27,7 WA" />
+        <meta name="description" content={t.pages.boats.cerionText} />
+      </Head>
+      <BoatLayout
+        boatDescription={description}
+        boatImages={images}
+        boatHeading="Cerion 27,7 WA"
+        boatAdditionalEquipment={equipment}
+        boatImageURL={cerion7}
+        boatData={data}
+      />
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
 import nauticalEquipment from "../../public/assets/images/equipment/nautical-equipment.jpg";
 import nauticalEquipment1 from "../../public/assets/images/equipment/nautical-equipment-1.jpg";
@@ -19,14 +20,24 @@ const NauticalEquipment = () => {
   ];
 
   return (
-    <EquipmentLayout
-      equipmentLayoutBackgroundImage={nauticalEquipment3}
-      equipmentLayoutImages={images}
-      equipmentLayoutHeading={t.common.nauticalEquipment}
-      equipmentLayoutHeadingText={t.pages.nauticalEquipment.headingText}
-      equipmentLayoutSubheading={t.common.nauticalEquipment}
-      equipmentLayoutText={t.pages.nauticalEquipment.text}
-    />
+    <>
+      <Head>
+        <title>{t.common.nauticalEquipment}</title>
+        <meta name="title" content={t.common.nauticalEquipment} />
+        <meta
+          name="description"
+          content={t.pages.nauticalEquipment.headingText}
+        />
+      </Head>
+      <EquipmentLayout
+        equipmentLayoutBackgroundImage={nauticalEquipment3}
+        equipmentLayoutImages={images}
+        equipmentLayoutHeading={t.common.nauticalEquipment}
+        equipmentLayoutHeadingText={t.pages.nauticalEquipment.headingText}
+        equipmentLayoutSubheading={t.common.nauticalEquipment}
+        equipmentLayoutText={t.pages.nauticalEquipment.text}
+      />
+    </>
   );
 };
 

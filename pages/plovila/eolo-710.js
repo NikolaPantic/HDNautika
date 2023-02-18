@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
 import eolo from "../../public/assets/images/boats/eolo710/eolo.jpg";
 import eolo1 from "../../public/assets/images/boats/eolo710/eolo-1.jpg";
@@ -66,14 +67,21 @@ const Eolo = () => {
   };
 
   return (
-    <BoatLayout
-      boatDescription={description}
-      boatImages={images}
-      boatHeading="Eolo 710"
-      boatAdditionalEquipment={equipment}
-      boatImageURL={eolo}
-      boatData={data}
-    />
+    <>
+      <Head>
+        <title>Eolo 710</title>
+        <meta name="title" content="Eolo 710" />
+        <meta name="description" content={t.pages.boats.eoloText} />
+      </Head>
+      <BoatLayout
+        boatDescription={description}
+        boatImages={images}
+        boatHeading="Eolo 710"
+        boatAdditionalEquipment={equipment}
+        boatImageURL={eolo}
+        boatData={data}
+      />
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
 import marino from "../../public/assets/images/boats/marino550/marino.jpg";
 import marino1 from "../../public/assets/images/boats/marino550/marino-1.jpg";
@@ -49,14 +50,21 @@ const Marino = () => {
   };
 
   return (
-    <BoatLayout
-      boatDescription={description}
-      boatImages={images}
-      boatHeading="Marino Gabry 550"
-      boatAdditionalEquipment={equipment}
-      boatImageURL={marino}
-      boatData={data}
-    />
+    <>
+      <Head>
+        <title>Marino Gabry 550</title>
+        <meta name="title" content="Marino Gabry 550" />
+        <meta name="description" content={t.pages.boats.marinoText} />
+      </Head>
+      <BoatLayout
+        boatDescription={description}
+        boatImages={images}
+        boatHeading="Marino Gabry 550"
+        boatAdditionalEquipment={equipment}
+        boatImageURL={marino}
+        boatData={data}
+      />
+    </>
   );
 };
 

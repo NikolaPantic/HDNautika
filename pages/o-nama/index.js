@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import PageLayout from "../../layout/PageLayout/PageLayout";
 import nautika from "../../public/assets/images/services/mechanic/mechanic.jpg";
@@ -20,73 +21,80 @@ const AboutUs = () => {
   const t = locale === "sr" ? sr : en;
 
   return (
-    <PageLayout
-      pageLayoutHeading={t.common.aboutUs}
-      pageLayoutImageUrl={logo}
-      pageLayoutHeadingText={t.pages.aboutUs.headingText}
-    >
-      <div className="about-us">
-        <section className="about-us__section">
-          <h2 className="secondary-heading">{t.pages.aboutUs.subheading1}</h2>
-          <div className="about-us__section--text">
-            <p>
-              {t.pages.aboutUs.text1} <strong>HONDA</strong>{" "}
-              {t.pages.aboutUs.text2}
-            </p>
-            <br />
-            <p>
-              {t.pages.aboutUs.text3} <strong>SPORTSTAR 22</strong>,{" "}
-              {t.pages.aboutUs.text4}{" "}
-              <Link className="text-link" href="/plovila/sportstar-22">
-                {t.pages.aboutUs.text5}
-              </Link>
-              .
-            </p>
-          </div>
-          <div className="about-us__section--images">
-            <Image src={nautika4} alt="HD Nautika Sportstar 22" />
-            <Image src={nautika} alt="HD Nautika mehaničke usluge" />
-            <Image src={nautika7} alt="HD Nautika Honda motor" />
-            <Image src={nautika1} alt="HD Nautika vanbrodski motori" />
-          </div>
-        </section>
-        <section className="about-us__section">
-          <h2 className="secondary-heading">{t.pages.aboutUs.subheading2}</h2>
-          <div className="about-us__section--text">
-            <p>{t.pages.aboutUs.text6}</p>
-            <br />
-            <p>
-              - <strong>{t.pages.aboutUs.text7}</strong> {t.pages.aboutUs.text8}
-              ,
-            </p>
-            <p>
-              - {t.pages.aboutUs.text9}{" "}
-              <strong>{t.pages.aboutUs.text10}</strong> {t.pages.aboutUs.text11}
-              ,
-            </p>
-            <p>
-              - {t.pages.aboutUs.text12}{" "}
-              <strong>{t.pages.aboutUs.text13}</strong>,
-            </p>
-            <p>
-              - <strong>{t.pages.aboutUs.text14}</strong>{" "}
-              {t.pages.aboutUs.text15},
-            </p>
+    <>
+      <Head>
+        <title>{t.common.aboutUs}</title>
+        <meta name="title" content={t.common.aboutUs} />
+        <meta name="description" content={t.pages.aboutUs.headingText} />
+      </Head>
+      <PageLayout
+        pageLayoutHeading={t.common.aboutUs}
+        pageLayoutImageUrl={logo}
+        pageLayoutHeadingText={t.pages.aboutUs.headingText}
+      >
+        <div className="about-us">
+          <section className="about-us__section">
+            <h2 className="secondary-heading">{t.pages.aboutUs.subheading1}</h2>
+            <div className="about-us__section--text">
+              <p>
+                {t.pages.aboutUs.text1} <strong>HONDA</strong>{" "}
+                {t.pages.aboutUs.text2}
+              </p>
+              <br />
+              <p>
+                {t.pages.aboutUs.text3} <strong>SPORTSTAR 22</strong>,{" "}
+                {t.pages.aboutUs.text4}{" "}
+                <Link className="text-link" href="/plovila/sportstar-22">
+                  {t.pages.aboutUs.text5}
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="about-us__section--images">
+              <Image src={nautika4} alt="HD Nautika Sportstar 22" />
+              <Image src={nautika} alt="HD Nautika mehaničke usluge" />
+              <Image src={nautika7} alt="HD Nautika Honda motor" />
+              <Image src={nautika1} alt="HD Nautika vanbrodski motori" />
+            </div>
+          </section>
+          <section className="about-us__section">
+            <h2 className="secondary-heading">{t.pages.aboutUs.subheading2}</h2>
+            <div className="about-us__section--text">
+              <p>{t.pages.aboutUs.text6}</p>
+              <br />
+              <p>
+                - <strong>{t.pages.aboutUs.text7}</strong>{" "}
+                {t.pages.aboutUs.text8},
+              </p>
+              <p>
+                - {t.pages.aboutUs.text9}{" "}
+                <strong>{t.pages.aboutUs.text10}</strong>{" "}
+                {t.pages.aboutUs.text11},
+              </p>
+              <p>
+                - {t.pages.aboutUs.text12}{" "}
+                <strong>{t.pages.aboutUs.text13}</strong>,
+              </p>
+              <p>
+                - <strong>{t.pages.aboutUs.text14}</strong>{" "}
+                {t.pages.aboutUs.text15},
+              </p>
 
-            <br />
-            <p>{t.pages.aboutUs.text16}</p>
-            <p>{t.pages.aboutUs.text17}</p>
-          </div>
+              <br />
+              <p>{t.pages.aboutUs.text16}</p>
+              <p>{t.pages.aboutUs.text17}</p>
+            </div>
 
-          <div className="about-us__section--images">
-            <Image src={nautika5} alt="HD Nautika farbanje plovila" />
-            <Image src={nautika2} alt="HD Nautika servis plovila" />
-            <Image src={nautika3} alt="HD Nautika farbanje plovila" />
-            <Image src={nautika6} alt="HD Nautika Sportstar 22" />
-          </div>
-        </section>
-      </div>
-    </PageLayout>
+            <div className="about-us__section--images">
+              <Image src={nautika5} alt="HD Nautika farbanje plovila" />
+              <Image src={nautika2} alt="HD Nautika servis plovila" />
+              <Image src={nautika3} alt="HD Nautika farbanje plovila" />
+              <Image src={nautika6} alt="HD Nautika Sportstar 22" />
+            </div>
+          </section>
+        </div>
+      </PageLayout>
+    </>
   );
 };
 

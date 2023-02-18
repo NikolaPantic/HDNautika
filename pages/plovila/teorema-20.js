@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
 import teorema from "../../public/assets/images/boats/teorema20/teorema.jpg";
 import teorema1 from "../../public/assets/images/boats/teorema20/teorema-1.jpg";
@@ -66,14 +67,21 @@ const Teorema = () => {
   };
 
   return (
-    <BoatLayout
-      boatDescription={description}
-      boatImages={images}
-      boatHeading="Teorema 20"
-      boatAdditionalEquipment={equipment}
-      boatImageURL={teorema}
-      boatData={data}
-    />
+    <>
+      <Head>
+        <title>Teorema 20</title>
+        <meta name="title" content="Teorema 20" />
+        <meta name="description" content={t.pages.boats.teoremaText} />
+      </Head>
+      <BoatLayout
+        boatDescription={description}
+        boatImages={images}
+        boatHeading="Teorema 20"
+        boatAdditionalEquipment={equipment}
+        boatImageURL={teorema}
+        boatData={data}
+      />
+    </>
   );
 };
 
