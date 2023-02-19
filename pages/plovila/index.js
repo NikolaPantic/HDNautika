@@ -44,7 +44,7 @@ const Boats = () => {
       heading: "Eolo 710",
       length: 7.7,
       numberOfPersons: 8,
-      enginePower: "2 x 150",
+      enginePower: "2 x 230",
       price: t.tableData.priceValue,
       available: t.tableData.available,
     },

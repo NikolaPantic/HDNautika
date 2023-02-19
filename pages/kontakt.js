@@ -6,6 +6,8 @@ import logo from "../public/assets/svg/logo1.svg";
 import phone from "../public/assets/svg/mobile.svg";
 import mail from "../public/assets/svg/mail4.svg";
 import location from "../public/assets/svg/location.svg";
+import sportstarLogo from "../public/assets/images/boats/sportstar22/sportstar-logo.jpg";
+
 import en from "../locales/en";
 import sr from "../locales/sr";
 const Contact = () => {
@@ -13,6 +15,7 @@ const Contact = () => {
   const t = locale === "sr" ? sr : en;
   return (
     <PageLayout
+      pageLayoutImageUrl={sportstarLogo}
       pageLayoutHeading={t.common.contact}
       pageLayoutHeadingText={t.pages.contact.headingText}
     >

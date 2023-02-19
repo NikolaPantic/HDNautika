@@ -44,7 +44,6 @@ const SectionAboutUs = () => {
           <Image src={about} alt="HD Nautika" />
           <Image src={about1} alt="HD Nautika" />
           <Image src={about2} alt="HD Nautika" />
-          <Image src={about} alt="" />
         </Carousel>
       </div>
     </section>

@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
-import sportstarLogo from "../../public/assets/images/boats/sportstar22/sportstar-logo.jpg";
 import sportstar from "../../public/assets/images/boats/sportstar22/sportstar.jpg";
 import sportstar1 from "../../public/assets/images/boats/sportstar22/sportstar-1.jpg";
 import sportstar2 from "../../public/assets/images/boats/sportstar22/sportstar-2.jpg";
@@ -116,7 +115,7 @@ const Sportstar = () => {
         boatHeading="Sportstar 22"
         boatDescription={description}
         boatAdditionalEquipment={equipment}
-        boatImageURL={sportstarLogo}
+        boatImageURL={sportstar28}
       />
     </>
   );
