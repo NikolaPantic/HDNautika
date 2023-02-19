@@ -16,30 +16,30 @@ const EquipmentCard = ({
 
   return (
     <TranslatedLink
-      className={
-        rectangular ? " equipment-card--rectangular" : "equipment-card"
-      }
+      className={rectangular ? "equipment-card--rectangular" : "equipment-card"}
       href={equipmentCardURL}
     >
-      <div
-        className={
-          rectangular
-            ? "equipment-card--rectangular--image"
-            : "equipment-card__image"
-        }
-      >
-        <Image src={equipmentCardImageSrc} alt={equipmentCardLabel} />
+      <div className="equipment-card__wrapper">
+        <div
+          className={
+            rectangular
+              ? "equipment-card--rectangular--image"
+              : "equipment-card__image"
+          }
+        >
+          <Image src={equipmentCardImageSrc} alt={equipmentCardLabel} />
+        </div>
+        <div
+          className={
+            rectangular
+              ? "equipment-card--rectangular--label"
+              : "equipment-card__label"
+          }
+        >
+          {equipmentCardLabel}
+        </div>
+        <span className="equipment-card__sublabel">{t.buttons.viewAll}</span>
       </div>
-      <div
-        className={
-          rectangular
-            ? "equipment-card--rectangular--label"
-            : "equipment-card__label"
-        }
-      >
-        {equipmentCardLabel}
-      </div>
-      <span className="equipment-card__sublabel">{t.buttons.viewAll}</span>
     </TranslatedLink>
   );
 };
