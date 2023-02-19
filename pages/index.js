@@ -3,10 +3,10 @@ import SectionHero from "../components/sections/SectionHero/SectionHero";
 import SectionAboutUs from "../components/sections/SectionAboutUs/SectionAboutUs";
 import SectionBoats from "../components/sections/SectionBoats/SectionBoats";
 import SectionEngines from "../components/sections/SectionEngines/SectionEngines";
-import SectionEquipment from "../components/sections/SectionEquipment/SectionEquipment.jsx";
-import SectionServices from "../components/sections/SectionServices/SectionServices.jsx";
 import SectionNewsletterReviews from "../components/sections/SectionNewsletterReviews/SectionNewsletterReviews";
 import SectionContact from "../components/SectionContact/SectionContact";
+import SectionEquipment from "../components/sections/SectionEquipment/SectionEquipment";
+import SectionServices from "../components/sections/SectionServices/SectionServices";
 
 export default function Home() {
   return (
