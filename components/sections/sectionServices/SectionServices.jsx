@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
-import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import ServiceCard from "../../ServiceCard/ServiceCard";
 import mechanic from "../../../public/assets/images/services/mechanic/mechanic-2.jpg";
 import painting from "../../../public/assets/images/services/reparation/painting.jpg";
 import interior from "../../../public/assets/images/services/interior/interior-1.jpg";
 import winter from "../../../public/assets/images/services/winter/winter.jpg";
-import OvalButton from "../../../components/OvalButton/OvalButton";
+import OvalButton from "../../OvalButton/OvalButton";
 
 import en from "../../../locales/en";
 import sr from "../../../locales/sr";
