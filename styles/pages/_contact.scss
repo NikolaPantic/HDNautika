@@ -71,10 +71,15 @@
     }
   }
 
-  &__iframe {
-    border: 0;
+  &__map {
     align-self: stretch;
     flex: 0 0 70%;
+
+    & iframe {
+      border: 0;
+      height: 100%;
+      width: 100%;
+    }
 
     @media only screen and (max-width: 600px) {
       align-self: center;

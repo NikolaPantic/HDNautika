@@ -24,6 +24,7 @@ const Newsletter = () => {
         "#newsletter-form",
         "yRSlAyjSNYF9CjZxT"
       )
+      .then(() => setSuccessfulEmail(true))
       .catch(() => {
         setInvalidEmail(true);
       });
@@ -64,7 +65,6 @@ const Newsletter = () => {
               setInvalidEmail(false);
             }
             {
-              setSuccessfulEmail(true);
               sendEmail();
             }
           } else {

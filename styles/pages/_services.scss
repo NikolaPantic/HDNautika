@@ -15,6 +15,7 @@
   }
 
   &__single-service {
+    min-height: 80vh;
     align-self: stretch;
     background-color: $color-primary-dark;
     flex: 0 0 23%;
@@ -35,12 +36,12 @@
     @media only screen and (max-width: 900px) {
       flex: 0 0 40%;
       margin: 2%;
-      min-height: 50vh;
+      min-height: 80vh;
     }
 
     @media only screen and (max-width: 600px) {
       flex: 0 0 80%;
-      min-height: 40vh;
+      min-height: 60vh;
     }
 
     &--heading {

@@ -18,11 +18,18 @@ const MechanicService = () => {
   return (
     <>
       <Head>
-        <title>{t.services.mechanicService.heading}</title>
-        <meta name="title" content={t.services.mechanicService.heading} />
+        <title>{t.metadata.mechanicService.title}</title>
+        <meta name="title" content={t.metadata.mechanicService.title} />
         <meta
           name="description"
-          content={t.pages.mechanicService.headingText}
+          content={t.metadata.mechanicService.description}
+        />
+        <meta name="keywords" content="popravka vanbrodskih motora" />
+        <meta property="og:title" content={t.metadata.mechanicService.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.mechanicService.description}
         />
       </Head>
       <PageLayout

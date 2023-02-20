@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 import TranslatedLink from "../../components/TranslatedLink/TranslatedLink";
-import logo from "../../public/assets/svg/logo1.svg";
+import logo from "../../public/assets/svg/nautica.png";
 import downArrow from "../../public/assets/svg/arrow-down-icon.svg";
 import serbian from "../../public/assets/svg/serbian.png";
 import english from "../../public/assets/svg/english.png";

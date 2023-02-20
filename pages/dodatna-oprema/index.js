@@ -4,7 +4,7 @@ import PageLayout from "../../layout/PageLayout/PageLayout";
 import EquipmentCard from "../../components/EquipmentCard/EquipmentCard";
 import propeller from "../../public/assets/images/equipment/propeller-card.jpg";
 import sonar from "../../public/assets/images/equipment/sonar-4.jpg";
-import engine1 from "../../public/assets/images/equipment/engine-equipment-4.jpg";
+import engine1 from "../../public/assets/images/equipment/honda-outboard-engine.jpg";
 import outboardEngineParts from "../../public/assets/images/equipment/engine-equipment.jpg";
 import nauticalEquipment from "../../public/assets/images/equipment/nautical-equipment.jpg";
 import Suggestions from "../../components/Suggestions/Suggestions";
@@ -19,12 +19,25 @@ const Equipment = () => {
   return (
     <>
       <Head>
-        <title>{t.common.additionalEquipment}</title>
-        <meta name="title" content={t.common.additionalEquipment} />
+        <title>{t.metadata.additionalEquipment.title}</title>
+        <meta name="title" content={t.metadata.additionalEquipment.title} />
         <meta
           name="description"
-          content={t.pages.additionalEquipment.headingText}
+          content={t.metadata.additionalEquipment.description}
         />
+        <meta
+          name="keywords"
+          content="oprema za plovila, dodatna oprema plovila"
+        />
+        <meta
+          property="og:title"
+          content={t.metadata.additionalEquipment.title}
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.additionalEquipment.description}
+        />{" "}
       </Head>
       <PageLayout
         pageLayoutImageUrl={outboardEngineParts}

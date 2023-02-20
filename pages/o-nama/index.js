@@ -23,9 +23,16 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>{t.common.aboutUs}</title>
-        <meta name="title" content={t.common.aboutUs} />
-        <meta name="description" content={t.pages.aboutUs.headingText} />
+        <title>{t.metadata.aboutUs.title}</title>
+        <meta name="title" content={t.metadata.aboutUs.title} />
+        <meta name="description" content={t.metadata.aboutUs.description} />
+        <meta name="keywords" content="HD Nautika, o nama" />
+        <meta property="og:title" content={t.metadata.aboutUs.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.aboutUs.description}
+        />
       </Head>
       <PageLayout
         pageLayoutHeading={t.common.aboutUs}

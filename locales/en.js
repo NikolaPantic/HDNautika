@@ -11,7 +11,7 @@ const en = {
     sonars: "Sonars",
     outboardEngineParts: "Outboard engine parts",
     nauticalEquipment: "Nautical equipment",
-    usedEquipment: "Used engines",
+    usedEquipment: "Used outboard engines",
     reviews: "Reviews",
     source: "Source",
     invalidField: "Fill in the field correctly! This field is required.",
@@ -361,52 +361,108 @@ const en = {
       title:
         "Service and sale of vessels and nautical equipment | Construction of vessels | HD Nautika",
       description:
-        "Sale and servicing of boats and outboard motors. Wide selection of outboard motors and accessories. Vessel and engine winterizer. All in one place.",
+        "Sale and servicing of boats and outboard engines. Wide selection of outboard engines and accessories. Vessel and engine winterizer. All in one place.",
     },
     aboutUs: {
       title: "About us | HD Nautika",
-      description: "",
+      description:
+        "We were founded in 2006 in Obrenovac, with the aim of providing the highest quality service and setting standards in boat construction. For more than 15 years, we have justified your trust, to our satisfaction.",
     },
     boats: {
       title: "Boats | HD Nautika",
-      description: "",
+      description:
+        "See our offer of vessels. We would be proud to highlight the Sportstar 22 speedboat, which was built in our workshop.",
     },
     sportstar: {
       title: "Sportstar 22 | HD Nautika",
-      description: "",
+      description:
+        "Sportstar 22 is a sports speedboat and the first vessel made in our workshop. It is characterized by an elegant line, easy passage around the central console and absolute comfort.",
     },
-    marino: { title: "Marino Gabry 550 | HD Nautika", description: "" },
-    teorema: { title: "Teorema 20 | HD Nautika", description: "" },
-    cerion: { title: "Cerion 27,7 WA | HD Nautika", description: "" },
-    eolo: { title: "Eolo 270 | HD Nautika", description: "" },
-    services: { title: "Services | HD Nautika", description: "" },
+    marino: {
+      title: "Marino Gabry 550 | HD Nautika",
+      description:
+        "Marino Gabry 550 is the ideal choice for lovers of sports driving. It is characterized by superior sailing characteristics, ease of movement and a sporty line.",
+    },
+    teorema: {
+      title: "Teorema 20 | HD Nautika",
+      description:
+        "Theorem 20 is a novelty on our market. With space for 7 passengers and a deep trough, it guarantees the ultimate fun on the water.",
+    },
+    cerion: {
+      title: "Cerion 27,7 WA | HD Nautika",
+      description:
+        "Speedboat Cerion 27.7 WA stands out with its elegant line and great sailing characteristics. It is powered by 2 Honda 150 engines, and with a length of 8.4 m, it provides complete comfort.",
+    },
+    eolo: {
+      title: "Eolo 270 | HD Nautika",
+      description:
+        "The Eolo 710 is the perfect boat model for anyone who enjoys peaceful sailing. With a fuel tank of 250 l, you can indulge in the charms of a long voyage.",
+    },
+    services: {
+      title: "Services | HD Nautika",
+      description:
+        "We offer mechanical services, boat and outboard engine service, interior design and repair, as well as boat and engine winterization.",
+    },
     mechanicService: {
       title: "Mechanic service | HD Nautika",
-      description: "",
+      description:
+        "Mechanical services include the repair and service of outboard engines, as well as the conversion of vessels from inboard to outboard engines.",
     },
-    vesselService: { title: "Vessel service | HD Nautika", description: "" },
-    interiorDesign: { title: "Interior design | HD Nautika", description: "" },
-    winterLog: { title: "Winter storage | HD Nautika", description: "" },
+    vesselService: {
+      title: "Vessel service | HD Nautika",
+      description:
+        "Vessel service includes plastic repairs, painting, polishing, vessel protection and antialgin application.",
+    },
+    interiorDesign: {
+      title: "Interior design | HD Nautika",
+      description:
+        "We make and repair all types of interiors: awnings, cushions, tarpaulins, we provide polyester services... Visit us and find out first hand everything you are interested in.",
+    },
+    winterLog: {
+      title: "Winter storage | HD Nautika",
+      description:
+        "We prepare vessels and engines for winter storage. We also transport boats and engines in the country and abroad",
+    },
     outboardEngines: {
       title: "Outboard engines | HD Nautika",
-      description: "",
+      description:
+        "We are selling new Honda outboard motors of different power and sizes.",
     },
     additionalEquipment: {
       title: "Additional equipment | HD Nautika",
-      description: "",
+      description:
+        "We offer a wide selection of accessories: propellers, sonar, outboard engine parts, nautical equipment, as well as used engines.",
     },
-    propellers: { title: "Propellers | HD Nautika", description: "" },
-    sonars: { title: "Sonars | HD Nautika", description: "" },
+    propellers: {
+      title: "Propellers | HD Nautika",
+      description:
+        "We offer Solas brand propellers for different types of engines, depending on the size, power and model of the engine.",
+    },
+    sonars: {
+      title: "Sonars | HD Nautika",
+      description:
+        "Sonars of the Lowrance brand, the highest quality in the nautical world. Sale of sonar of different price range and equipment, depending on your needs.",
+    },
     outboardEngineParts: {
       title: "Outboard engine parts | HD Nautika",
-      description: "",
+      description:
+        "Wide selection of outboard engine parts as well as outboard engine accessories.",
     },
     nauticalEquipment: {
       title: "Nautical equipment | HD Nautika",
-      description: "",
+      description:
+        "From nautical equipment we offer: steering wheels, speedometers, music, lighting, deck equipment, metal haberdashery and much more. Visit us and find everything you need in one place.",
     },
-    usedEquipment: { title: "Used engines | HD Nautika", description: "" },
-    contact: { title: "Contact | HD Nautika", description: "" },
+    usedEquipment: {
+      title: "Used engines | HD Nautika",
+      description:
+        "Wide selection of used engines. Every uesd engine is serviced with a one-year written warranty.",
+    },
+    contact: {
+      title: "Contact | HD Nautika",
+      description:
+        "We are located in Obrenovac, at street Stevana Sinđelića 13. Visit us and find out everything you are interested in.",
+    },
   },
 };
 

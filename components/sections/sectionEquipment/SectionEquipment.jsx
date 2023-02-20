@@ -4,7 +4,7 @@ import OvalButton from "../../OvalButton/OvalButton";
 import propeller from "../../../public/assets/images/equipment/propeller.jpg";
 import sonar from "../../../public/assets/images/equipment/sonar-1.jpg";
 import engineEquipment from "../../../public/assets/images/equipment/engine-equipment.jpg";
-import engine1 from "../../../public/assets/images/equipment/engine-equipment-4.jpg";
+import engine1 from "../../../public/assets/images/equipment/honda-outboard-engine.jpg";
 import nauticalEquipment from "../../../public/assets/images/equipment/nautical-equipment-1.jpg";
 
 import en from "../../../locales/en";

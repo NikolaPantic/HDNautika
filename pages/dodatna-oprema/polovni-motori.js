@@ -11,9 +11,22 @@ const UsedEquipment = () => {
   return (
     <>
       <Head>
-        <title>{t.common.usedEquipment}</title>
-        <meta name="title" content={t.common.usedEquipment} />
-        <meta name="description" content={t.pages.usedEquipment.headingText} />
+        <title>{t.metadata.usedEquipment.title}</title>
+        <meta name="title" content={t.metadata.usedEquipment.title} />
+        <meta
+          name="description"
+          content={t.metadata.usedEquipment.description}
+        />
+        <meta
+          name="keywords"
+          content="polovni vanbrodski motori, honda vanbrodski motori"
+        />
+        <meta property="og:title" content={t.metadata.usedEquipment.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.usedEquipment.description}
+        />{" "}
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={usedEquipment}

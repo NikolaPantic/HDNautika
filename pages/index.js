@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import SectionHero from "../components/sections/SectionHero/SectionHero";
 import SectionAboutUs from "../components/sections/SectionAboutUs/SectionAboutUs";
 import SectionBoats from "../components/sections/SectionBoats/SectionBoats";
@@ -7,23 +8,25 @@ import SectionNewsletterReviews from "../components/sections/SectionNewsletterRe
 import SectionContact from "../components/SectionContact/SectionContact";
 import SectionEquipment from "../components/sections/SectionEquipment/SectionEquipment";
 import SectionServices from "../components/sections/SectionServices/SectionServices";
+import en from "../locales/en";
+import sr from "../locales/sr";
 
 export default function Home() {
+  const { locale } = useRouter();
+  const t = locale === "sr" ? sr : en;
   return (
     <>
       <Head>
-        <title>{t.metadata.landingPage.heading}</title>
-        <meta name="title" content={t.metadata.landingPage.heading} />
+        <title>{t.metadata.landingPage.title}</title>
+        <meta name="title" content={t.metadata.landingPage.title} />
         <meta name="description" content={t.metadata.landingPage.description} />
-        <meta
-          name="keywords"
-          content="HD Nautika, servis plovila, prodaja motora"
-        />
-        <meta property="og:title" content={t.metadata.landingPage.heading} />
+        <meta name="keywords" content="HD Nautika, servis plovila" />
+        <meta property="og:title" content={t.metadata.landingPage.title} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:description" content="" />
+        <meta
+          property="og:description"
+          content={t.metadata.landingPage.description}
+        />
       </Head>
 
       <article className="landing-page">

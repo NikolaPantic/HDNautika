@@ -9,7 +9,7 @@ import eolo from "../../public/assets/images/boats/eolo710/eolo-2.jpg";
 import marino from "../../public/assets/images/boats/marino550/marino.jpg";
 import propeller from "../../public/assets/images/equipment/propeller-card.jpg";
 import sonar from "../../public/assets/images/equipment/sonar-4.jpg";
-import engine1 from "../../public/assets/images/equipment/engine-equipment-4.jpg";
+import engine1 from "../../public/assets/images/equipment/honda-outboard-engine.jpg";
 import engineEquipment from "../../public/assets/images/equipment/engine-equipment.jpg";
 import nauticalEquipment from "../../public/assets/images/equipment/nautical-equipment.jpg";
 

@@ -22,11 +22,21 @@ const NauticalEquipment = () => {
   return (
     <>
       <Head>
-        <title>{t.common.nauticalEquipment}</title>
-        <meta name="title" content={t.common.nauticalEquipment} />
+        <title>{t.metadata.nauticalEquipment.title}</title>
+        <meta name="title" content={t.metadata.nauticalEquipment.title} />
         <meta
           name="description"
-          content={t.pages.nauticalEquipment.headingText}
+          content={t.metadata.nauticalEquipment.description}
+        />
+        <meta name="keywords" content="nauticka oprema, oprema za camce" />
+        <meta
+          property="og:title"
+          content={t.metadata.nauticalEquipment.title}
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.nauticalEquipment.description}
         />
       </Head>
       <EquipmentLayout

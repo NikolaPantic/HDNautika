@@ -11,7 +11,7 @@ const sr = {
     sonars: "Sonari",
     outboardEngineParts: "Delovi vanbrodskih motora",
     nauticalEquipment: "Nautička oprema",
-    usedEquipment: "Polovni motori",
+    usedEquipment: "Polovni vanbrodski motori",
     reviews: "Recenzije",
     source: "Izvor",
     invalidField: "Popunite polje pravilno! Polje je obavezno.",
@@ -352,57 +352,110 @@ const sr = {
   metadata: {
     landingPage: {
       title:
-        "Servis i prodaja plovila i nautičke opreme | Izrada plovila | Zimovnik",
+        "Servis i prodaja plovila i nautičke opreme | Izrada plovila | HD Nautika",
       description:
         "Prodaja i servisiranje plovila i vanbrodskih motora. Širok izbor vanbrodskih motora i dodatne opreme. Zimovnik plovila i motora. Sve na jednom mestu.",
     },
     aboutUs: {
       title: "O nama | HD Nautika",
-      description: "",
+      description:
+        "Osnovani smo 2006. godine u Obrenovcu, sa ciljem pružanja najkvalitetnije usluge i postavljanja standarda u izradi plovila. Više od 15 godina opravdavamo vaše poverenje, na naše zadovoljstvo.",
     },
     boats: {
       title: "Plovila | HD Nautika",
-      description: "",
+      description:
+        "Pogledajte našu ponudu plovila. Sa ponosom bismo istakli gliser Sportstar 22, koji je rađen u našoj radionici.",
     },
     sportstar: {
       title: "Sportstar 22 | HD Nautika",
-      description: "",
+      description:
+        "Sportstar 22 je sportski gliser i prvo plovilo izrađeno u našoj radionici. Odlikuje ga elegantna linija, lak prolaz oko centralne konzole i apsolutna udobnost.",
     },
-    marino: { title: "Marino Gabry 550 | HD Nautika", description: "" },
-    teorema: { title: "Teorema 20 | HD Nautika", description: "" },
-    cerion: { title: "Cerion 27,7 WA | HD Nautika", description: "" },
-    eolo: { title: "Eolo 270 | HD Nautika", description: "" },
-    services: { title: "Usluge | HD Nautika", description: "" },
+    marino: {
+      title: "Marino Gabry 550 | HD Nautika",
+      description:
+        "Marino Gabry 550 je idealan izbor za ljubitelje sportske vožnje. Odlikuju ga vrhunske plovne karakteristike, lakoća kretanja i sportska linija.",
+    },
+    teorema: {
+      title: "Teorema 20 | HD Nautika",
+      description:
+        "Teorema 20 predstavlja novinu na našem tržištu. Sa prostorom za 7 putnika i dubokim koritom, garantuje vrhunsku zabavu na vodi.",
+    },
+    cerion: {
+      title: "Cerion 27,7 WA | HD Nautika",
+      description:
+        "Gliser Cerion 27,7 WA se ističe elegantnom linijom i sjajni plovnim karakteristikama. Pokreću ga 2 Honda 150 motora, a sa dužinom od 8.4 m obezbeđuje potpuni komfor.",
+    },
+    eolo: {
+      title: "Eolo 270 | HD Nautika",
+      description:
+        "Eolo 710 je savršen model plovila za sve koji uživaju u mirnim plovidbama. Uz rezervoar goriva od 250 l, možete se prepustiti čarima duge plovidbe.",
+    },
+    services: {
+      title: "Usluge | HD Nautika",
+      description:
+        "Od usluga nudimo mehaničarske usluge, servis plovila i vanbrodskih motora, izradu i reparaciju enterijera, kao i zimovnik plovila i motora.",
+    },
     mechanicService: {
       title: "Mehaničarke usluge | HD Nautika",
-      description: "",
+      description:
+        "U mehaničarske usluge spadaju popravka i servis vanbrodskih motora, kao i prepravka plovila sa brodskih na vanbrodske motore.",
     },
-    vesselService: { title: "Servis plovila | HD Nautika", description: "" },
+    vesselService: {
+      title: "Servis plovila | HD Nautika",
+      description:
+        "Servis plovila podrazumeva popravke na plastici, farbanje, poliranje, zaštitu plovila i nanošenje antialgina.",
+    },
     interiorDesign: {
       title: "Izrada enterijera | HD Nautika",
-      description: "",
+      description:
+        "Izrađujemo i vršimo reparaciju svih vrsti enterijera: tendi, jastuka, prekrivnih cerada, vršimo poliesterske usluge... Posetite nas i saznajte iz prve ruke sve što vas zanima.",
     },
-    winterLog: { title: "Zimovnik plovila | HD Nautika", description: "" },
+    winterLog: {
+      title: "Zimovnik plovila | HD Nautika",
+      description:
+        "Pripremamo plovila i motore za zimovnik. Takođe, vršimo prevoz plovila i motora u zemlji i inostranstvu",
+    },
     outboardEngines: {
       title: "Vanbrodski motori | HD Nautika",
-      description: "",
+      description:
+        "Prodajemo nove vanbrodske motore marke Honda, različite snage i veličine.",
     },
     additionalEquipment: {
       title: "Dodatna oprema | HD Nautika",
-      description: "",
+      description:
+        "Nudimo širok izbor dodatne opreme: propelera, sonara, delova vanbrodskih motora, nautičke opreme, kao i polovnih motora.",
     },
-    propellers: { title: "Popeleri | HD Nautika", description: "" },
-    sonars: { title: "Sonari | HD Nautika", description: "" },
+    propellers: {
+      title: "Propeleri | HD Nautika",
+      description:
+        "Nudimo propelere marke Solas za različite tipove motora, u zavisnosti od veličine, snage i modela motora.",
+    },
+    sonars: {
+      title: "Sonari | HD Nautika",
+      description:
+        "Sonari marke Lowrance, najkvalitetnijih u svetu nautike. Prodaja sonara različitog cenovnog ranga i opremljenosti, u zavisnosti od vaših potreba.",
+    },
     outboardEngineParts: {
       title: "Delovi vanbrodskih motora | HD Nautika",
-      description: "",
+      description:
+        "Širok izbor delova vanbrodskih motora, kao i dodatne opreme za vanbrodske motore.",
     },
     nauticalEquipment: {
       title: "Nautička oprema | HD Nautika",
-      description: "",
+      description:
+        "Od nautičke opreme nudimo: volane, brzinomere, muziku, rasvetu, palubnu opremu, metalnu galanteriju i još dosta toga. Posetite nas i nađite sve što vam treba na jednom mestu.",
     },
-    usedEquipment: { title: "Polovni motori | HD Nautika", description: "" },
-    contact: { title: "Kontakt | HD Nautika", description: "" },
+    usedEquipment: {
+      title: "Polovni motori | HD Nautika",
+      description:
+        "Širok izbor polovnih motora. Svaki polovni motor je servisiran sa pismenom garancijom u trajanju od godinu dana.",
+    },
+    contact: {
+      title: "Kontakt | HD Nautika",
+      description:
+        "Nalazimo se u Obrenovcu, u ulici Stevana Sinđelića 13. Posetite nas i saznajte sve što vas zanima.",
+    },
   },
 };
 

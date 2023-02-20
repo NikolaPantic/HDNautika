@@ -1,6 +1,6 @@
 .equipment-card {
   flex: 0 0 40%;
-  height: 25vh;
+  height: 35vh;
   color: $color-primary-dark;
   position: relative;
   text-transform: uppercase;
@@ -51,6 +51,7 @@
   }
 
   &__label {
+    text-align: center;
     font-size: 1.5rem;
     width: 100%;
     position: absolute;
@@ -73,11 +74,12 @@
     transition: all 0.5s;
     position: absolute;
     left: -155%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) skew(20deg);
     bottom: 5%;
 
     @media only screen and (max-width: 1300px) {
       left: 50%;
+      transform: translate(-50%) skew(0);
     }
   }
 
@@ -89,6 +91,10 @@
     height: 30vh;
     margin: 1% 0;
     flex: 0 0 18%;
+
+    & .equipment-card__sublabel {
+      display: none;
+    }
 
     & > .equipment-card__wrapper {
       display: flex;

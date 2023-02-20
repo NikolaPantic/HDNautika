@@ -58,9 +58,19 @@ const Interior = () => {
   return (
     <>
       <Head>
-        <title>{t.services.interiorDesign.heading}</title>
-        <meta name="title" content={t.services.interiorDesign.heading} />
-        <meta name="description" content={t.pages.interiorDesign.headingText} />
+        <title>{t.metadata.interiorDesign.title}</title>
+        <meta name="title" content={t.metadata.interiorDesign.title} />
+        <meta
+          name="description"
+          content={t.metadata.interiorDesign.description}
+        />
+        <meta name="keywords" content="izrada enterijera" />
+        <meta property="og:title" content={t.metadata.interiorDesign.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.interiorDesign.description}
+        />
       </Head>
       <PageLayout
         pageLayoutImageUrl={interior13}

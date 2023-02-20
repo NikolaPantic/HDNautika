@@ -16,9 +16,16 @@ const Propellers = () => {
   return (
     <>
       <Head>
-        <title>{t.common.propellers}</title>
-        <meta name="title" content={t.common.propellers} />
-        <meta name="description" content={t.pages.propellers.headingText} />
+        <title>{t.metadata.propellers.title}</title>
+        <meta name="title" content={t.metadata.propellers.title} />
+        <meta name="description" content={t.metadata.propellers.description} />
+        <meta name="keywords" content="propeleri, Solas" />
+        <meta property="og:title" content={t.metadata.propellers.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.propellers.description}
+        />{" "}
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={propeller1}

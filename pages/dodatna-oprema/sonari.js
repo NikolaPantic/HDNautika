@@ -17,9 +17,16 @@ const Sonars = () => {
   return (
     <>
       <Head>
-        <title>{t.common.sonars}</title>
-        <meta name="title" content={t.common.sonars} />
-        <meta name="description" content={t.pages.sonars.headingText} />
+        <title>{t.metadata.sonars.title}</title>
+        <meta name="title" content={t.metadata.sonars.title} />
+        <meta name="description" content={t.metadata.sonars.description} />
+        <meta name="keywords" content="sonari, Lowrance" />
+        <meta property="og:title" content={t.metadata.sonars.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.sonars.description}
+        />{" "}
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={sonar1}

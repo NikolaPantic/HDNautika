@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import OvalButton from "../../OvalButton/OvalButton";
-import engine from "../../../public/assets/images/equipment/engine-equipment-4.jpg";
+import engine from "../../../public/assets/images/equipment/honda-engines.jpg";
 
 import en from "../../../locales/en";
 import sr from "../../../locales/sr";

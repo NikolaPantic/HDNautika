@@ -17,9 +17,19 @@ const Engines = () => {
   return (
     <>
       <Head>
-        <title>{t.common.outboardEngines}</title>
-        <meta name="title" content={t.common.outboardEngines} />
-        <meta name="description" content={t.pages.engines.headingText} />
+        <title>{t.metadata.outboardEngines.title}</title>
+        <meta name="title" content={t.metadata.outboardEngines.title} />
+        <meta
+          name="description"
+          content={t.metadata.outboardEngines.description}
+        />
+        <meta name="keywords" content="Honda, vanbrodski motori " />
+        <meta property="og:title" content={t.metadata.outboardEngines.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.outboardEngines.description}
+        />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={engine2}

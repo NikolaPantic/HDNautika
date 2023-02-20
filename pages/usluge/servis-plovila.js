@@ -53,9 +53,19 @@ const Service = () => {
   return (
     <>
       <Head>
-        <title>{t.services.vesselService.heading}</title>
-        <meta name="title" content={t.services.vesselService.heading} />
-        <meta name="description" content={t.pages.vesselService.headingText} />
+        <title>{t.metadata.vesselService.title}</title>
+        <meta name="title" content={t.metadata.vesselService.title} />
+        <meta
+          name="description"
+          content={t.metadata.vesselService.description}
+        />
+        <meta name="keywords" content="izrada enterijera" />
+        <meta property="og:title" content={t.metadata.vesselService.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.vesselService.description}
+        />{" "}
       </Head>
       <PageLayout
         pageLayoutImageUrl={reparationBlue4}

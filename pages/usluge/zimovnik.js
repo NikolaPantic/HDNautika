@@ -18,9 +18,16 @@ const Winter = () => {
   return (
     <>
       <Head>
-        <title>{t.services.winterLog.heading}</title>
-        <meta name="title" content={t.services.winterLog.heading} />
-        <meta name="description" content={t.pages.winterLog.headingText} />
+        <title>{t.metadata.winterLog.title}</title>
+        <meta name="title" content={t.metadata.winterLog.title} />
+        <meta name="description" content={t.metadata.winterLog.description} />
+        <meta name="keywords" content="zimovnik plovila" />
+        <meta property="og:title" content={t.metadata.winterLog.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.winterLog.description}
+        />{" "}
       </Head>
       <PageLayout
         pageLayoutImageUrl={winterDrive}

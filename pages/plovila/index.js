@@ -69,9 +69,16 @@ const Boats = () => {
   return (
     <>
       <Head>
-        <title>{t.common.boats}</title>
-        <meta name="title" content={t.common.boats} />
-        <meta name="description" content={t.pages.boats.headingText} />
+        <title>{t.metadata.boats.title}</title>
+        <meta name="title" content={t.metadata.boats.title} />
+        <meta name="description" content={t.metadata.boats.description} />
+        <meta name="keywords" content="prodaja plovila" />
+        <meta property="og:title" content={t.metadata.boats.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.boats.description}
+        />{" "}
       </Head>
       <PageLayout
         pageLayoutHeadingText={t.pages.boats.headingText}
