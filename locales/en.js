@@ -356,6 +356,58 @@ const en = {
     ledLights: "LED lights",
     teleflexCable: "teleflex cable",
   },
+  metadata: {
+    landingPage: {
+      title:
+        "Service and sale of vessels and nautical equipment | Construction of vessels | HD Nautika",
+      description:
+        "Sale and servicing of boats and outboard motors. Wide selection of outboard motors and accessories. Vessel and engine winterizer. All in one place.",
+    },
+    aboutUs: {
+      title: "About us | HD Nautika",
+      description: "",
+    },
+    boats: {
+      title: "Boats | HD Nautika",
+      description: "",
+    },
+    sportstar: {
+      title: "Sportstar 22 | HD Nautika",
+      description: "",
+    },
+    marino: { title: "Marino Gabry 550 | HD Nautika", description: "" },
+    teorema: { title: "Teorema 20 | HD Nautika", description: "" },
+    cerion: { title: "Cerion 27,7 WA | HD Nautika", description: "" },
+    eolo: { title: "Eolo 270 | HD Nautika", description: "" },
+    services: { title: "Services | HD Nautika", description: "" },
+    mechanicService: {
+      title: "Mechanic service | HD Nautika",
+      description: "",
+    },
+    vesselService: { title: "Vessel service | HD Nautika", description: "" },
+    interiorDesign: { title: "Interior design | HD Nautika", description: "" },
+    winterLog: { title: "Winter storage | HD Nautika", description: "" },
+    outboardEngines: {
+      title: "Outboard engines | HD Nautika",
+      description: "",
+    },
+    additionalEquipment: {
+      title: "Additional equipment | HD Nautika",
+      description: "",
+    },
+    propellers: { title: "Propellers | HD Nautika", description: "" },
+    sonars: { title: "Sonars | HD Nautika", description: "" },
+    outboardEngineParts: {
+      title: "Outboard engine parts | HD Nautika",
+      description: "",
+    },
+    nauticalEquipment: {
+      title: "Nautical equipment | HD Nautika",
+      description: "",
+    },
+    usedEquipment: { title: "Used engines | HD Nautika", description: "" },
+    contact: { title: "Contact | HD Nautika", description: "" },
+  },
 };
 
 export default en;

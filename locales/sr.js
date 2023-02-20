@@ -349,6 +349,61 @@ const sr = {
     ledLights: "LED osvetljenje",
     teleflexCable: "teleflex sajla",
   },
+  metadata: {
+    landingPage: {
+      title:
+        "Servis i prodaja plovila i nautičke opreme | Izrada plovila | Zimovnik",
+      description:
+        "Prodaja i servisiranje plovila i vanbrodskih motora. Širok izbor vanbrodskih motora i dodatne opreme. Zimovnik plovila i motora. Sve na jednom mestu.",
+    },
+    aboutUs: {
+      title: "O nama | HD Nautika",
+      description: "",
+    },
+    boats: {
+      title: "Plovila | HD Nautika",
+      description: "",
+    },
+    sportstar: {
+      title: "Sportstar 22 | HD Nautika",
+      description: "",
+    },
+    marino: { title: "Marino Gabry 550 | HD Nautika", description: "" },
+    teorema: { title: "Teorema 20 | HD Nautika", description: "" },
+    cerion: { title: "Cerion 27,7 WA | HD Nautika", description: "" },
+    eolo: { title: "Eolo 270 | HD Nautika", description: "" },
+    services: { title: "Usluge | HD Nautika", description: "" },
+    mechanicService: {
+      title: "Mehaničarke usluge | HD Nautika",
+      description: "",
+    },
+    vesselService: { title: "Servis plovila | HD Nautika", description: "" },
+    interiorDesign: {
+      title: "Izrada enterijera | HD Nautika",
+      description: "",
+    },
+    winterLog: { title: "Zimovnik plovila | HD Nautika", description: "" },
+    outboardEngines: {
+      title: "Vanbrodski motori | HD Nautika",
+      description: "",
+    },
+    additionalEquipment: {
+      title: "Dodatna oprema | HD Nautika",
+      description: "",
+    },
+    propellers: { title: "Popeleri | HD Nautika", description: "" },
+    sonars: { title: "Sonari | HD Nautika", description: "" },
+    outboardEngineParts: {
+      title: "Delovi vanbrodskih motora | HD Nautika",
+      description: "",
+    },
+    nauticalEquipment: {
+      title: "Nautička oprema | HD Nautika",
+      description: "",
+    },
+    usedEquipment: { title: "Polovni motori | HD Nautika", description: "" },
+    contact: { title: "Kontakt | HD Nautika", description: "" },
+  },
 };
 
 export default sr;
