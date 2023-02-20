@@ -11,7 +11,7 @@ const en = {
     sonars: "Sonars",
     outboardEngineParts: "Outboard engine parts",
     nauticalEquipment: "Nautical equipment",
-    usedEquipment: "Used equipment",
+    usedEquipment: "Used engines",
     reviews: "Reviews",
     source: "Source",
     invalidField: "Fill in the field correctly! This field is required.",
@@ -28,6 +28,7 @@ const en = {
     red: "red",
     blue: "blue",
     white: "white",
+    basic: "basic",
   },
   buttons: {
     boatsOffer: "Boats offer",
@@ -60,9 +61,9 @@ const en = {
   services: {
     mechanicService: {
       heading: "Mechanic service",
-      service1: "Repair of marine and outboard engines",
-      service2: "Servicing of marine and outboard engines",
-      service3: "Conversion from inboard to outboard engines",
+      service1: "Repair of outboard engines",
+      service2: "Servicing of outboard engines",
+      service3: "Vessel conversion from inboard to outboard engines",
     },
     vesselService: {
       heading: "Vessel service",
@@ -80,8 +81,8 @@ const en = {
     },
     winterLog: {
       heading: "Winter storage",
-      service1: "Vessel's winter log",
-      service2: "Engine winterizer",
+      service1: "Vessel winter storage",
+      service2: "Engine winter storage",
       service3: "Transportation of vessels in the country and abroad",
     },
     engineEquipment: {
@@ -95,7 +96,7 @@ const en = {
       heading: "More about us",
       text1: "HD Nautika is a family company founded in 2006 in Obrenovac.",
       text2:
-        "We are engaged in the construction of vessels, restoration and sale of used vessels and outboard motors, as well as repair and maintenance of vessels (painting, polyester repair, polishing and anti-algin protection).",
+        "We are engaged in the construction of vessels, restoration and sale of vessels and outboard motors, as well as repair and maintenance of vessels (painting, polyester repair, polishing and anti-algin protection).",
       text3:
         "For more than 15 years, we have been importing and selling new HONDA outboard motors, as well as used motors of other brands: YAMAHA, SUZUKI, MERCURY...",
       text4: "Visit us and see for yourself the proven quality.",
@@ -116,11 +117,12 @@ const en = {
         "A wide selection of Solas boat propellers, of different diameters and pitches, for different types of outboard motors.",
       text2:
         "Lowrance sonars of various sizes, equipment and price ranges, depending on your needs.",
-      text3: "",
+      text3:
+        "We offer a wide selection of outboard motor parts as well as outboard motor accessories",
       text4:
         "Additional equipment for your boat: steering wheels, lighting, stainless steel cleats, MP3 music, speedometers... All in one place.",
       text5:
-        "Quality selection of used equipment and outboard motors. All used outboards come with a warranty.",
+        "Quality selection of used outboard motors. All used used engines come with a warranty.",
     },
 
     newsletterReviews: {
@@ -192,7 +194,7 @@ const en = {
       heading: "Additional equipment offer",
       headingText:
         "Equip your vessel as desired with additional equipment from our offer.",
-      text: "Vessel equipment is an indispensable part of every vessel. It enables the pleasure of sailing to be complete, while at the same time ensuring the maximum possible safety of sailing. If you would like to additionally equip your boat or boat, contact us and check our offer. We offer a wide selection of propellers, sonar, outboard motors, outboard motor parts and other nautical equipment. All used equipment is serviced, we give a one-year written guarantee on every used engine.",
+      text: "Vessel equipment is an indispensable part of every vessel. It enables the pleasure of sailing to be complete, while at the same time ensuring the maximum possible safety of sailing. If you would like to additionally equip your boat or boat, contact us and check our offer. We offer a wide selection of propellers, sonar, outboard motor parts, used outboard engines and other nautical equipment. All used engines are serviced, we give a one-year written guarantee on every used engine.",
     },
     propellers: {
       heading: "Propellers offer",
@@ -210,9 +212,8 @@ const en = {
       text: "Quality equipment contributes to greater safety of the vessel, better appearance, and thus your satisfaction. If you want to additionally equip the vessel, you can do so with us. We offer a wide selection of steering wheels, speedometers, lighting, music equipment, deck equipment and metal accessories. We are available to answer all questions, to give professional opinion or to advise you.",
     },
     usedEquipment: {
-      heading: "Selection of used equipment",
-      headingText:
-        "Serviced used equipment, with warranty for outboard motors.",
+      heading: "Selection of used engines",
+      headingText: "Serviced used engines, with one-year warranty.",
       text: "In addition to new equipment, vessels and outboard motors, we also offer used equipment. We inspect, service and offer all used equipment in usable condition, and we also provide a one-year written warranty on outboard motors.",
     },
     contact: {
@@ -221,11 +222,11 @@ const en = {
     },
     mechanicService: {
       headingText:
-        "Vessel service includes plastic repair services, painting, polishing, vessel protection and antialgin application.",
+        "Vršimo servis i popravku vanbrodskih motora, kao i prepravku plovila sa brodskih na vanbrodske motore.",
       figcaption:
         "Engine clogged with scale, due to lack of maintenance and lack of rinsing after use in sea water.",
       text1:
-        "A good and safe engine is the basis of any boat, and that's why very important to whom you will entrust the repair and service of your vessel. We have been servicing engines for more than 15 years, so you can do it for us take our word for it when we say that we have many years of experience and knowledge in that area. We carry out all types of ship repairs of outboard engines, their service, as well as conversion of marine engines to the outboard.",
+        "A good and safe engine is the basis of every boat, and that is why it is very important to whom you entrust the repair and service of your boat. We have been servicing engines for more than 15 years, so you can take our word for it when we say that we have many years of experience and knowledge in the field. We perform all types of outboard engine repairs, their service, as well as conversion of vessels from inboard engines to outboard engines.",
       text2:
         "Service prices vary and depend on the model, type and power of the engine. For information on a specific engine type, you can",
       text3: "call us",
@@ -261,7 +262,8 @@ const en = {
     winterLog: {
       headingText:
         "We prepare vessels and engines (inboard and outboard) for winterization. We transport vehicles in the country and abroad.",
-      figcaption: "Transportation of vessels and preparation for wintering",
+      figcaption:
+        "Transportation of vessels and preparation for winter storage",
       text1:
         "At the end of each sailing season, where you put it down is very important your boat or motor. If you don't have storage space vessel, or if you want to save space, contact us in order to secure a place and store your vessel for the winter. Also, if you are unable to transport your vessel or engine to us, let us know. We provide transportation services, as in country, as well as abroad.",
       text2: "For more information, you can",

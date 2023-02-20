@@ -69,7 +69,7 @@ const SectionBoats = () => {
                     {t.tableData.fuelTank}:
                   </span>
                   <span className="section-boats__info--specification-card--data">
-                    180 l
+                    215 l
                   </span>
                 </div>
                 <div className="section-boats__info--specification-card">

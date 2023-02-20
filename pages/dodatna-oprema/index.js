@@ -66,7 +66,7 @@ const Equipment = () => {
               rectangular={true}
               equipmentCardLabel={t.common.usedEquipment}
               equipmentCardImageSrc={engine1}
-              equipmentCardURL="/dodatna-oprema/polovna-oprema"
+              equipmentCardURL="/dodatna-oprema/polovni-motori"
             />
           </div>
         </div>

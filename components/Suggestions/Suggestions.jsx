@@ -28,16 +28,6 @@ const Suggestions = ({ suggestionType = "boats" }) => {
         path: "/plovila/sportstar-22",
       },
       {
-        name: "Cerion 27,7 WA",
-        image: cerion,
-        path: "/plovila/cerion-27,7-wa",
-      },
-      {
-        name: "Eolo 710",
-        image: eolo,
-        path: "/plovila/eolo-710",
-      },
-      {
         name: "Marino Gabry 550",
         image: marino,
         path: "/plovila/marino-gabry-550",
@@ -46,6 +36,16 @@ const Suggestions = ({ suggestionType = "boats" }) => {
         name: "Teorema 20",
         image: teorema,
         path: "/plovila/teorema-20",
+      },
+      {
+        name: "Cerion 27,7 WA",
+        image: cerion,
+        path: "/plovila/cerion-27,7-wa",
+      },
+      {
+        name: "Eolo 710",
+        image: eolo,
+        path: "/plovila/eolo-710",
       },
     ],
     equipment: [
@@ -72,7 +72,7 @@ const Suggestions = ({ suggestionType = "boats" }) => {
       {
         name: t.common.usedEquipment,
         image: engine1,
-        path: "/dodatna-oprema/polovna-oprema",
+        path: "/dodatna-oprema/polovni-motori",
       },
     ],
   };

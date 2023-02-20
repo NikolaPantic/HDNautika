@@ -28,7 +28,7 @@ const Boats = () => {
       heading: "Sportstar 22",
       length: 6.51,
       numberOfPersons: 8,
-      enginePower: 120,
+      enginePower: 260,
       price: t.tableData.priceValue,
       available: t.tableData.available,
     },
@@ -87,18 +87,6 @@ const Boats = () => {
             boatCardLink="/plovila/sportstar-22"
           />
           <BoatCard
-            boatCardData={boatsData.cerionData}
-            boatCardBackgroundImageURL={cerion}
-            boatCardImageURL={cerion1}
-            boatCardLink="/plovila/cerion-27,7-wa"
-          />
-          <BoatCard
-            boatCardData={boatsData.eoloData}
-            boatCardBackgroundImageURL={eolo}
-            boatCardImageURL={eolo1}
-            boatCardLink="/plovila/eolo-710"
-          />
-          <BoatCard
             boatCardData={boatsData.marinoData}
             boatCardBackgroundImageURL={marino}
             boatCardImageURL={marino1}
@@ -109,6 +97,18 @@ const Boats = () => {
             boatCardBackgroundImageURL={teorema}
             boatCardImageURL={teorema1}
             boatCardLink="/plovila/teorema-20"
+          />
+          <BoatCard
+            boatCardData={boatsData.cerionData}
+            boatCardBackgroundImageURL={cerion}
+            boatCardImageURL={cerion1}
+            boatCardLink="/plovila/cerion-27,7-wa"
+          />
+          <BoatCard
+            boatCardData={boatsData.eoloData}
+            boatCardBackgroundImageURL={eolo}
+            boatCardImageURL={eolo1}
+            boatCardLink="/plovila/eolo-710"
           />
         </div>
         <Suggestions suggestionType="equipment" />

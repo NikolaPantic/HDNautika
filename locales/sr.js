@@ -11,7 +11,7 @@ const sr = {
     sonars: "Sonari",
     outboardEngineParts: "Delovi vanbrodskih motora",
     nauticalEquipment: "Nautička oprema",
-    usedEquipment: "Polovna oprema",
+    usedEquipment: "Polovni motori",
     reviews: "Recenzije",
     source: "Izvor",
     invalidField: "Popunite polje pravilno! Polje je obavezno.",
@@ -19,7 +19,7 @@ const sr = {
     taxID: "PIB",
     phone: "Telefon",
     workingTime: "Radno vreme",
-    workingDays: "Ponedeljak - petak",
+    workingDays: "Ponedeljak - subota",
     nonWorkingDays: "Nedelja: neradan dan",
     social: "Društvene mreže",
     mainMenu: "Glavni meni",
@@ -28,6 +28,7 @@ const sr = {
     red: "crvena",
     blue: "plava",
     white: "bela",
+    basic: "osnovna varijanta",
   },
   buttons: {
     boatsOffer: "Ponuda plovila",
@@ -60,9 +61,9 @@ const sr = {
   services: {
     mechanicService: {
       heading: "Mehaničarske usluge",
-      service1: "Popravka brodskih i vanbrodskih motora",
-      service2: "Servisiranje brodskih i vanbrodskih motora",
-      service3: "Prepravka sa brodskih na vanbrodske motore",
+      service1: "Popravka vanbrodskih motora",
+      service2: "Servisiranje vanbrodskih motora",
+      service3: "Prepravka plovila sa brodskih na vanbrodske motore",
     },
     vesselService: {
       heading: "Servis plovila",
@@ -91,7 +92,7 @@ const sr = {
       heading: "Nešto o nama",
       text1: "HD Nautika je porodična firma osnovana 2006. godine u Obrenovcu.",
       text2:
-        "Bavimo se izradom plovila, restauracijom i prodajom polovnih plovila i vanbrodskih motora, kao i popravkom i održavanjem plovila (farbanje, popravljanje poliestera, poliranje i antialgin zaštita).",
+        "Bavimo se izradom plovila, restauracijom i prodajom plovila i vanbrodskih motora, kao i popravkom i održavanjem plovila (farbanje, popravljanje poliestera, poliranje i antialgin zaštita).",
       text3:
         "Više od 15 godina uvozimo i prodajemo nove vanbrodske motore marke HONDA, kao i polovne motore ostalih brendova: YAMAHA, SUZUKI, MERCURY...",
       text4: "Posetite nas i uverite se u dokazani kvalitet.",
@@ -112,11 +113,12 @@ const sr = {
         "Širok izbor propelera za čamce marke Solas, različitog prečnika i nagiba, za različite tipove vanbrodskih motora.",
       text2:
         "Sonari marke Lowrance, različite veličine, opremljenosti i cenovnog ranga, u zavisnosti od vaših potreba.",
-      text3: "",
+      text3:
+        "Nudimo širok izbor delova vanbrodskih motora, kao i dodatnu opremu za vanbrodske motore",
       text4:
         "Dodatna oprema za vaše plovilo: volani, osvetljenje, inox bitve, MP3 muzika, brzinomeri... Sve na jednom mestu.",
       text5:
-        "Kvalitetan izbor polovne opreme i vanbrodskih motora. Svi polovni vanbrodski motori dolaze uz garanciju.",
+        "Kvalitetan izbor polovnih vanbrodskih motora. Svi polovni motori dolaze uz garanciju.",
     },
     newsletterReviews: {
       text1:
@@ -186,7 +188,7 @@ const sr = {
       heading: "Ponuda dodatne opreme",
       headingText:
         "Opremite vaše plovilo po želji dodatnom opremom iz naše ponude.",
-      text: "Oprema za plovilo predstavlja nezaobilazni deo svakog plovnog objekta. Ona omogućuje da užitak u plovidbi bude potpun, istovremeno obezbeđujući maksimalnu moguću bezbednost plovidbe. Ukoliko biste dodatno opremili svoj brod ili čamac, kontaktirajte nas i proverite našu ponudu. Nudimo širok izbor propelera, sonara, vanbrodskih motora, delova za vanbrodske motore i ostale nautičke opreme. Sva polovna oprema je servisirana, na svaki polovni motor dajemo pismenu garanciju od godinu dana.",
+      text: "Oprema za plovilo predstavlja nezaobilazni deo svakog plovnog objekta. Ona omogućuje da užitak u plovidbi bude potpun, istovremeno obezbeđujući maksimalnu moguću bezbednost plovidbe. Ukoliko biste dodatno opremili svoj brod ili čamac, kontaktirajte nas i proverite našu ponudu. Nudimo širok izbor propelera, sonara, vanbrodskih motora, delova za vanbrodske motore i ostale nautičke opreme. Svi polovni motori su servisirani, na svaki polovni motor dajemo pismenu garanciju od godinu dana.",
     },
     propellers: {
       heading: "Ponuda propelera",
@@ -204,10 +206,10 @@ const sr = {
       text: "Kvalitetna oprema doprinosi većoj sigurnosti plovila, boljem izgledu, a samim tim i vašem zadovoljstvu. Ukoliko želite dodatno da opremite plovilo, to možete učiniti kod nas. Nudimo širok izbor volana, brzinomera, rasvete, muzičke opreme, palubne opreme i metalne galanterije. Na raspolaganju smo da odgovorimo na sva pitanja, da damo stručno mišljenje ili da vas posavetujemo.",
     },
     usedEquipment: {
-      heading: "Izbor polovne opreme",
+      heading: "Izbor polovnih vanbrodskih motora",
       headingText:
-        "Servisirana polovna oprema, sa garancijom za vanbrodske motore.",
-      text: "Osim nove opreme, plovila i vanbrodskih motora, u ponudi imamo i polovnu opremu. Svu polovnu opremu pregledamo, servisiramo i nudimo u upotrebnom stanju, a na vanbrodske motore dajemo i pismenu garanciju od godinu dana.",
+        "Servisirani polovni vanbrodski motori, sa garancijom od godinu dana.",
+      text: "Osim nove opreme, plovila i vanbrodskih motora, u ponudi imamo i polovne vanbrodske motore. Svaki motor pregledamo, servisiramo i nudimo u upotrebnom stanju. Uz svaki polovni vanbrodski motor dajemo pismenu garanciju od godinu dana.",
     },
     contact: {
       headingText: "Kontakt informacije o nama.",
@@ -215,11 +217,11 @@ const sr = {
     },
     mechanicService: {
       headingText:
-        "U servis plovila spadaju usluge popravki na plastici, farbanje, poliranje, zaštita plovila i nanošenje antialgina.",
+        "Vršimo servis i popravku vanbrodskih motora, kao i prepravku plovila sa brodskih na vanbrodske motore.",
       figcaption:
         " Motor zapušen od kamenca, usled neodržavanja i neispiranja nakon korišćenja u morskoj vodi.",
       text1:
-        "Dobar i siguran motor predstavlja osnovu svakog plovila, i zato je veoma bitno kome ćete prepustiti popravku i servis svog plovila. Servisiranjem motora se bavimo više od 15 godina, stoga nam možete verovati na reč kada kažemo da posedujemo dugogodišnje iskustvo i znanje u toj oblasti. Vršimo sve vrste popravki brodskih i vanbrodskih motora, njihov servis, kao i prepravke brodskih motora na vanbrodske.",
+        "Dobar i siguran motor predstavlja osnovu svakog plovila, i zato je veoma bitno kome ćete prepustiti popravku i servis svog plovila. Servisiranjem motora se bavimo više od 15 godina, stoga nam možete verovati na reč kada kažemo da posedujemo dugogodišnje iskustvo i znanje u toj oblasti. Vršimo sve vrste popravki vanbrodskih motora, njihov servis, kao i prepravke plovila sa brodskih motora na vanbrodske.",
       text2:
         "Cene usluga variraju i zavise od modela, tipa i snage motora. Za informacije o određenom tipu motora možete nas",
       text3: "pozvati",

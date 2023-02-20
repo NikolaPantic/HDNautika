@@ -35,15 +35,17 @@ const Contact = () => {
             <span className="contact__address--row">Stevana Sinđelića 13</span>
             <span className="contact__address--row">11500, Obrenovac</span>
             <span className="contact__address--row">
+              {t.common.taxID}: 109714376
+            </span>
+            <span className="contact__address--row">
               <Image src={phone} alt="phone" />:{" "}
-              <Link href="tel:+381641234567">+381641234567</Link>
+              <Link href="tel:+381637719973">+381 63 7719973</Link>
             </span>
             <span className="contact__address--row">
               <Image src={mail} alt="mail" />:{" "}
-              <Link href="mailto:hdnautika@gmail.com">hdnautika@gmail.com</Link>
-            </span>
-            <span className="contact__address--row">
-              {t.common.taxID}: 123456789
+              <Link href="mailto:e270@open.telekom.rs">
+                e270@open.telekom.rs
+              </Link>
             </span>
           </address>
         </div>

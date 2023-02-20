@@ -17,12 +17,12 @@ const Footer = () => {
         <span>HD Nautika</span>
         <span>Stevana Sinđelića 13</span>
         <span>11500, Obrenovac</span>
-        <span>{t.common.taxID}: 1234567890</span>
+        <span>{t.common.taxID}: 109714376</span>
         <span>
-          {t.common.phone}: <a href="tel:+381641234567">0641234567</a>
+          {t.common.phone}: <a href="tel:+381637719973">+381 63 7719973</a>
         </span>
         <span>
-          E-mail: <a href="mailto:hdnautika@gmail.com">hdnautika@gmail.com</a>
+          E-mail: <a href="mailto:e270@open.telekom.rs">e270@open.telekom.rs</a>
         </span>
       </FooterSection>
       <FooterSection footerSectionHeading={t.common.mainMenu}>
@@ -51,13 +51,13 @@ const Footer = () => {
         <TranslatedLink href="/dodatna-oprema/nauticka-oprema">
           {t.common.nauticalEquipment}
         </TranslatedLink>
-        <TranslatedLink href="/dodatna-oprema/polovna-oprema">
+        <TranslatedLink href="/dodatna-oprema/polovni-motori">
           {t.common.usedEquipment}
         </TranslatedLink>
       </FooterSection>
       <FooterSection footerSectionHeading={t.common.workingTime}>
         <span>
-          {t.common.workingDays}: <time>07:00</time>-<time>19:00</time>
+          {t.common.workingDays}: <time>09:00</time>-<time>17:00</time>
         </span>
         <span>{t.common.nonWorkingDays}</span>
 

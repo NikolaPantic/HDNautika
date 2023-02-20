@@ -107,7 +107,7 @@ const nextConfig = {
       },
       {
         source: "/en/additional-equipment/used-equipment",
-        destination: "/en/dodatna-oprema/polovna-oprema",
+        destination: "/en/dodatna-oprema/polovni-motori",
         locale: false,
       },
     ];

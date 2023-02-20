@@ -24,7 +24,7 @@ const pathTranslations = {
       "/additional-equipment/outboard-engine-parts",
     "/dodatna-oprema/nauticka-oprema":
       "/additional-equipment/nautical-equipment",
-    "/dodatna-oprema/polovna-oprema": "/additional-equipment/used-equipment",
+    "/dodatna-oprema/polovni-motori": "/additional-equipment/used-engines",
   },
 };
 

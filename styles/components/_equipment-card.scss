@@ -1,26 +1,21 @@
 .equipment-card {
   flex: 0 0 40%;
   height: 25vh;
+  color: $color-primary-dark;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s;
+  transform: skew(-20deg);
 
-  &__wrapper {
-    height: 100%;
-    width: 100%;
-    color: $color-primary-dark;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.5s;
-    transform: skew(-20deg);
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media only screen and (max-width: 1300px) {
     transform: none;

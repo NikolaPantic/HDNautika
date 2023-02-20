@@ -40,11 +40,7 @@ const SectionEquipment = () => {
           </div>
           <div className="section-equipment__cards--single-card">
             <div className="section-equipment__cards--single-card--description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-                delectus ex tempore at ullam eius, quae quod quibusdam fuga!
-                Hic?
-              </p>
+              <p>{t.sections.equipment.text3}</p>
             </div>
             <EquipmentCard
               equipmentCardURL="/dodatna-oprema/delovi-vanbrodskih-motora"
@@ -67,7 +63,7 @@ const SectionEquipment = () => {
               <p>{t.sections.equipment.text5}</p>
             </div>
             <EquipmentCard
-              equipmentCardURL="/dodatna-oprema/polovna-oprema"
+              equipmentCardURL="/dodatna-oprema/polovni-motori"
               equipmentCardImageSrc={engine1}
               equipmentCardLabel={t.common.usedEquipment}
             />

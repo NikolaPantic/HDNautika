@@ -127,7 +127,7 @@ const Header = ({ sticky }) => {
               </li>
               <li className="header__navigation--catalog--list-item">
                 <TranslatedLink
-                  href="/dodatna-oprema/polovna-oprema"
+                  href="/dodatna-oprema/polovni-motori"
                   className="header__navigation--catalog--item-link"
                 >
                   {t.common.usedEquipment}
@@ -294,7 +294,7 @@ const Header = ({ sticky }) => {
                 <li>
                   <TranslatedLink
                     onClick={closeMobileMenu}
-                    href="/dodatna-oprema/polovna-oprema"
+                    href="/dodatna-oprema/polovni-motori"
                   >
                     {t.common.usedEquipment}
                   </TranslatedLink>
