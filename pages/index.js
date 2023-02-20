@@ -12,26 +12,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Servis i prodaja plovila i nautičke opreme | Izrada plovila | Zimovnik
-        </title>
-        <meta
-          name="title"
-          content="Servis i prodaja plovila i vanbrodskih motora | Izrada plovila | Zimovnik"
-        />
-        <meta
-          name="description"
-          content="Servis i prodaja plovila i vanbrodskih motora. Novi Honda motori. Prodaja nautičke opreme. Zimovnik plovila i motora."
-        />
+        <title>{t.metadata.landingPage.heading}</title>
+        <meta name="title" content={t.metadata.landingPage.heading} />
+        <meta name="description" content={t.metadata.landingPage.description} />
         <meta
           name="keywords"
           content="HD Nautika, servis plovila, prodaja motora"
         />
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="" />
+        <meta property="og:title" content={t.metadata.landingPage.heading} />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
         <meta property="og:image" content="" />
-        <meta property="og:site_name" content="" />
         <meta property="og:description" content="" />
       </Head>
 
