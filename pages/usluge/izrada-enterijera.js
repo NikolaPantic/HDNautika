@@ -87,7 +87,7 @@ const Interior = () => {
               <br />
               <p>
                 {t.pages.interiorDesign.text2}{" "}
-                <Link className="text-link" href="tel:+381641234567">
+                <Link className="text-link" href="tel:+381637719973">
                   {t.pages.interiorDesign.text3}
                 </Link>{" "}
                 {t.pages.interiorDesign.text4}{" "}
