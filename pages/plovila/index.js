@@ -60,7 +60,7 @@ const Boats = () => {
       heading: "Teorema 20",
       length: 5.92,
       numberOfPersons: 7,
-      enginePower: "140",
+      enginePower: "150",
       price: t.tableData.priceValue,
       available: t.tableData.available,
     },

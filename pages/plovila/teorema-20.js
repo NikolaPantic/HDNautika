@@ -59,7 +59,7 @@ const Teorema = () => {
     width: 2.2,
     weight: "/",
     engineType: t.boatEquipment.outboardEngine,
-    maxEnginePower: "140",
+    maxEnginePower: "150",
     fuelTank: "/",
     waterTank: "/",
     maxPerson: 7,

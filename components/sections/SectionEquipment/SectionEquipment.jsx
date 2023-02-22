@@ -15,7 +15,7 @@ const SectionEquipment = () => {
   const t = locale === "sr" ? sr : en;
   return (
     <section className="section-equipment">
-      <h3 className="secondary-heading">{t.common.additionalEquipment}</h3>
+      <h2 className="secondary-heading">{t.common.additionalEquipment}</h2>
       <div className="section-equipment__content">
         <div className="section-equipment__cards">
           <div className="section-equipment__cards--single-card">

@@ -9,7 +9,7 @@ import sr from "../../locales/sr";
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [invalidEmail, setInvalidEmail] = useState(false);
-  const [successfulEmail, setSuccessfulEmail] = useState(false);
+  const [successfulEmail, setSuccessfulEmail] = useState(true);
 
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;

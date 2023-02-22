@@ -16,7 +16,7 @@ const SectionAboutUs = () => {
   const t = locale === "sr" ? sr : en;
   return (
     <section className="section-about-us">
-      <h3 className="secondary-heading">{t.sections.aboutUs.heading}</h3>
+      <h2 className="secondary-heading">{t.sections.aboutUs.heading}</h2>
       <div className="section-about-us__content">
         <div className="section-about-us__content--text-and-button">
           <div className="section-about-us__content--text">

@@ -24,6 +24,9 @@
   @media only screen and (max-width: 1300px) {
     font-size: 1.5rem;
   }
+  & > span {
+    width: fit-content;
+  }
 
   & > h3 {
     color: $color-white;

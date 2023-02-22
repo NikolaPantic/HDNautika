@@ -40,7 +40,7 @@ const SectionServices = () => {
 
   return (
     <section className="section-services">
-      <h3 className="secondary-heading">{t.sections.services.heading}</h3>
+      <h2 className="secondary-heading">{t.sections.services.heading}</h2>
       <div className="section-services__content">
         <div className="section-services__cards">
           <ServiceCard

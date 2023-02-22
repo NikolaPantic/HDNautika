@@ -20,7 +20,7 @@ const SectionBoats = () => {
 
   return (
     <section className="section-boats">
-      <h3 className="secondary-heading">{t.sections.boats.heading}</h3>
+      <h2 className="secondary-heading">{t.sections.boats.heading}</h2>
       <div className="section-boats__main">
         <div className="section-boats__info">
           <div className="section-boats__info--carousel">

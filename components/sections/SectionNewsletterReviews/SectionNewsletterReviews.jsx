@@ -17,13 +17,13 @@ const SectionNewsletterReviews = () => {
   return (
     <section className="section-newsletter-reviews">
       <div className="section-newsletter-reviews__field">
-        <h3 className="tertiary-heading">Newsletter</h3>
+        <h2 className="tertiary-heading">Newsletter</h2>
         <div className="section-newsletter-reviews__field--content">
           <Newsletter />
         </div>
       </div>
       <div className="section-newsletter-reviews__field">
-        <h3 className="tertiary-heading">{t.common.reviews}</h3>
+        <h2 className="tertiary-heading">{t.common.reviews}</h2>
         <div className="section-newsletter-reviews__field--content">
           <Carousel
             autoPlay={true}
