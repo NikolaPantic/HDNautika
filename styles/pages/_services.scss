@@ -4,14 +4,21 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  @media only screen and (min-width: 1900px) {
+    min-height: 60vh;
+  }
   @media only screen and (max-width: 1300px) {
     min-height: 60vh;
+    font-size: 1.2rem;
   }
 
   @media only screen and (max-width: 900px) {
+    font-size: 1.5rem;
     min-height: 70vh;
     flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
   }
 
   &__single-service {
@@ -32,6 +39,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
+    @media only screen and (min-width: 1900px) {
+      min-height: auto;
+      height: 70vh;
+    }
 
     @media only screen and (max-width: 900px) {
       flex: 0 0 40%;
@@ -62,6 +74,10 @@
 
       @media only screen and (max-width: 900px) {
         flex: 0 0 40%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        flex: 1;
       }
 
       &--1 {
@@ -104,6 +120,10 @@
     &--list {
       flex: 1;
       width: 80%;
+
+      @media only screen and (max-width: 600px) {
+        flex: 0 0 40%;
+      }
 
       & > li {
         align-self: stretch;

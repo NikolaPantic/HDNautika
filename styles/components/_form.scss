@@ -21,6 +21,10 @@
   -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 
+  @media only screen and (max-width: 1300px) {
+    font-size: 1.5rem;
+  }
+
   & > h3 {
     color: $color-white;
   }
@@ -42,13 +46,17 @@
     background-color: rgba($color-white, 0.7);
     color: $color-primary-dark;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   & input::placeholder,
   & textarea::placeholder {
     font-weight: 400;
     font-size: 1rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__fields {

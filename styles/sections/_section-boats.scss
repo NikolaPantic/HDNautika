@@ -34,6 +34,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    @media only screen and (max-width: 1300px) {
+      margin-bottom: 2rem;
+    }
 
     @media only screen and (max-width: 900px) {
       flex-direction: column;
@@ -69,6 +72,10 @@
       &--text {
         width: 90%;
 
+        @media only screen and (max-width: 1300px) {
+          font-size: 1.5rem;
+        }
+
         @media only screen and (max-width: 900px) {
           width: 100%;
         }
@@ -87,6 +94,11 @@
 
         @media only screen and (max-width: 600px) {
           width: 80%;
+          flex-direction: column;
+
+          & > a {
+            margin: 1rem;
+          }
         }
       }
 
@@ -107,7 +119,7 @@
 
       @media only screen and (max-width: 900px) {
         align-self: center;
-        width: 70%;
+        width: 90%;
       }
       @media only screen and (max-width: 600px) {
         width: 95%;
@@ -131,12 +143,19 @@
       justify-content: space-between;
       padding: 0.5rem 1rem;
       background-color: rgba($color-white, 0.6);
+      @media only screen and (max-width: 1300px) {
+        font-size: 1.2rem;
+      }
 
       &--heading {
         font-family: "Bebas Neue", cursive;
         font-weight: 400;
         font-size: 0.9rem;
         color: $color-primary-dark;
+
+        @media only screen and (max-width: 1300px) {
+          font-size: 1.5rem;
+        }
       }
 
       &--data {
@@ -144,6 +163,9 @@
         color: $color-black;
         text-align: right;
         font-weight: 600;
+        @media only screen and (max-width: 1300px) {
+          flex: none;
+        }
       }
     }
   }
