@@ -2,14 +2,35 @@
   background-color: $color-primary-dark;
   color: $color-grey-light;
   min-height: 40vh;
-  padding: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 
-  @media only screen and (max-width: 900px) {
-    flex-wrap: wrap;
-    padding: 2rem;
+  &__sections {
+    align-self: stretch;
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+  }
+
+  &__rightsreserved {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: $color-primary;
+    & a {
+      display: inline;
+      color: $color-primary-light;
+    }
   }
 
   &__social {

@@ -16,12 +16,8 @@
     justify-content: flex-end;
 
     @media only screen and (max-width: 1300px) {
-      margin-top: 7vh;
-      height: 40vh;
-    }
-
-    @media only screen and (max-width: 600px) {
-      height: 30vh;
+      min-height: 60vh;
+      justify-content: space-evenly;
     }
 
     & h1 {
@@ -29,6 +25,13 @@
       top: 50%;
       transform: translateY(-50%);
       animation: none;
+      padding: 1rem;
+
+      @media only screen and (max-width: 1300px) {
+        position: relative;
+        top: auto;
+        transform: none;
+      }
     }
     & p {
       font-size: 1.2rem;
@@ -37,6 +40,14 @@
       max-width: 80%;
       text-align: center;
       margin-bottom: 2%;
+
+      @media only screen and (max-width: 1300px) {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 900px) {
+        font-size: 1.2rem;
+      }
     }
   }
 

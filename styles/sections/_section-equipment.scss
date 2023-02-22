@@ -27,6 +27,7 @@
 
     @media only screen and (max-width: 600px) {
       padding: 4rem 0;
+      align-self: stretch;
     }
   }
 
@@ -57,6 +58,7 @@
           flex-direction: column-reverse;
         }
       }
+
       @media only screen and (max-width: 600px) {
         width: 80%;
       }

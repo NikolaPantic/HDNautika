@@ -13,6 +13,7 @@
   @media only screen and (max-width: 1300px) {
     background-color: $color-primary-dark !important;
     height: 10vh !important;
+    position: sticky !important;
   }
 
   &__navigation {
@@ -185,7 +186,7 @@
 
     &--list {
       overflow: scroll;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       background-color: $color-primary-dark;
       position: fixed;
       left: 0;
@@ -195,14 +196,13 @@
       color: $color-white;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
       transition: all 0.5s;
       transform: scaleY(0);
       transform-origin: top;
 
       & li {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
       }
 
       &--services {
@@ -212,7 +212,7 @@
         & label {
           display: block;
           position: absolute;
-          top: 0.5rem;
+          top: 1.25rem;
           right: -10%;
 
           & img {
@@ -230,6 +230,10 @@
 
         @media only screen and (max-width: 900px) {
           height: 100px;
+        }
+
+        @media only screen and (max-width: 600px) {
+          height: 130px;
         }
       }
 
