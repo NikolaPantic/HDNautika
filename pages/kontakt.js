@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import PageLayout from "../layout/PageLayout/PageLayout";
-import logo from "../public/assets/svg/logo1.svg";
+import logo from "../public/assets/images/logo.png";
 import phone from "../public/assets/svg/mobile.svg";
 import mail from "../public/assets/svg/mail4.svg";
 import location from "../public/assets/svg/location.svg";

@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Newsletter from "../../Newsletter/Newsletter";
 import UserReview from "../../UserReview/UserReview";
 import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar-background.jpg";
-import boat from "../../../public/assets/images/speedboat.jpg";
+import boat from "../../../public/assets/images/boats/sportstar22/sportstar-12.jpg";
 import engine from "../../../public/assets/images/boats/sportstar22/sportstar.jpg";
 
 import en from "../../../locales/en";
