@@ -11,7 +11,7 @@ import nautika4 from "../../public/assets/images/boats/sportstar22/sportstar-blu
 import nautika5 from "../../public/assets/images/services/reparation/reparation-1.jpg";
 import nautika6 from "../../public/assets/images/boats/sportstar22/sportstar-table.jpg";
 import nautika7 from "../../public/assets/images/boats/sportstar22/sportstar-engine.jpg";
-import logo from "../../public/assets/images/logo.png";
+import logo from "../../public/assets/images/nautica.jpg";
 
 import en from "../../locales/en";
 import sr from "../../locales/sr";
