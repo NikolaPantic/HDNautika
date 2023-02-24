@@ -7,19 +7,10 @@
     rgba($color-primary, 0.6),
     rgba($color-primary-dark, 0.6)
   );
-  display: flex;
-  flex-direction: column;
+  @include columnCenterContent;
   justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
 
   @media screen and (max-width: 1300px) {
-    height: 90vh;
-  }
-  @media only screen and (max-width: 900px) {
-    height: 80vh;
-  }
-  @media only screen and (max-width: 600px) {
     height: 90vh;
   }
 
@@ -35,9 +26,7 @@
 
   &__heading {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columnCenterContent;
     margin: 3rem 1rem;
   }
 

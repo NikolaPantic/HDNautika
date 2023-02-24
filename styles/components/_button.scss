@@ -6,9 +6,7 @@
   color: $color-black;
   padding: 1rem 2rem;
   background-color: $color-white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centerContent;
   animation: pulsate 1.5s infinite;
   z-index: 1;
 

@@ -1,8 +1,6 @@
 .ovalbutton {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centerContent;
   padding: 0.75rem 2rem;
   text-transform: uppercase;
   letter-spacing: 0.15rem;

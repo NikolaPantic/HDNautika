@@ -1,7 +1,5 @@
 .section-about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterContent;
   justify-content: center;
   padding: 2rem 0;
 
@@ -22,9 +20,7 @@
     &--text-and-button {
       flex: 0 0 35%;
       align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
       justify-content: space-around;
 
       @media only screen and (max-width: 900px) {

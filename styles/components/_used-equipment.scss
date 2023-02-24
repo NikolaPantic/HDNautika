@@ -1,9 +1,7 @@
 .used-equipment {
   color: $color-white;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterContent;
   align-self: stretch;
   padding: 2rem 0;
   background-image: linear-gradient(
@@ -12,9 +10,7 @@
       rgba($color-primary-dark, 0.6)
     ),
     url("../../public/assets/images/engine.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include centerBackgroundImage;
   background-attachment: fixed;
 
   & > h2 {
@@ -30,15 +26,11 @@
 
   &__details {
     align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columnCenterContent;
 
     &--info {
       flex: 0 0 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
 
       & h3 {
         color: $color-primary-light;

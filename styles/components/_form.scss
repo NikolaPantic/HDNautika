@@ -2,9 +2,7 @@
   position: relative;
   padding: 2rem 0;
   align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterContent;
   color: $color-white;
   background-image: linear-gradient(
       to right bottom,
@@ -13,9 +11,7 @@
     ),
     url("../../public/assets/images/engine.jpg");
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include centerBackgroundImage;
   background-attachment: fixed;
 
   -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
