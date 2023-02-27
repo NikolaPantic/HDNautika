@@ -1,7 +1,7 @@
 .footer {
   background-color: $color-primary-dark;
   color: $color-grey-light;
-  min-height: 40vh;
+  min-height: 50vh;
   @include columnCenterContent;
 
   &__sections {

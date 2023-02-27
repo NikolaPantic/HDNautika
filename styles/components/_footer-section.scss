@@ -1,6 +1,6 @@
 .footer-section {
   align-self: stretch;
-  flex: 0 0 23%;
+  flex: 0 0 18%;
   @include centerContent;
   padding: 1rem;
 
@@ -16,7 +16,7 @@
   }
 
   & .footer-section {
-    padding: 1rem 0;
+    padding: 0;
     align-items: center;
 
     &__heading {

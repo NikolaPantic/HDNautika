@@ -34,12 +34,21 @@ const Footer = () => {
           <TranslatedLink href="/vanbrodski-motori">
             {t.common.outboardEngines}
           </TranslatedLink>
-
           <TranslatedLink href="/dodatna-oprema">
             {t.common.additionalEquipment}
           </TranslatedLink>
           <TranslatedLink href="/kontakt">{t.common.contact}</TranslatedLink>
         </FooterSection>
+
+        <FooterSection footerSectionHeading={t.common.outboardEngines}>
+          <TranslatedLink href="/vanbrodski-motori/novi-motori">
+            {t.common.newOutboardEngines}
+          </TranslatedLink>
+          <TranslatedLink href="/vanbrodski-motori/polovni-motori">
+            {t.common.usedOutboardEngines}
+          </TranslatedLink>
+        </FooterSection>
+
         <FooterSection footerSectionHeading={t.common.additionalEquipment}>
           <TranslatedLink href="/dodatna-oprema/propeleri">
             {t.common.propellers}
@@ -52,9 +61,6 @@ const Footer = () => {
           </TranslatedLink>
           <TranslatedLink href="/dodatna-oprema/nauticka-oprema">
             {t.common.nauticalEquipment}
-          </TranslatedLink>
-          <TranslatedLink href="/dodatna-oprema/polovni-motori">
-            {t.common.usedEquipment}
           </TranslatedLink>
         </FooterSection>
         <FooterSection footerSectionHeading={t.common.workingTime}>

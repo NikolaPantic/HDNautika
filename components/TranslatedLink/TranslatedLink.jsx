@@ -7,6 +7,8 @@ const pathTranslations = {
     "/plovila": "/boats",
     "/usluge": "/services",
     "/vanbrodski-motori": "/outboard-engines",
+    "/vanbrodski-motori/polovni-motori": "/outboard-engines/used-engines",
+    "/vanbrodski-motori/novi-motori": "/outboard-engines/new-engines",
     "/dodatna-oprema": "/additional-equipment",
     "/kontakt": "/contact",
     "/plovila/sportstar-22": "/boats/sportstar-22",
@@ -18,13 +20,13 @@ const pathTranslations = {
     "/usluge/servis-plovila": "/services/vessel-service",
     "/usluge/izrada-enterijera": "/services/interior-design",
     "/usluge/zimovnik": "/services/winter-log",
+    "/vanbrodski-motori/polovni-motori": "/outboard-engines/used-engines",
     "/dodatna-oprema/propeleri": "/additional-equipment/propellers",
     "/dodatna-oprema/sonari": "/additional-equipment/sonars",
     "/dodatna-oprema/delovi-vanbrodskih-motora":
       "/additional-equipment/outboard-engine-parts",
     "/dodatna-oprema/nauticka-oprema":
       "/additional-equipment/nautical-equipment",
-    "/dodatna-oprema/polovni-motori": "/additional-equipment/used-engines",
   },
 };
 
