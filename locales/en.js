@@ -5,6 +5,8 @@ const en = {
     boats: "Boats",
     services: "Services",
     outboardEngines: "Outboard engines",
+    newOutboardEngines: "New outboard engines",
+    usedOutboardEngines: "Used outboard engines",
     additionalEquipment: "Additional equipment",
     contact: "Contact",
     propellers: "Propellers",
@@ -186,7 +188,13 @@ const en = {
       headingText:
         "Among the services, we single out mechanical services, boat service, production of all types of interiors and engine and boat winterization.",
     },
-    engines: {
+    outboardEngines: {
+      subheading: "Engine offer",
+      headingText:
+        "Sale of new and used outboard motors of various categories.",
+      text: "We offer a wide selection of new Honda engines, different powers and sizes, as well as serviced used engines of various brands. All new engines come with a 5-year warranty, while we provide a one-year written warranty on used engines.",
+    },
+    newEngines: {
       headingText: "Sale of new Honda outboard engines.",
       text: "It is unnecessary to talk about the importance of outboard engines on a vessel. The engine is the heart of every motor vessel, the driving force. It is important to find the right engine for the boat, because by synchronizing the engine, propeller and size of the boat, optimal performance can be achieved. From the assortment, we highlight brand new HONDA engines, which are at the top of the world in the nautical world. In addition, we offer a wide selection of serviced Honda, Yamaha, Suzuki and Mercury engines, with which you will receive a one-year written warranty. Visit us and find out first hand which engine best fits your vessel.",
     },
@@ -194,7 +202,7 @@ const en = {
       heading: "Additional equipment offer",
       headingText:
         "Equip your vessel as desired with additional equipment from our offer.",
-      text: "Vessel equipment is an indispensable part of every vessel. It enables the pleasure of sailing to be complete, while at the same time ensuring the maximum possible safety of sailing. If you would like to additionally equip your boat or boat, contact us and check our offer. We offer a wide selection of propellers, sonar, outboard motor parts, used outboard engines and other nautical equipment. All used engines are serviced, we give a one-year written guarantee on every used engine.",
+      text: "Vessel equipment is an indispensable part of every vessel. It enables the pleasure of sailing to be complete, while at the same time ensuring the maximum possible safety of sailing. If you would like to additionally equip your boat or boat, contact us and check our offer. We offer a wide selection of propellers, sonar, outboard motor parts and other nautical equipment.",
     },
     propellers: {
       heading: "Propellers offer",
@@ -211,7 +219,7 @@ const en = {
       headingText: "A wide selection of nautical equipment in one place.",
       text: "Quality equipment contributes to greater safety of the vessel, better appearance, and thus your satisfaction. If you want to additionally equip the vessel, you can do so with us. We offer a wide selection of steering wheels, speedometers, lighting, music equipment, deck equipment and metal accessories. We are available to answer all questions, to give professional opinion or to advise you.",
     },
-    usedEquipment: {
+    usedEngines: {
       heading: "Selection of used engines",
       headingText: "Serviced used engines, with one-year warranty.",
       text: "In addition to new equipment, vessels and outboard motors, we also offer used equipment. We inspect, service and offer all used equipment in usable condition, and we also provide a one-year written warranty on outboard motors.",
@@ -423,8 +431,8 @@ const en = {
       description:
         "We prepare vessels and engines for winter storage. We also transport boats and engines in the country and abroad",
     },
-    outboardEngines: {
-      title: "Outboard engines | HD Nautika",
+    newOutboardEngines: {
+      title: "New outboard engines | HD Nautika",
       description:
         "We are selling new Honda outboard motors of different power and sizes.",
     },
@@ -453,10 +461,15 @@ const en = {
       description:
         "From nautical equipment we offer: steering wheels, speedometers, music, lighting, deck equipment, metal haberdashery and much more. Visit us and find everything you need in one place.",
     },
-    usedEquipment: {
-      title: "Used engines | HD Nautika",
+    outboardEngines: {
+      title: "Outboard engines | HD Nautika",
       description:
-        "Wide selection of used engines. Every uesd engine is serviced with a one-year written warranty.",
+        "We offer new and serviced outboard motors, with a written warranty of 1 to 5 years.",
+    },
+    usedEngines: {
+      title: "Used outboard engines | HD Nautika",
+      description:
+        "Wide selection of used outboard engines. Every uesd engine is serviced with a one-year written warranty.",
     },
     contact: {
       title: "Contact | HD Nautika",

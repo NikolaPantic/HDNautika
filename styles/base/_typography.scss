@@ -45,13 +45,10 @@ p {
 textarea::placeholder {
   font-family: "Montserrat", sans-serif;
 }
+
 .header__navigation--service-link {
   text-transform: uppercase;
   font-weight: 600;
-
-  &__sticky {
-    color: $color-white;
-  }
 }
 
 h1,
