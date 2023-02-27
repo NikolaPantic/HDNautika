@@ -1,18 +1,13 @@
 import { useRouter } from "next/router";
-import Head from "next/head";
-import EquipmentLayout from "../../layout/EquipmentLayout/EquipmentLayout";
-import engine from "../../public/assets/images/equipment/engine-4.jpg";
-import engine1 from "../../public/assets/images/equipment/engine-1.jpg";
-import engine2 from "../../public/assets/images/equipment/engine-2.jpg";
-import engine3 from "../../public/assets/images/equipment/engine-3.jpg";
-
-import en from "../../locales/en";
+import PageLayout from "../../layout/PageLayout/PageLayout";
+import hondaEngines from "../../public/assets/images/equipment/honda-engines.jpg";
 import sr from "../../locales/sr";
-
-const Engines = () => {
+import en from "../../locales/en";
+import Link from "next/link";
+import Head from "next/head";
+const OutboardEngines = () => {
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;
-  const images = [engine, engine1, engine2, engine3];
 
   return (
     <>
@@ -31,16 +26,39 @@ const Engines = () => {
           content={t.metadata.outboardEngines.description}
         />
       </Head>
-      <EquipmentLayout
-        equipmentLayoutBackgroundImage={engine2}
-        equipmentLayoutImages={images}
-        equipmentLayoutHeading={t.common.outboardEngines}
-        equipmentLayoutHeadingText={t.pages.engines.headingText}
-        equipmentLayoutSubheading={t.common.outboardEngines}
-        equipmentLayoutText={t.pages.engines.text}
-      />
+      <PageLayout
+        pageLayoutImageUrl={hondaEngines}
+        pageLayoutHeading={t.common.outboardEngines}
+        pageLayoutHeadingText={t.pages.outboardEngines.headingText}
+      >
+        <div className="outboard-engines">
+          <div className="outboard-engines__content">
+            <h2 className="secondary-heading">
+              {t.pages.outboardEngines.subheading}
+            </h2>
+            <p className="outboard-engines__text">
+              {" "}
+              {t.pages.outboardEngines.text}
+            </p>
+          </div>
+          <div className="outboard-engines__cards">
+            <Link
+              className="outboard-engines__card outboard-engines__card--1"
+              href="/vanbrodski-motori/novi-motori"
+            >
+              <div>{t.common.newOutboardEngines}</div>
+            </Link>
+            <Link
+              className="outboard-engines__card outboard-engines__card--2"
+              href="/vanbrodski-motori/polovni-motori"
+            >
+              <div>{t.common.usedOutboardEngines}</div>
+            </Link>
+          </div>
+        </div>
+      </PageLayout>
     </>
   );
 };
 
-export default Engines;
+export default OutboardEngines;

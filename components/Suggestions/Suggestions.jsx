@@ -69,11 +69,6 @@ const Suggestions = ({ suggestionType = "boats" }) => {
         image: nauticalEquipment,
         path: "/dodatna-oprema/nauticka-oprema",
       },
-      {
-        name: t.common.usedEquipment,
-        image: engine1,
-        path: "/dodatna-oprema/polovni-motori",
-      },
     ],
   };
   return (

@@ -16,8 +16,15 @@ import sr from "../../locales/sr";
 const Header = ({ sticky }) => {
   const [isMobileHeaderMenuOpened, setIsMobileHeaderMenuOpened] =
     useState(false);
-  const [isMobileHeaderSubmenuOpened, setIsMobileHeaderSubmenuOpened] =
-    useState(false);
+  const [
+    isMobileHeaderEquipmentSubmenuOpened,
+    setIsMobileHeaderEquipmentSubmenuOpened,
+  ] = useState(false);
+
+  const [
+    isMobileHeaderEnginesSubmenuOpened,
+    setIsMobileHeaderEnginesSubmenuOpened,
+  ] = useState(false);
 
   const { locale, push } = useRouter();
 
@@ -28,8 +35,11 @@ const Header = ({ sticky }) => {
   };
 
   const closeMobileMenu = () => {
-    if (isMobileHeaderSubmenuOpened) {
-      setIsMobileHeaderSubmenuOpened(false);
+    if (isMobileHeaderEquipmentSubmenuOpened) {
+      setIsMobileHeaderEquipmentSubmenuOpened(false);
+    }
+    if (isMobileHeaderEnginesSubmenuOpened) {
+      setIsMobileHeaderEnginesSubmenuOpened(false);
     }
     setIsMobileHeaderMenuOpened(false);
   };
@@ -72,13 +82,35 @@ const Header = ({ sticky }) => {
               {t.common.services}
             </TranslatedLink>
           </li>
-          <li className="header__navigation--service-item">
+          <li className="header__navigation--service-item header__navigation--catalog">
             <TranslatedLink
               href="/vanbrodski-motori"
               className="header__navigation--service-link"
             >
               {t.common.outboardEngines}
             </TranslatedLink>
+            <Image src={downArrow} alt="down arrow" />
+            <ul
+              className="header__navigation--catalog--list"
+              style={{ top: sticky ? "12vh" : "10vh" }}
+            >
+              <li className="header__navigation--catalog--list-item">
+                <TranslatedLink
+                  href="/vanbrodski-motori/novi-motori"
+                  className="header__navigation--catalog--item-link"
+                >
+                  {t.common.newOutboardEngines}
+                </TranslatedLink>
+              </li>
+              <li className="header__navigation--catalog--list-item">
+                <TranslatedLink
+                  href="/vanbrodski-motori/polovni-motori"
+                  className="header__navigation--catalog--item-link"
+                >
+                  {t.common.usedOutboardEngines}
+                </TranslatedLink>
+              </li>
+            </ul>
           </li>
           <li className="header__navigation--service-item header__navigation--catalog">
             <TranslatedLink
@@ -123,14 +155,6 @@ const Header = ({ sticky }) => {
                   className="header__navigation--catalog--item-link"
                 >
                   {t.common.nauticalEquipment}
-                </TranslatedLink>
-              </li>
-              <li className="header__navigation--catalog--list-item">
-                <TranslatedLink
-                  href="/dodatna-oprema/polovni-motori"
-                  className="header__navigation--catalog--item-link"
-                >
-                  {t.common.usedEquipment}
                 </TranslatedLink>
               </li>
             </ul>
@@ -193,9 +217,10 @@ const Header = ({ sticky }) => {
           <label
             className="header__hamburger-menu--button"
             htmlFor="menu-toggle"
-            onClick={() =>
-              setIsMobileHeaderMenuOpened(!isMobileHeaderMenuOpened)
-            }
+            onClick={() => {
+              setIsMobileHeaderMenuOpened(!isMobileHeaderMenuOpened);
+              if (isMobileHeaderMenuOpened) closeMobileMenu();
+            }}
           >
             <span></span>
           </label>
@@ -226,13 +251,53 @@ const Header = ({ sticky }) => {
                 {t.common.services}
               </TranslatedLink>
             </li>
-            <li>
+            <li className="header__mobile-navigation--list--services">
               <TranslatedLink
                 onClick={closeMobileMenu}
                 href="/vanbrodski-motori"
               >
                 {t.common.outboardEngines}
               </TranslatedLink>
+              <input
+                onChange={() => {}}
+                type="checkbox"
+                id="engines"
+                checked={
+                  isMobileHeaderMenuOpened
+                    ? isMobileHeaderEnginesSubmenuOpened
+                      ? true
+                      : false
+                    : false
+                }
+              />
+              <label
+                htmlFor="engines"
+                onClick={() =>
+                  setIsMobileHeaderEnginesSubmenuOpened(
+                    !isMobileHeaderEnginesSubmenuOpened
+                  )
+                }
+              >
+                <Image src={downArrow} alt="arrow" />
+              </label>
+              <ul className="header__mobile-navigation--services-list">
+                <li>
+                  <TranslatedLink
+                    onClick={closeMobileMenu}
+                    href="/vanbrodski-motori/novi-motori"
+                  >
+                    {t.common.newOutboardEngines}
+                  </TranslatedLink>
+                </li>
+                <li>
+                  <TranslatedLink
+                    onClick={closeMobileMenu}
+                    href="/vanbrodski-motori/polovni-motori"
+                  >
+                    {t.common.usedOutboardEngines}
+                  </TranslatedLink>
+                </li>
+              </ul>
             </li>
             <li className="header__mobile-navigation--list--services">
               <TranslatedLink onClick={closeMobileMenu} href="/dodatna-oprema">
@@ -244,7 +309,7 @@ const Header = ({ sticky }) => {
                 id="services"
                 checked={
                   isMobileHeaderMenuOpened
-                    ? isMobileHeaderSubmenuOpened
+                    ? isMobileHeaderEquipmentSubmenuOpened
                       ? true
                       : false
                     : false
@@ -253,7 +318,9 @@ const Header = ({ sticky }) => {
               <label
                 htmlFor="services"
                 onClick={() =>
-                  setIsMobileHeaderSubmenuOpened(!isMobileHeaderSubmenuOpened)
+                  setIsMobileHeaderEquipmentSubmenuOpened(
+                    !isMobileHeaderEquipmentSubmenuOpened
+                  )
                 }
               >
                 <Image src={downArrow} alt="arrow" />
@@ -289,14 +356,6 @@ const Header = ({ sticky }) => {
                     href="/dodatna-oprema/nauticka-oprema"
                   >
                     {t.common.nauticalEquipment}
-                  </TranslatedLink>
-                </li>
-                <li>
-                  <TranslatedLink
-                    onClick={closeMobileMenu}
-                    href="/dodatna-oprema/polovni-motori"
-                  >
-                    {t.common.usedEquipment}
                   </TranslatedLink>
                 </li>
               </ul>

@@ -5,6 +5,8 @@ const sr = {
     boats: "Plovila",
     services: "Usluge",
     outboardEngines: "Vanbrodski motori",
+    newOutboardEngines: "Novi vanbrodski motori",
+    usedOutboardEngines: "Polovni vanbrodski motori",
     additionalEquipment: "Dodatna oprema",
     contact: "Kontakt",
     propellers: "Propeleri",
@@ -180,15 +182,21 @@ const sr = {
       headingText:
         "Od usluga izdvajamo mehaničarske usluge, servis plovila, izradu svih vrsti enterijera i zimovnik motora i plovila.",
     },
-    engines: {
+    outboardEngines: {
+      subheading: "Ponuda motora",
+      headingText:
+        "Prodaja novih i polovnih vanbrodskih motora različitih kategorija.",
+      text: "Nudimo širok izbor novih Honda motora, različite snage i veličine, kao i servisirane polovne motore različitih brendova. Svi novi motori dolaze sa garancijom od 5 godina, dok na polovne motore dajemo pismenu garanciju sa rokom trajanja od godinu dana.",
+    },
+    newEngines: {
       headingText: "Prodaja novih vanbrodskih motora marke Honda.",
-      text: "O značaju vanbrodskih motora na plovilu je suvišno govoriti. Motor predstavlja srce svakog motornog plovila, pokretačku snagu. Važno je pronaći prikladan motor za plovilo, jer sinhronizacijom motora, propelera i veličine plovila mogu se postići optimalne performanse. Iz asortimana izdvajamo potpuno nove motore marke HONDA, koji se nalaze u svetskom vrhu u svetu nautike. Osim toga, nudimo širok izbor servisiranih motora marki Honda, Yamaha, Suzuki i Mercury, uz koje ćete dobiti pismenu garanciju sa rokom važenja od godinu dana. Posetite nas i saznajte iz prve ruke koji motor najbolje pristaje vašem plovilu.",
+      text: "O značaju vanbrodskih motora na plovilu je suvišno govoriti. Motor predstavlja srce svakog motornog plovila, pokretačku snagu. Važno je pronaći prikladan motor za plovilo, jer sinhronizacijom motora, propelera i veličine plovila mogu se postići optimalne performanse. Iz asortimana izdvajamo potpuno nove motore marke HONDA, uz koje dobijate garanciju od 5 godina. Posetite nas i saznajte iz prve ruke koji motor najbolje pristaje vašem plovilu.",
     },
     additionalEquipment: {
       heading: "Ponuda dodatne opreme",
       headingText:
         "Opremite vaše plovilo po želji dodatnom opremom iz naše ponude.",
-      text: "Oprema za plovilo predstavlja nezaobilazni deo svakog plovnog objekta. Ona omogućuje da užitak u plovidbi bude potpun, istovremeno obezbeđujući maksimalnu moguću bezbednost plovidbe. Ukoliko biste dodatno opremili svoj brod ili čamac, kontaktirajte nas i proverite našu ponudu. Nudimo širok izbor propelera, sonara, vanbrodskih motora, delova za vanbrodske motore i ostale nautičke opreme. Svi polovni motori su servisirani, na svaki polovni motor dajemo pismenu garanciju od godinu dana.",
+      text: "Oprema za plovilo predstavlja nezaobilazni deo svakog plovnog objekta. Ona omogućuje da užitak u plovidbi bude potpun, istovremeno obezbeđujući maksimalnu moguću bezbednost plovidbe. Ukoliko biste dodatno opremili svoj brod ili čamac, kontaktirajte nas i proverite našu ponudu. Nudimo širok izbor propelera, sonara, delova za vanbrodske motore i ostale nautičke opreme.",
     },
     propellers: {
       heading: "Ponuda propelera",
@@ -205,7 +213,7 @@ const sr = {
       headingText: "Širok izbor nautičke opreme na jednom mestu.",
       text: "Kvalitetna oprema doprinosi većoj sigurnosti plovila, boljem izgledu, a samim tim i vašem zadovoljstvu. Ukoliko želite dodatno da opremite plovilo, to možete učiniti kod nas. Nudimo širok izbor volana, brzinomera, rasvete, muzičke opreme, palubne opreme i metalne galanterije. Na raspolaganju smo da odgovorimo na sva pitanja, da damo stručno mišljenje ili da vas posavetujemo.",
     },
-    usedEquipment: {
+    usedEngines: {
       heading: "Izbor polovnih vanbrodskih motora",
       headingText:
         "Servisirani polovni vanbrodski motori, sa garancijom od godinu dana.",
@@ -416,8 +424,8 @@ const sr = {
       description:
         "Pripremamo plovila i motore za zimovnik. Takođe, vršimo prevoz plovila i motora u zemlji i inostranstvu",
     },
-    outboardEngines: {
-      title: "Vanbrodski motori | HD Nautika",
+    newOutboardEngines: {
+      title: "Novi vanbrodski motori | HD Nautika",
       description:
         "Prodajemo nove vanbrodske motore marke Honda, različite snage i veličine.",
     },
@@ -446,8 +454,14 @@ const sr = {
       description:
         "Od nautičke opreme nudimo: volane, brzinomere, muziku, rasvetu, palubnu opremu, metalnu galanteriju i još dosta toga. Posetite nas i nađite sve što vam treba na jednom mestu.",
     },
-    usedEquipment: {
-      title: "Polovni motori | HD Nautika",
+
+    outboardEngines: {
+      title: "Vanbrodski motori | HD Nautika",
+      description:
+        "Nudimo nove i servisirane vanbrodske motore, sa pismenom garancijom od 1 do 5 godina.",
+    },
+    usedEngines: {
+      title: "Polovni vanbrodski motori | HD Nautika",
       description:
         "Širok izbor polovnih motora. Svaki polovni motor je servisiran sa pismenom garancijom u trajanju od godinu dana.",
     },

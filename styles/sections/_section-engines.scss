@@ -1,8 +1,6 @@
 .section-engines {
   min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterContent;
   padding: 2rem 0;
 
   &__content {
@@ -18,9 +16,7 @@
     &--info {
       align-self: stretch;
       flex: 0 0 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
       justify-content: space-evenly;
 
       & > p {
@@ -37,9 +33,7 @@
 
     & figure {
       flex: 0 0 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include centerContent;
 
       & img {
         width: 100%;

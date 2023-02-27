@@ -75,12 +75,6 @@ const Equipment = () => {
               equipmentCardImageSrc={nauticalEquipment}
               equipmentCardURL="/dodatna-oprema/nauticka-oprema"
             />
-            <EquipmentCard
-              rectangular={true}
-              equipmentCardLabel={t.common.usedEquipment}
-              equipmentCardImageSrc={engine1}
-              equipmentCardURL="/dodatna-oprema/polovni-motori"
-            />
           </div>
         </div>
         <Suggestions suggestionType="boats" />

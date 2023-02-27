@@ -1,13 +1,9 @@
 .section-boats {
   padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterContent;
 
   &__main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centerContent;
     padding: 2rem;
 
     background-image: linear-gradient(
@@ -16,9 +12,7 @@
         rgba($color-primary-dark, 0.7)
       ),
       url("../../public/assets/images/boats/sportstar22/sportstar-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include centerBackgroundImage;
     background-attachment: fixed;
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
@@ -49,9 +43,7 @@
 
     &--carousel {
       flex: 0 0 60%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include centerContent;
 
       @media only screen and (max-width: 900px) {
         width: 95%;
@@ -60,9 +52,7 @@
 
     &--content {
       flex: 0 0 35%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
       justify-content: space-between;
 
       & > h3 {
@@ -113,9 +103,7 @@
     &--specifications {
       margin: 2rem 0;
       align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
 
       @media only screen and (max-width: 900px) {
         align-self: center;
@@ -173,10 +161,7 @@
   &__other {
     margin: 2rem auto;
     align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    @include columnCenterContent;
     &--boats {
       width: 100%;
       display: flex;

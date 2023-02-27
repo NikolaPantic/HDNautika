@@ -6,16 +6,12 @@
   text-transform: uppercase;
   font-size: 2rem;
   margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centerContent;
   overflow: hidden;
   transition: all 0.5s;
   transform: skew(-20deg);
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  @include centerBackgroundImage;
 
   @media only screen and (max-width: 1300px) {
     transform: none;
@@ -113,7 +109,7 @@
   }
 
   &--rectangular {
-    height: 30vh;
+    height: 40vh;
     margin: 1% 0;
     flex: 0 0 18%;
 
@@ -122,9 +118,7 @@
     }
 
     & > .equipment-card__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
     }
 
     @media only screen and (max-width: 1300px) {
@@ -146,9 +140,7 @@
 
     &--image {
       height: 60%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include columnCenterContent;
       border-radius: 50%;
 
       & > img {

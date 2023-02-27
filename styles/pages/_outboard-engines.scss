@@ -1,0 +1,74 @@
+.outboard-engines {
+  padding: 2rem 0;
+  @include columnCenterContent;
+  align-self: stretch;
+
+  &__content {
+    @include columnCenterContent;
+  }
+
+  &__text {
+    max-width: 80%;
+  }
+
+  &__cards {
+    padding: 2rem 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: block;
+    margin: 1%;
+    width: 20%;
+    height: 45vh;
+
+    @media only screen and (max-width: 1300px) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 70%;
+    }
+
+    & div {
+      position: relative;
+      top: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+      transition: all 0.5s;
+      height: 10%;
+    }
+
+    &:hover div {
+      top: 0;
+      height: 100%;
+      padding: 0;
+    }
+
+    &--1 {
+      background-image: url("../../public/assets/images/boats/sportstar22/sportstar-15.jpg");
+      @include centerBackgroundImage;
+    }
+    &--2 {
+      background-image: url("../../public/assets/images/used-equipment/yamaha4070getl-1.jpg");
+      @include centerBackgroundImage;
+    }
+  }
+}

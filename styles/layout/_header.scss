@@ -32,9 +32,7 @@
       padding: 0.5rem;
       height: 3rem;
       flex: 0 0 10%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include centerContent;
 
       & > img {
         height: 100%;
@@ -174,9 +172,7 @@
     &--logo {
       align-self: stretch;
       flex: 0 0 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include centerContent;
 
       & img {
         width: auto;
@@ -194,9 +190,7 @@
       width: 100%;
       height: 90vh;
       color: $color-white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
       transition: all 0.5s;
       transform: scaleY(0);
       transform-origin: top;
@@ -237,6 +231,21 @@
         }
       }
 
+      & #engines:checked ~ ul {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        height: 75px;
+
+        @media only screen and (max-width: 900px) {
+          height: 50px;
+        }
+
+        @media only screen and (max-width: 600px) {
+          height: 70px;
+        }
+      }
+
       & input[type="checkbox"]:checked + label {
         transform: rotate(-180deg);
         transition: all 0.5s;
@@ -255,9 +264,7 @@
       transition: all 0.5s;
       font-size: 1.3rem;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
 
       & li {
         padding: 0.5rem;
@@ -307,9 +314,7 @@
     }
 
     .header__hamburger-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include centerContent;
     }
 
     .header__hamburger-menu--button {

@@ -1,9 +1,7 @@
 .footer-section {
   align-self: stretch;
   flex: 0 0 23%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include centerContent;
   padding: 1rem;
 
   @media only screen and (max-width: 900px) {
@@ -29,11 +27,8 @@
   &__heading {
     font-family: "Montserrat", sans-serif;
     color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerContent;
     flex: 0 0 30%;
-    align-self: stretch;
     align-self: flex-start;
     text-transform: uppercase;
     text-align: center;

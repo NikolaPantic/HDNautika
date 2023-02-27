@@ -31,9 +31,7 @@
   }
 
   &__image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include centerBackgroundImage;
 
     @media only screen and (max-width: 600px) {
       min-height: 20vh;
@@ -48,18 +46,12 @@
     }
 
     color: $color-white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columnCenterContent;
     justify-content: space-around;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include centerBackgroundImage;
 
     &--data {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include columnCenterContent;
       width: 80%;
       @media only screen and (max-width: 1300px) {
         font-size: 1.5rem;

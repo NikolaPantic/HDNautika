@@ -58,16 +58,6 @@ const SectionEquipment = () => {
               <p>{t.sections.equipment.text4}</p>
             </div>
           </div>
-          <div className="section-equipment__cards--single-card">
-            <div className="section-equipment__cards--single-card--description">
-              <p>{t.sections.equipment.text5}</p>
-            </div>
-            <EquipmentCard
-              equipmentCardURL="/dodatna-oprema/polovni-motori"
-              equipmentCardImageSrc={engine1}
-              equipmentCardLabel={t.common.usedEquipment}
-            />
-          </div>
         </div>
         <OvalButton ovalButtonLabel={t.buttons.viewAll} darkMode={true} />
       </div>
