@@ -72,10 +72,15 @@ const Cerion = () => {
   return (
     <>
       <Head>
-        {" "}
-        <title>Cerion 27,7 WA</title>
-        <meta name="title" content="Cerion 27,7 WA" />
-        <meta name="description" content={t.pages.boats.cerionText} />
+        <title>{t.metadata.cerion.description}</title>
+        <meta name="title" content={t.metadata.cerion.title} />
+        <meta name="description" content={t.metadata.cerion.description} />
+        <meta property="og:title" content={t.metadata.cerion.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.cerion.description}
+        />
       </Head>
       <BoatLayout
         boatDescription={description}

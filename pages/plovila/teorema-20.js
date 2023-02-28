@@ -69,9 +69,15 @@ const Teorema = () => {
   return (
     <>
       <Head>
-        <title>Teorema 20</title>
-        <meta name="title" content="Teorema 20" />
-        <meta name="description" content={t.pages.boats.teoremaText} />
+        <title>{t.metadata.teorema.description}</title>
+        <meta name="title" content={t.metadata.teorema.title} />
+        <meta name="description" content={t.metadata.teorema.description} />
+        <meta property="og:title" content={t.metadata.teorema.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.teorema.description}
+        />{" "}
       </Head>
       <BoatLayout
         boatDescription={description}

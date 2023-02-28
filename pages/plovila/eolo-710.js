@@ -69,9 +69,15 @@ const Eolo = () => {
   return (
     <>
       <Head>
-        <title>Eolo 710</title>
-        <meta name="title" content="Eolo 710" />
-        <meta name="description" content={t.pages.boats.eoloText} />
+        <title>{t.metadata.eolo.description}</title>
+        <meta name="title" content={t.metadata.eolo.title} />
+        <meta name="description" content={t.metadata.eolo.description} />
+        <meta property="og:title" content={t.metadata.eolo.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.eolo.description}
+        />{" "}
       </Head>
       <BoatLayout
         boatDescription={description}

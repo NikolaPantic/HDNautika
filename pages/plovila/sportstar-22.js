@@ -105,9 +105,15 @@ const Sportstar = () => {
   return (
     <>
       <Head>
-        <title>Sportstar 22</title>
-        <meta name="title" content="Sportstar 22" />
-        <meta name="description" content={t.pages.boats.sportstarText} />
+        <title>{t.metadata.sportstar.description}</title>
+        <meta name="title" content={t.metadata.sportstar.title} />
+        <meta name="description" content={t.metadata.sportstar.description} />
+        <meta property="og:title" content={t.metadata.sportstar.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.sportstar.description}
+        />
       </Head>
       <BoatLayout
         boatData={data}

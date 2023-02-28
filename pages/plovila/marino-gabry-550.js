@@ -52,9 +52,15 @@ const Marino = () => {
   return (
     <>
       <Head>
-        <title>Marino Gabry 550</title>
-        <meta name="title" content="Marino Gabry 550" />
-        <meta name="description" content={t.pages.boats.marinoText} />
+        <title>{t.metadata.marino.description}</title>
+        <meta name="title" content={t.metadata.marino.title} />
+        <meta name="description" content={t.metadata.marino.description} />
+        <meta property="og:title" content={t.metadata.marino.title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content={t.metadata.marino.description}
+        />{" "}
       </Head>
       <BoatLayout
         boatDescription={description}
