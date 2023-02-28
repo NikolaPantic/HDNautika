@@ -58,12 +58,12 @@ const Eolo = () => {
     length: 7.7,
     width: 2.5,
     weight: 2000,
-    engineType: "vanbrodski",
+    engineType: t.boatEquipment.outboardEngine,
     maxEnginePower: "2 x 230",
     fuelTank: 250,
     waterTank: 100,
     maxPerson: 8,
-    color: "plavo-bela",
+    color: t.common.blue + "-" + t.common.white,
   };
 
   return (
