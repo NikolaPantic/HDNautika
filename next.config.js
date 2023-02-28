@@ -31,6 +31,16 @@ const nextConfig = {
         locale: false,
       },
       {
+        source: "/en/outboard-engines/new-engines",
+        destination: "/en/vanbrodski-motori/novi-motori",
+        locale: false,
+      },
+      {
+        source: "/en/outboard-engines/used-engines",
+        destination: "/en/vanbrodski-motori/polovni-motori",
+        locale: false,
+      },
+      {
         source: "/en/additional-equipment",
         destination: "/en/dodatna-oprema",
         locale: false,
@@ -103,11 +113,6 @@ const nextConfig = {
       {
         source: "/en/additional-equipment/nautical-equipment",
         destination: "/en/dodatna-oprema/nauticka-oprema",
-        locale: false,
-      },
-      {
-        source: "/en/additional-equipment/used-equipment",
-        destination: "/en/dodatna-oprema/polovni-motori",
         locale: false,
       },
     ];
