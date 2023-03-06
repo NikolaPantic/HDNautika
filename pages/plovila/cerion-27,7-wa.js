@@ -72,7 +72,7 @@ const Cerion = () => {
   return (
     <>
       <Head>
-        <title>{t.metadata.cerion.description}</title>
+        <title>{t.metadata.cerion.title}</title>
         <meta name="title" content={t.metadata.cerion.title} />
         <meta name="description" content={t.metadata.cerion.description} />
         <meta property="og:title" content={t.metadata.cerion.title} />

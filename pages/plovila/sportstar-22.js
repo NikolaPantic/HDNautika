@@ -105,7 +105,7 @@ const Sportstar = () => {
   return (
     <>
       <Head>
-        <title>{t.metadata.sportstar.description}</title>
+        <title>{t.metadata.sportstar.title}</title>
         <meta name="title" content={t.metadata.sportstar.title} />
         <meta name="description" content={t.metadata.sportstar.description} />
         <meta property="og:title" content={t.metadata.sportstar.title} />

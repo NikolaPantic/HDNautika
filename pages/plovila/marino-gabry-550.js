@@ -52,7 +52,7 @@ const Marino = () => {
   return (
     <>
       <Head>
-        <title>{t.metadata.marino.description}</title>
+        <title>{t.metadata.marino.title}</title>
         <meta name="title" content={t.metadata.marino.title} />
         <meta name="description" content={t.metadata.marino.description} />
         <meta property="og:title" content={t.metadata.marino.title} />

@@ -69,7 +69,7 @@ const Eolo = () => {
   return (
     <>
       <Head>
-        <title>{t.metadata.eolo.description}</title>
+        <title>{t.metadata.eolo.title}</title>
         <meta name="title" content={t.metadata.eolo.title} />
         <meta name="description" content={t.metadata.eolo.description} />
         <meta property="og:title" content={t.metadata.eolo.title} />

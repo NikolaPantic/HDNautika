@@ -69,7 +69,7 @@ const Teorema = () => {
   return (
     <>
       <Head>
-        <title>{t.metadata.teorema.description}</title>
+        <title>{t.metadata.teorema.title}</title>
         <meta name="title" content={t.metadata.teorema.title} />
         <meta name="description" content={t.metadata.teorema.description} />
         <meta property="og:title" content={t.metadata.teorema.title} />
