@@ -20,9 +20,9 @@ const Newsletter = () => {
     emailjs
       .sendForm(
         "contact_service",
-        "newsletter_template",
+        "template_nlohhrg",
         "#newsletter-form",
-        "yRSlAyjSNYF9CjZxT"
+        "ZQrDszK4sKthfKhlC"
       )
       .then(() => setSuccessfulEmail(true))
       .catch(() => {

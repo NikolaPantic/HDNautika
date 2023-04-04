@@ -49,9 +49,9 @@ const Form = () => {
       emailjs
         .sendForm(
           "contact_service",
-          "contact_form",
+          "template_1c8aw4g",
           "#form",
-          "yRSlAyjSNYF9CjZxT"
+          "ZQrDszK4sKthfKhlC"
         )
         .then(() => {
           setIsEmailSent(true);
