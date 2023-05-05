@@ -31,11 +31,11 @@ export default function Home() {
 
       <article className="landing-page">
         <SectionHero />
-        <SectionAboutUs />
         <SectionBoats />
         <SectionServices />
         <SectionEngines />
         <SectionEquipment />
+        <SectionAboutUs />
         <SectionNewsletterReviews />
         <SectionContact />
       </article>

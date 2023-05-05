@@ -31,6 +31,7 @@ const sr = {
     blue: "plava",
     white: "bela",
     basic: "osnovna varijanta",
+    videoPresentation:"Video prikaz našeg plovila"
   },
   buttons: {
     boatsOffer: "Ponuda plovila",

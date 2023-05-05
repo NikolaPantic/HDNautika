@@ -67,7 +67,7 @@ const Marino = () => {
         boatImages={images}
         boatHeading="Marino Gabry 550"
         boatAdditionalEquipment={equipment}
-        boatImageURL={marino}
+        boatImageURL={marino1}
         boatData={data}
       />
     </>

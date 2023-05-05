@@ -28,9 +28,14 @@ import sportstar23 from "../../public/assets/images/boats/sportstar22/sportstar-
 import sportstar24 from "../../public/assets/images/boats/sportstar22/sportstar-blue-1.jpg";
 import sportstar25 from "../../public/assets/images/boats/sportstar22/sportstar-blue-2.jpg";
 import sportstar26 from "../../public/assets/images/boats/sportstar22/sportstar-blue-3.jpg";
+import sportstar27 from "../../public/assets/images/boats/sportstar22/sportstar-21.jpg";
 import sportstar28 from "../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
 import sportstar29 from "../../public/assets/images/boats/sportstar22/sportstar-23.jpg";
-import sportstar27 from "../../public/assets/images/boats/sportstar22/sportstar-21.jpg";
+import sportstar30 from "../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
+import sportstar31 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-1.jpg";
+import sportstar32 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-2.jpg";
+import sportstar33 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-3.jpg";
+import sportstar34 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-4.jpg";
 
 import en from "../../locales/en";
 import sr from "../../locales/sr";
@@ -70,6 +75,11 @@ const Sportstar = () => {
     sportstar26,
     sportstar28,
     sportstar29,
+    sportstar30,
+    sportstar31,
+    sportstar32,
+    sportstar33,
+    sportstar34,
   ];
 
   const equipment = [
@@ -116,12 +126,13 @@ const Sportstar = () => {
         />
       </Head>
       <BoatLayout
+        isSportstarBoat={true}
         boatData={data}
         boatImages={images}
         boatHeading="Sportstar 22"
         boatDescription={description}
         boatAdditionalEquipment={equipment}
-        boatImageURL={sportstar28}
+        boatImageURL={sportstar5}
       />
     </>
   );

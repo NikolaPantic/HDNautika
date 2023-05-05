@@ -31,6 +31,7 @@ const en = {
     blue: "blue",
     white: "white",
     basic: "basic",
+    videoPresentation:"Video presentation of our vessel"
   },
   buttons: {
     boatsOffer: "Boats offer",

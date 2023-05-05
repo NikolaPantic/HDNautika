@@ -9,6 +9,7 @@ import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar
 import sportstar1 from "../../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
 import sportstar2 from "../../../public/assets/images/boats/sportstar22/sportstar-2.jpg";
 import sportstar3 from "../../../public/assets/images/boats/sportstar22/sportstar-blue-3.jpg";
+import sportstar4 from "../../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
 
 import en from "../../../locales/en";
 import sr from "../../../locales/sr";
@@ -24,21 +25,7 @@ const SectionBoats = () => {
       <div className="section-boats__main">
         <div className="section-boats__info">
           <div className="section-boats__info--carousel">
-            <Carousel
-              className="carousell"
-              autoPlay={true}
-              infiniteLoop={true}
-              showArrows={false}
-              showIndicators={true}
-              showStatus={false}
-              showThumbs={false}
-              stopOnHover={false}
-            >
-              <Image src={sportstar} alt="HD Nautika Sportstar 22" />
-              <Image src={sportstar2} alt="HD Nautika Sportstar 22" />
-              <Image src={sportstar1} alt="HD Nautika Sportstar 22" />
-              <Image src={sportstar3} alt="HD Nautika Sportstar 22" />
-            </Carousel>
+          <iframe src="https://www.youtube.com/embed/HRIFgDDBx6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className="section-boats__info--content">
             <h3 className="tertiary-heading">Sportstar 22</h3>

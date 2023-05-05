@@ -60,14 +60,6 @@ const Header = ({ sticky }) => {
         <ul className="header__navigation--services">
           <li className="header__navigation--service-item">
             <TranslatedLink
-              href="/o-nama"
-              className="header__navigation--service-link"
-            >
-              {t.common.aboutUs}
-            </TranslatedLink>
-          </li>
-          <li className="header__navigation--service-item">
-            <TranslatedLink
               href="/plovila"
               className="header__navigation--service-link"
             >
@@ -161,6 +153,14 @@ const Header = ({ sticky }) => {
           </li>
           <li className="header__navigation--service-item">
             <TranslatedLink
+              href="/o-nama"
+              className="header__navigation--service-link"
+            >
+              {t.common.aboutUs}
+            </TranslatedLink>
+          </li>
+          <li className="header__navigation--service-item">
+            <TranslatedLink
               href="/kontakt"
               className="header__navigation--service-link"
             >
@@ -235,11 +235,6 @@ const Header = ({ sticky }) => {
                   <Image src={english} alt="Zastava Velike Britanije" />
                 </button>
               </div>
-            </li>
-            <li>
-              <TranslatedLink onClick={closeMobileMenu} href="/o-nama">
-                {t.common.aboutUs}
-              </TranslatedLink>
             </li>
             <li>
               <TranslatedLink onClick={closeMobileMenu} href="/plovila">
@@ -359,6 +354,11 @@ const Header = ({ sticky }) => {
                   </TranslatedLink>
                 </li>
               </ul>
+            </li>
+            <li>
+              <TranslatedLink onClick={closeMobileMenu} href="/o-nama">
+                {t.common.aboutUs}
+              </TranslatedLink>
             </li>
             <li>
               <TranslatedLink onClick={closeMobileMenu} href="/kontakt">

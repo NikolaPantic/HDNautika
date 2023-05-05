@@ -23,10 +23,10 @@ const Teorema = () => {
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;
   const images = [
+    teorema3,
     teorema,
     teorema1,
     teorema2,
-    teorema3,
     teorema4,
     teorema5,
     teorema6,

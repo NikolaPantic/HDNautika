@@ -1,23 +1,58 @@
 .boat-layout {
   min-height: 200vh;
   @include columnCenterContent;
-  justify-content: space-evenly;
   padding: 2rem 0;
 
   @media only screen and (max-width: 1300px) {
-    min-height: 145vh;
+    min-height: 150vh;
   }
 
   @media only screen and (max-width: 600px) {
-    min-height: 250vh;
+    min-height: 270vh;
   }
 
-  &__about {
-    width: 70%;
-    @include columnCenterContent;
+  &--sportstar{
+    justify-content: flex-start;
+    min-height: 280vh;
+ 
+  
+    @media only screen and (max-width: 1300px) {
+      min-height: 200vh;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      min-height: 300vh;
+    }
+  }
+
+  &__about-and-image{
+    align-self: stretch;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
 
     @media only screen and (max-width: 600px) {
-      width: 95%;
+      flex-direction: column;
+    } 
+  }
+
+&__about,&__image{
+  flex:0 0 45%;
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+    margin:1rem 0;
+  }
+}
+
+  &__about {
+    @include columnCenterContent;
+  }
+
+  &__image{
+    
+    & img{
+      width:100%;
+      height: auto;
     }
   }
 
@@ -141,6 +176,35 @@
 
     @media only screen and (max-width: 600px) {
       width: 95%;
+    }
+  }
+
+  &__video-gallery{
+    margin-top: 15vh;
+    width: 100%;
+    @include columnCenterContent;
+
+    &--videos{
+      width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      @media only screen and (max-width: 768px) {
+        width: 95%;
+        flex-direction: column;
+      }
+
+      & iframe{
+        flex:0 0 45%;
+        height:50vh;
+
+        @media only screen and (max-width: 768px) {
+          width: 95%;
+          margin:1rem 0;
+          flex:auto;
+        }
+      }
     }
   }
 }

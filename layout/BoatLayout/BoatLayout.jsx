@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
@@ -11,6 +12,7 @@ import en from "../../locales/en";
 import sr from "../../locales/sr";
 
 const BoatLayout = ({
+  isSportstarBoat=false,
   boatImages = [],
   boatHeading = "",
   boatImageURL = "",
@@ -26,10 +28,13 @@ const BoatLayout = ({
       pageLayoutHeading={boatHeading}
       pageLayoutImageUrl={boatImageURL}
     >
-      <div className="boat-layout">
+      <div className={isSportstarBoat? "boat-layout boat-layout--sportstar":"boat-layout"}>
+        <div className="boat-layout__about-and-image">
         <div className="boat-layout__about">
           <h2 className="tertiary-heading">{t.pages.boats.headingAbout}</h2>
           <p>{boatDescription}</p>
+          </div>
+          <div className="boat-layout__image"><Image src={boatImageURL} alt='image'/></div>
         </div>
         <div className="boat-layout__info">
           <div className="boat-layout__section">
@@ -141,6 +146,15 @@ const BoatLayout = ({
             hasMediaButton={false}
           />
         </div>
+
+{isSportstarBoat && <div className="boat-layout__video-gallery">
+  <h2 className="tertiary-heading">{t.common.videoPresentation}</h2>
+  <div className="boat-layout__video-gallery--videos"> 
+  <iframe src="https://www.youtube.com/embed/HRIFgDDBx6I" title="Sportstar 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/ynrgNtx3tIs" title="Sportstar 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  
+  </div>}
       </div>
       <Suggestions suggestionType="equipment" />
     </PageLayout>

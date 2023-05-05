@@ -45,6 +45,11 @@
       flex: 0 0 60%;
       @include centerContent;
 
+      & iframe{
+        width:100%;
+        height:68vh;
+      }
+
       @media only screen and (max-width: 900px) {
         width: 95%;
       }
