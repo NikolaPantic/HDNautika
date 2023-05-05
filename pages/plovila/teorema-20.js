@@ -78,10 +78,10 @@ const Teorema = () => {
           property="og:description"
           content={t.metadata.teorema.description}
         />
-          <meta property="og:image" content={teorema}/>
+          <meta property="og:image" content='/assets/images/boats/teorema20/teorema.jpg'/>
 <meta name="twitter:title" content={t.metadata.teorema.title}/>
  <meta name="twitter:description" content={t.metadata.teorema.description}/>
- <meta name="twitter:image" content={teorema}/>
+ <meta name="twitter:image" content='/assets/images/boats/teorema20/teorema.jpg'/>
       </Head>
       <BoatLayout
         boatDescription={description}

@@ -78,10 +78,10 @@ const Eolo = () => {
           property="og:description"
           content={t.metadata.eolo.description}
         />
-          <meta property="og:image" content={eolo}/>
+          <meta property="og:image" content='/assets/images/boats/eolo710/eolo.jpg'/>
 <meta name="twitter:title" content={t.metadata.eolo.title}/>
  <meta name="twitter:description" content={t.metadata.eolo.description}/>
- <meta name="twitter:image" content={eolo}/>
+ <meta name="twitter:image" content='/assets/images/boats/eolo710/eolo.jpg'/>
       </Head>
       <BoatLayout
         boatDescription={description}

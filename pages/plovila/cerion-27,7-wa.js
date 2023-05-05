@@ -81,10 +81,10 @@ const Cerion = () => {
           property="og:description"
           content={t.metadata.cerion.description}
         />
-          <meta property="og:image" content={cerion7}/>
+          <meta property="og:image" content='/assets/images/boats/cerion27/cerion-7.jpg'/>
 <meta name="twitter:title" content={t.metadata.cerion.title}/>
  <meta name="twitter:description" content={t.metadata.cerion.description}/>
- <meta name="twitter:image" content={cerion7}/>
+ <meta name="twitter:image" content='/assets/images/boats/cerion27/cerion-7.jpg'/>
       </Head>
       <BoatLayout
         boatDescription={description}

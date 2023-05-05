@@ -78,7 +78,8 @@ const Boats = () => {
         <meta
           property="og:description"
           content={t.metadata.boats.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutHeadingText={t.pages.boats.headingText}

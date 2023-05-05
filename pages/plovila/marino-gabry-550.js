@@ -61,10 +61,10 @@ const Marino = () => {
           property="og:description"
           content={t.metadata.marino.description}
         />
-        <meta property="og:image" content={marino1}/>
+        <meta property="og:image" content='/assets/images/boats/marino550/marino-1.jpg'/>
 <meta name="twitter:title" content={t.metadata.marino.title}/>
  <meta name="twitter:description" content={t.metadata.marino.description}/>
- <meta name="twitter:image" content={marino1}/>
+ <meta name="twitter:image" content='/assets/images/boats/marino550/marino-1.jpg'/>
       </Head>
       <BoatLayout
         boatDescription={description}

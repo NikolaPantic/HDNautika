@@ -124,9 +124,9 @@ const Sportstar = () => {
           property="og:description"
           content={t.metadata.sportstar.description}
         />
-          <meta property="og:image" content={sportstar5}/>
+          <meta property="og:image" content='/assets/images/boats/sportstar22/sportstar-background.jpg'/>
 <meta name="twitter:title" content={t.metadata.sportstar.title}/>
- <meta name="twitter:description" content={t.metadata.sportstar.description}/>
+ <meta name="twitter:description" content='/assets/images/boats/sportstar22/sportstar-background.jpg'/>
  <meta name="twitter:image" content={sportstar5}/>
       </Head>
       <BoatLayout
