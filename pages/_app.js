@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:site_name" content="HD Nautika" />
         <link rel="icon" href="/assets/images/logo.png" />
-        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <Layout>
         <Component {...pageProps} />
