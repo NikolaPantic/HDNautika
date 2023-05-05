@@ -26,7 +26,8 @@ const Sonars = () => {
         <meta
           property="og:description"
           content={t.metadata.sonars.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={sonar1}

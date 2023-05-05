@@ -25,6 +25,7 @@ const OutboardEngines = () => {
           property="og:description"
           content={t.metadata.outboardEngines.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutImageUrl={hondaEngines}

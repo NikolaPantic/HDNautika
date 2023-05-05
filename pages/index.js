@@ -27,6 +27,7 @@ export default function Home() {
           property="og:description"
           content={t.metadata.landingPage.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
 
       <article className="landing-page">

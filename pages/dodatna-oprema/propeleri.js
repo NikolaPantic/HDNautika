@@ -25,7 +25,8 @@ const Propellers = () => {
         <meta
           property="og:description"
           content={t.metadata.propellers.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={propeller1}

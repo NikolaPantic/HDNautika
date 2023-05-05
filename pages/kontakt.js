@@ -18,6 +18,7 @@ const Contact = () => {
     <>
       <Head>
         <title>{t.metadata.contact.title}</title>
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutImageUrl={sportstarLogo}

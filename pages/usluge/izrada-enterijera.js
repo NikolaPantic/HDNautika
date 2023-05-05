@@ -71,6 +71,7 @@ const Interior = () => {
           property="og:description"
           content={t.metadata.interiorDesign.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutImageUrl={interior13}

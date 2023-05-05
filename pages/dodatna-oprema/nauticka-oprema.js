@@ -38,6 +38,7 @@ const NauticalEquipment = () => {
           property="og:description"
           content={t.metadata.nauticalEquipment.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={nauticalEquipment3}

@@ -27,7 +27,8 @@ const Winter = () => {
         <meta
           property="og:description"
           content={t.metadata.winterLog.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutImageUrl={winterDrive}

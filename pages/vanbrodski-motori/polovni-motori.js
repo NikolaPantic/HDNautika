@@ -23,7 +23,8 @@ const UsedEquipment = () => {
         <meta
           property="og:description"
           content={t.metadata.usedEngines.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={usedEquipment}

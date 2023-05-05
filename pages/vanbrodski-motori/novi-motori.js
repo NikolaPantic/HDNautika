@@ -17,6 +17,7 @@ const Engines = () => {
   return (
     <>
       <Head>
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
         <title>{t.metadata.newOutboardEngines.title}</title>
         <meta name="title" content={t.metadata.newOutboardEngines.title} />
         <meta
@@ -33,6 +34,7 @@ const Engines = () => {
           property="og:description"
           content={t.metadata.newOutboardEngines.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <EquipmentLayout
         equipmentLayoutBackgroundImage={engine2}

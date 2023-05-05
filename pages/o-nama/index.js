@@ -33,6 +33,7 @@ const AboutUs = () => {
           property="og:description"
           content={t.metadata.aboutUs.description}
         />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutHeading={t.common.aboutUs}

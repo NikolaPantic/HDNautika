@@ -65,7 +65,8 @@ const Service = () => {
         <meta
           property="og:description"
           content={t.metadata.vesselService.description}
-        />{" "}
+        />
+        <meta property="og:image" content="/assets/images/nautica.jpg" />
       </Head>
       <PageLayout
         pageLayoutImageUrl={reparationBlue4}
