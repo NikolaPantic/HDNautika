@@ -77,7 +77,11 @@ const Teorema = () => {
         <meta
           property="og:description"
           content={t.metadata.teorema.description}
-        />{" "}
+        />
+          <meta property="og:image" content={teorema}/>
+<meta name="twitter:title" content={t.metadata.teorema.title}/>
+ <meta name="twitter:description" content={t.metadata.teorema.description}/>
+ <meta name="twitter:image" content={teorema}/>
       </Head>
       <BoatLayout
         boatDescription={description}
