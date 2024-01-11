@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import DOMPurify from 'dompurify';
 import emailjs from "@emailjs/browser";
 import InvalidFieldText from "../InvalidFieldText/InvalidFieldText";
 import SuccessfulFieldText from "../SuccessfulFieldText/SuccessfulFieldText";
@@ -51,7 +52,7 @@ const Form = () => {
           "contact_service",
           "template_1c8aw4g",
           "#form",
-          "ZQrDszK4sKthfKhlC"
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
         .then(() => {
           setIsEmailSent(true);
@@ -106,10 +107,11 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
+              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
 
               setFirstName((prevState) => ({
                 ...prevState,
-                ["value"]: e.target.value.trim(),
+                ["value"]: sanitizedValue,
               }));
             }}
           />
@@ -137,9 +139,11 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
+
+              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
               setLastName((prevState) => ({
                 ...prevState,
-                ["value"]: e.target.value.trim(),
+                ["value"]: sanitizedValue,
               }));
             }}
           />
@@ -167,9 +171,10 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
+              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
               setEmail((prevState) => ({
                 ...prevState,
-                ["value"]: e.target.value.trim(),
+                ["value"]: sanitizedValue,
               }));
             }}
           />
@@ -197,9 +202,10 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
+              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
               setPhone((prevState) => ({
                 ...prevState,
-                ["value"]: e.target.value.trim(),
+                ["value"]: sanitizedValue,
               }));
             }}
           />
@@ -220,9 +226,10 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
+              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
               setMessage((prevState) => ({
                 ...prevState,
-                ["value"]: e.target.value.trim(),
+                ["value"]: sanitizedValue,
               }));
             }}
             className={message.invalid ? "invalid" : ""}

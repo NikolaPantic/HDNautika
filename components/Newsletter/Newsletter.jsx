@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import DOMPurify from 'dompurify';
 import emailjs from "@emailjs/browser";
 import SuccessfulFieldText from "../SuccessfulFieldText/SuccessfulFieldText";
 import InvalidFieldText from "../InvalidFieldText/InvalidFieldText";
@@ -22,7 +23,7 @@ const Newsletter = () => {
         "contact_service",
         "template_nlohhrg",
         "#newsletter-form",
-        "ZQrDszK4sKthfKhlC"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(() => setSuccessfulEmail(true))
       .catch(() => {
@@ -51,8 +52,9 @@ const Newsletter = () => {
             if (invalidEmail) {
               setInvalidEmail(false);
             }
+            const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
             setSuccessfulEmail(false);
-            setEmail(e.target.value);
+            setEmail(sanitizedValue);
           }}
         />
         <InvalidFieldText condition={invalidEmail} />
