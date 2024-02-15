@@ -8,6 +8,7 @@ const sr = {
     newOutboardEngines: "Novi vanbrodski motori",
     usedOutboardEngines: "Polovni vanbrodski motori",
     additionalEquipment: "Dodatna oprema",
+    basicEquipment: "Osnovna oprema",
     contact: "Kontakt",
     propellers: "Propeleri",
     sonars: "Sonari",
@@ -178,7 +179,7 @@ const sr = {
         "Potpuno nov gliser marke Marino, modernog dizajna i enterijera. Odlikuju ga vrhunske plovne karakteristike, sportska linija i lakoća kretanja. Marino Gabry 550 predstavlja idealan izbor za sve koji žele da uživaju u sportskoj vožnji.",
       teoremaText:
         "Potpuno novo kod nas na tržištu, gliser Teorema 20 predstavlja pravo oličenje sportskog dizajna. Projektovan za 7 odraslih osoba, svojim dubokim koritom obezbeđuje potpunu sigurnost svih putnika. U ponudi su open varijanta i varijanta sa kabinom. ",
-    },
+   skipText:"SKIP Sport 19 je idealan izbor za sve ljubitelje vodenih sportova i aktivnosti na vodi. Svojim izuzetnim navigacionim karakteristikama pruža sigurnost, ekonomičnost i udobnost na vodi, kako sa motorima male snage, tako i sa motorima do 140 konjskih snaga. Opremljen udobnim sedištem i prostranim prostorom za odlaganje opreme, pruža udobnost i praktičnost. Pored toga, lakoća rukovanja čini ga pogodnim za sve nivoe iskustva, bilo da ste početnik ili iskusan vozač"      },
     services: {
       headingText:
         "Od usluga izdvajamo mehaničarske usluge, servis plovila, izradu svih vrsti enterijera i zimovnik motora i plovila.",
@@ -282,7 +283,7 @@ const sr = {
   },
   components: {
     suggestions: {
-      headingEquipment: "Pogledajte dodatnu opremu iz naše ponude:",
+      headingEquipment: "Pogledajte dodatnu opremu za plovila iz naše ponude:",
       headingBoats: "Pogledajte plovila iz naše ponude:",
     },
     equipmentLayout: {
@@ -357,6 +358,12 @@ const sr = {
     cushions: "jastuci za spoljni deo i kabinu",
     ledLights: "LED osvetljenje",
     teleflexCable: "teleflex sajla",
+    seat:"sedište sa naslonom",
+    storageLocker:"ostava za stvari",
+    batterySwitch:"glavni prekidač za akumulator",
+    upholsteryComplete:"kompletan tapacirung (jastuci)"
+
+
   },
   metadata: {
     landingPage: {
@@ -390,16 +397,12 @@ const sr = {
       description:
         "Teorema 20 predstavlja novinu na našem tržištu. Sa prostorom za 7 putnika i dubokim koritom, garantuje vrhunsku zabavu na vodi.",
     },
-    cerion: {
-      title: "Cerion 27,7 WA | HD Nautika",
+    skip: {
+      title: "SKIP Sport 19 | HD Nautika",
       description:
-        "Gliser Cerion 27,7 WA se ističe elegantnom linijom i sjajni plovnim karakteristikama. Pokreću ga 2 Honda 150 motora, a sa dužinom od 8.4 m obezbeđuje potpuni komfor.",
+        "Brzo i elegantno plovilo za vodene sportove. Udobno sedište, prostran prostor za opremu. Lako upravljanje, savršen za sve nivoe iskustva.",
     },
-    eolo: {
-      title: "Eolo 270 | HD Nautika",
-      description:
-        "Eolo 710 je savršen model plovila za sve koji uživaju u mirnim plovidbama. Uz rezervoar goriva od 250 l, možete se prepustiti čarima duge plovidbe.",
-    },
+  
     services: {
       title: "Usluge | HD Nautika",
       description:

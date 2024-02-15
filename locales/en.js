@@ -8,6 +8,7 @@ const en = {
     newOutboardEngines: "New outboard engines",
     usedOutboardEngines: "Used outboard engines",
     additionalEquipment: "Additional equipment",
+    basicEquipment: "Basic equipment",
     contact: "Contact",
     propellers: "Propellers",
     sonars: "Sonars",
@@ -184,7 +185,8 @@ const en = {
         "Brand new Marino speedboat with modern design and interior. It is characterized by excellent sailing characteristics, a sporty line and ease of movement. The Marino Gabry 550 is the ideal choice for anyone who wants to enjoy a sporty ride.",
       teoremaText:
         "Completely new on our market, the Teorema 20 speedboat is the true embodiment of sporty design. Designed for 7 adults, its deep bed ensures complete safety for all passengers. We offer an open variant and a variant with a cabin.",
-    },
+    skipText:"The SKIP Sport 19 boat is the ideal choice for all lovers of water sports and activities on the water. With its exceptional navigation characteristics, it provides safety, economy and comfort on the water, both with low-power engines and with engines up to 140 horsepower. Equipped with a comfortable seat and a spacious storage space for equipment, it provides comfort and practicality. In addition, the ease of handling makes it suitable for all experience levels, whether you are a beginner or an experienced rider."
+      },
     services: {
       headingText:
         "Among the services, we single out mechanical services, boat service, production of all types of interiors and engine and boat winterization.",
@@ -289,7 +291,7 @@ const en = {
 
   components: {
     suggestions: {
-      headingEquipment: "See additional equipment from our offer:",
+      headingEquipment: "See the additional equipment of the boat from our offer:",
       headingBoats: "See boats from our offer:",
     },
     equipmentLayout: {
@@ -364,6 +366,10 @@ const en = {
     cushions: "exterior and cabin cushions",
     ledLights: "LED lights",
     teleflexCable: "teleflex cable",
+    seat:"seat with backrest",
+    storageLocker:"storage locker",
+    batterySwitch:"main battery switch",
+    upholsteryComplete:"complete upholstery (pillows)"
   },
   metadata: {
     landingPage: {
@@ -397,16 +403,9 @@ const en = {
       description:
         "Theorem 20 is a novelty on our market. With space for 7 passengers and a deep trough, it guarantees the ultimate fun on the water.",
     },
-    cerion: {
-      title: "Cerion 27,7 WA | HD Nautika",
-      description:
-        "Speedboat Cerion 27.7 WA stands out with its elegant line and great sailing characteristics. It is powered by 2 Honda 150 engines, and with a length of 8.4 m, it provides complete comfort.",
-    },
-    eolo: {
-      title: "Eolo 270 | HD Nautika",
-      description:
-        "The Eolo 710 is the perfect boat model for anyone who enjoys peaceful sailing. With a fuel tank of 250 l, you can indulge in the charms of a long voyage.",
-    },
+    skip: {
+      title: "SKIP Sport 19 | HD Nautika",
+      description: "Fast and stylish water sports boat. Comfortable seat, spacious gear compartment. Easy handling, perfect for all experience levels.",},
     services: {
       title: "Services | HD Nautika",
       description:

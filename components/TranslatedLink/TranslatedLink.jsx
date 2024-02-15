@@ -13,6 +13,7 @@ const pathTranslations = {
     "/kontakt": "/contact",
     "/plovila/sportstar-22": "/boats/sportstar-22",
     "/plovila/cerion-27,7-wa": "/boats/cerion-27,7-wa",
+    "/plovila/skip-sport-19": "/boats/skip-sport-19",
     "/plovila/eolo-710": "/boats/eolo-710",
     "/plovila/marino-gabry-550": "/boats/marino-gabry-550",
     "/plovila/teorema-20": "/boats/teorema-20",

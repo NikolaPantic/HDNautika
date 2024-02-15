@@ -121,7 +121,7 @@ const BoatLayout = ({
             </div>
           </div>
           <div className="boat-layout__section boat-layout__equipment">
-            <h2 className="tertiary-heading">{t.common.additionalEquipment}</h2>
+            <h2 className="tertiary-heading">{t.common.basicEquipment}</h2>
             <ul className="boat-layout__equipment--list">
               {boatAdditionalEquipment.map((e) => (
                 <li key={e}>- {e}</li>

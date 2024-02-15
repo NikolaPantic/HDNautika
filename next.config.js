@@ -66,6 +66,11 @@ const nextConfig = {
         locale: false,
       },
       {
+        source: "/en/boats/skip-sport-19",
+        destination: "/en/plovila/skip-sport-19",
+        locale: false,
+      },
+      {
         source: "/en/boats/marino-gabry-550",
         destination: "/en/plovila/marino-gabry-550",
         locale: false,
