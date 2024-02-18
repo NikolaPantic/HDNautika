@@ -17,7 +17,7 @@ const SectionIcons = () => {
             imageSrc:anchor,
             cardHeading:t.common.yearsOfTrust,
             cardText:t.common.weWereFounded2006,
-            cardLink:"/o-nama'",
+            cardLink:"/o-nama",
             linkText:t.common.moreAboutUs},
         {
             imageSrc:boat,
