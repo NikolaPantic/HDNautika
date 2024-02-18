@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import Newsletter from "../../Newsletter/Newsletter";
 import UserReview from "../../UserReview/UserReview";
 import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar-background.jpg";

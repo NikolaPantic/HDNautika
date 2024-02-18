@@ -32,7 +32,7 @@ const UsedEquipment = () => {
         equipmentLayoutHeading={t.common.usedEquipment}
         equipmentLayoutHeadingText={t.pages.usedEngines.headingText}
         equipmentLayoutSubheading={t.pages.usedEngines.heading}
-        equipmentLayoutText={t.pages.usedEngines.text}
+        equipmentLayoutText={`${t.pages.usedEngines.text} ${t.common.buyingEngineOnCredit}`}
       />
     </>
   );

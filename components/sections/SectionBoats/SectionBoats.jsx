@@ -25,7 +25,7 @@ const SectionBoats = () => {
       <div className="section-boats__main">
         <div className="section-boats__info">
           <div className="section-boats__info--carousel">
-          <iframe src="https://www.youtube.com/embed/HRIFgDDBx6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/HRIFgDDBx6I" title="Sportstar 22 | HD Nautika" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className="section-boats__info--content">
             <h3 className="tertiary-heading">Sportstar 22</h3>
@@ -56,7 +56,7 @@ const SectionBoats = () => {
                     {t.tableData.fuelTank}:
                   </span>
                   <span className="section-boats__info--specification-card--data">
-                    215 l
+                    180 l
                   </span>
                 </div>
                 <div className="section-boats__info--specification-card">

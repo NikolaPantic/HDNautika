@@ -32,7 +32,18 @@ const en = {
     blue: "blue",
     white: "white",
     basic: "basic",
-    videoPresentation:"Video presentation of our vessel"
+    videoPresentation:"Video presentation of our vessel",
+    yearsOfTrust:"18 years of trust",
+    weWereFounded2006:'We were founded in 2006 with the aim of establishing standards in the world of nautical and customer satisfaction.',
+    moreAboutUs:"More about us",
+    vesselOnCredit:"Vessel on credit",
+    possibilityOfBuyingVesselsOnCredit:"We offer the possibility of buying vessels and outboard motors on credit, under the most favorable credit terms.",
+    sendInquiry:"Send inquiry",
+    writtenWarranty:"Written warranty",
+    writtenWarantyOnOutboardEngines:'12 months written warranty on every used outboard motor purchased from us. Every engine is inspected, serviced and ready to go.',
+    buyingVesselsOnCredit:"In response to demand and your interest, we have introduced the possibility of buying vessels and outboard motors on credit at the most favorable terms.",
+    buyingEngineOnCredit:"Also, we have introduced the possibility of buying outboard motors on credit.",
+    vesselAvailableWithCreditPayment:"All our vessels can be purchased on credit at the most favorable credit terms."
   },
   buttons: {
     boatsOffer: "Boats offer",
@@ -181,8 +192,6 @@ const en = {
         "Speedboat Cerion 27, 7 WA stands out with its extremely elegant line and great sailing characteristics. It is powered by 2 Honda 150 engines, and with its 8.4 m length and 2.5 m width, it ensures complete comfort and comfortable navigation. The Cerion 27.7 is the ideal choice for anyone looking for a strong and at the same time elegant boat.",
       eoloText:
         "The Eolo 710 is the perfect boat model for everyone who enjoys long and peaceful sailings. With a 250 l fuel tank, you can indulge in the charms of a long sailing, and the space for 8 passengers makes it possible to get completely comfortable and take your company with you. Sail with new landscapes with HD Nautica.",
-      marinoText:
-        "Brand new Marino speedboat with modern design and interior. It is characterized by excellent sailing characteristics, a sporty line and ease of movement. The Marino Gabry 550 is the ideal choice for anyone who wants to enjoy a sporty ride.",
       teoremaText:
         "Completely new on our market, the Teorema 20 speedboat is the true embodiment of sporty design. Designed for 7 adults, its deep bed ensures complete safety for all passengers. We offer an open variant and a variant with a cabin.",
     skipText:"The SKIP Sport 19 boat is the ideal choice for all lovers of water sports and activities on the water. With its exceptional navigation characteristics, it provides safety, economy and comfort on the water, both with low-power engines and with engines up to 140 horsepower. Equipped with a comfortable seat and a spacious storage space for equipment, it provides comfort and practicality. In addition, the ease of handling makes it suitable for all experience levels, whether you are a beginner or an experienced rider."
@@ -392,11 +401,6 @@ const en = {
       title: "Sportstar 22 | HD Nautika",
       description:
         "Sportstar 22 is a sports speedboat and the first vessel made in our workshop. It is characterized by an elegant line, easy passage around the central console and absolute comfort.",
-    },
-    marino: {
-      title: "Marino Gabry 550 | HD Nautika",
-      description:
-        "Marino Gabry 550 is the ideal choice for lovers of sports driving. It is characterized by superior sailing characteristics, ease of movement and a sporty line.",
     },
     teorema: {
       title: "Teorema 20 | HD Nautika",

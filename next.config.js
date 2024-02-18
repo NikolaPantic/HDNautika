@@ -56,28 +56,8 @@ const nextConfig = {
         locale: false,
       },
       {
-        source: "/en/boats/cerion-27,7-wa",
-        destination: "/en/plovila/cerion-27,7-wa",
-        locale: false,
-      },
-      {
-        source: "/en/boats/eolo-710",
-        destination: "/en/plovila/eolo-710",
-        locale: false,
-      },
-      {
         source: "/en/boats/skip-sport-19",
         destination: "/en/plovila/skip-sport-19",
-        locale: false,
-      },
-      {
-        source: "/en/boats/marino-gabry-550",
-        destination: "/en/plovila/marino-gabry-550",
-        locale: false,
-      },
-      {
-        source: "/en/boats/teorema-20",
-        destination: "/en/plovila/teorema-20",
         locale: false,
       },
       {

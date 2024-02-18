@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import PageLayout from "../../layout/PageLayout/PageLayout";
-import hondaEngines from "../../public/assets/images/equipment/honda-engines.jpg";
+import hondaEngines from "../../public/assets/images/equipment/honda-engines.png";
 import sr from "../../locales/sr";
 import en from "../../locales/en";
 import Link from "next/link";
@@ -41,6 +41,9 @@ const OutboardEngines = () => {
               {" "}
               {t.pages.outboardEngines.text}
             </p>
+            <p>
+              {t.common.buyingVesselsOnCredit}
+              </p>
           </div>
           <div className="outboard-engines__cards">
             <Link

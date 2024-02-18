@@ -4,6 +4,7 @@ import BoatLayout from "../../layout/BoatLayout/BoatLayout";
 import en from "../../locales/en";
 import sr from "../../locales/sr";
 
+import skipTest from "../../public/assets/images/boats/skip-sport-19/skip-sport-1-removebg-preview.png";
 import skip1 from "../../public/assets/images/boats/skip-sport-19/skip-sport-1.jpeg";
 import skip2 from "../../public/assets/images/boats/skip-sport-19/skip-sport-2.jpeg";
 import skip3 from "../../public/assets/images/boats/skip-sport-19/skip-sport-3.jpeg";
@@ -112,7 +113,7 @@ const Skip = () => {
         boatImages={images}
         boatHeading="SKIP sport 19"
         boatAdditionalEquipment={equipment}
-        boatImageURL={skip1}
+        boatImageURL={skipTest}
         boatData={data}
       />
     </>

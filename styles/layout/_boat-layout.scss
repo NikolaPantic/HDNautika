@@ -46,6 +46,10 @@
 
   &__about {
     @include columnCenterContent;
+
+    p{
+      align-self: flex-start;
+    }
   }
 
   &__image{

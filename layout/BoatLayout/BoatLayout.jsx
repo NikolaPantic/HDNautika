@@ -33,6 +33,7 @@ const BoatLayout = ({
         <div className="boat-layout__about">
           <h2 className="tertiary-heading">{t.pages.boats.headingAbout}</h2>
           <p>{boatDescription}</p>
+          <p>{t.common.vesselAvailableWithCreditPayment}</p>
           </div>
           <div className="boat-layout__image"><Image src={boatImageURL} alt='image'/></div>
         </div>

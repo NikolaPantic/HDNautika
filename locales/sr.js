@@ -32,7 +32,18 @@ const sr = {
     blue: "plava",
     white: "bela",
     basic: "osnovna varijanta",
-    videoPresentation:"Video prikaz našeg plovila"
+    videoPresentation:"Video prikaz našeg plovila",
+    yearsOfTrust:"18 godina poverenja",
+    weWereFounded2006:'Osnovani smo 2006. godine sa ciljem uspostavljanja standarda u svetu nautike i zadovoljstva mušterija.',
+    moreAboutUs:"Detaljnije o nama",
+    vesselOnCredit:"Plovilo na kredit",
+    possibilityOfBuyingVesselsOnCredit:"Nudimo mogućnost kupovine plovila i vanbrodskih motora na kredit, po najpovoljnijim kreditnim uslovima.",
+    sendInquiry:"Pošalji upit",
+    writtenWarranty:"Pisana garancija",
+    writtenWarantyOnOutboardEngines:'12 meseci pisane garancije na svaki polovni vanbrodski motor kupljen kod nas. Svaki motor je pregledan, servisiran i spreman za upotrebu.',
+    buyingVesselsOnCredit:"Kao odgovor na potražnju i vaše interesovanje, uveli smo i mogućnost kupovine plovila i vanbrodskih motora na kredit po najpovoljnijim uslovima.",
+    buyingEngineOnCredit:"Takođe, uveli smo mogućnost kupovine vanbrodskih motora na kredit.",
+    vesselAvailableWithCreditPayment:"Sva naša plovila se mogu kupiti na kredit po najpovoljnijim kreditnim uslovima."
   },
   buttons: {
     boatsOffer: "Ponuda plovila",
@@ -110,7 +121,7 @@ const sr = {
       heading: "Osnovne usluge",
     },
     engines: {
-      text: "U ponudi imamo potpuno nove vanbrodske motore marke Honda, za različite tipove plovila. Osim toga, nudimo i servisirane motore marki Honda, Yamaha, Mercury, sa pismenom garancijom u trajanju od godinu dana.",
+      text: "U ponudi imamo potpuno nove vanbrodske motore marke Honda, za različite tipove plovila. Osim toga, nudimo i servisirane motore marki Honda, Yamaha, Mercury, sa pisanom garancijom u trajanju od godinu dana.",
     },
     equipment: {
       text1:
@@ -175,8 +186,6 @@ const sr = {
         "Gliser Cerion 27, 7 WA se ističe svojom izuzetno elegantnom linijom i sjajnim plovnim karakteristikama. Kreće se pomoću 2 motora Honda 150, a sa svojih 8.4 m dužine i 2.5 m širine, obezbeđuje potpuni komfort i udobnu plovidbu. Cerion 27,7 je idealan izbor za sve koji traže snažno, a u isto vreme i elegantno plovilo.",
       eoloText:
         "Eolo 710 je savršen model plovila za sve koji uživaju u dugim i mirnim plovidbama. Uz rezervoar goriva od 250 l, možete se prepustiti čarima duge plovidbe, a prostor za 8 putnika čini mogućim da se sasvim raskomotite i povedete društvo sa sobom. Zaplovite uz nove predele uz HD Nautiku.",
-      marinoText:
-        "Potpuno nov gliser marke Marino, modernog dizajna i enterijera. Odlikuju ga vrhunske plovne karakteristike, sportska linija i lakoća kretanja. Marino Gabry 550 predstavlja idealan izbor za sve koji žele da uživaju u sportskoj vožnji.",
       teoremaText:
         "Potpuno novo kod nas na tržištu, gliser Teorema 20 predstavlja pravo oličenje sportskog dizajna. Projektovan za 7 odraslih osoba, svojim dubokim koritom obezbeđuje potpunu sigurnost svih putnika. U ponudi su open varijanta i varijanta sa kabinom. ",
    skipText:"SKIP Sport 19 je idealan izbor za sve ljubitelje vodenih sportova i aktivnosti na vodi. Svojim izuzetnim navigacionim karakteristikama pruža sigurnost, ekonomičnost i udobnost na vodi, kako sa motorima male snage, tako i sa motorima do 140 konjskih snaga. Opremljen udobnim sedištem i prostranim prostorom za odlaganje opreme, pruža udobnost i praktičnost. Pored toga, lakoća rukovanja čini ga pogodnim za sve nivoe iskustva, bilo da ste početnik ili iskusan vozač"      },
@@ -188,7 +197,7 @@ const sr = {
       subheading: "Ponuda motora",
       headingText:
         "Prodaja novih i polovnih vanbrodskih motora različitih kategorija.",
-      text: "Nudimo širok izbor novih Honda motora, različite snage i veličine, kao i servisirane polovne motore različitih brendova. Svi novi motori dolaze sa garancijom od 5 godina, dok na polovne motore dajemo pismenu garanciju sa rokom trajanja od godinu dana.",
+      text: "Nudimo širok izbor novih Honda motora, različite snage i veličine, kao i servisirane polovne motore različitih brendova. Svi novi motori dolaze sa garancijom od 5 godina, dok na polovne motore dajemo pisanu garanciju sa rokom trajanja od godinu dana.",
     },
     newEngines: {
       headingText: "Prodaja novih vanbrodskih motora marke Honda.",
@@ -219,7 +228,7 @@ const sr = {
       heading: "Izbor polovnih vanbrodskih motora",
       headingText:
         "Servisirani polovni vanbrodski motori, sa garancijom od godinu dana.",
-      text: "Osim nove opreme, plovila i vanbrodskih motora, u ponudi imamo i polovne vanbrodske motore. Svaki motor pregledamo, servisiramo i nudimo u upotrebnom stanju. Uz svaki polovni vanbrodski motor dajemo pismenu garanciju od godinu dana.",
+      text: "Osim nove opreme, plovila i vanbrodskih motora, u ponudi imamo i polovne vanbrodske motore. Svaki motor pregledamo, servisiramo i nudimo u upotrebnom stanju. Uz svaki polovni vanbrodski motor dajemo pisanu garanciju od godinu dana.",
     },
     contact: {
       headingText: "Kontakt informacije o nama.",
@@ -386,11 +395,6 @@ const sr = {
       title: "Sportstar 22 | HD Nautika",
       description:
         "Sportstar 22 je sportski gliser i prvo plovilo izrađeno u našoj radionici. Odlikuje ga elegantna linija, lak prolaz oko centralne konzole i apsolutna udobnost.",
-    },
-    marino: {
-      title: "Marino Gabry 550 | HD Nautika",
-      description:
-        "Marino Gabry 550 je idealan izbor za ljubitelje sportske vožnje. Odlikuju ga vrhunske plovne karakteristike, lakoća kretanja i sportska linija.",
     },
     teorema: {
       title: "Teorema 20 | HD Nautika",

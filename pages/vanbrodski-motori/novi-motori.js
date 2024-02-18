@@ -42,7 +42,7 @@ const Engines = () => {
         equipmentLayoutHeading={t.common.newOutboardEngines}
         equipmentLayoutHeadingText={t.pages.newEngines.headingText}
         equipmentLayoutSubheading={t.common.newOutboardEngines}
-        equipmentLayoutText={t.pages.newEngines.text}
+        equipmentLayoutText={`${t.pages.newEngines.text} ${t.common.buyingEngineOnCredit}`}
       />
     </>
   );

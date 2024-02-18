@@ -5,7 +5,6 @@ import EquipmentCard from "../EquipmentCard/EquipmentCard";
 import sportstar from "../../public/assets/images/boats/sportstar22/sportstar-4.jpg";
 import skip from "../../public/assets/images/boats/skip-sport-19/skip-sport-1.jpeg";
 import teorema from "../../public/assets/images/boats/teorema20/teorema-1.jpg";
-import marino from "../../public/assets/images/boats/marino550/marino.jpg";
 import propeller from "../../public/assets/images/equipment/propeller-card.jpg";
 import sonar from "../../public/assets/images/equipment/sonar-4.jpg";
 import engineEquipment from "../../public/assets/images/equipment/engine-equipment.jpg";
@@ -29,11 +28,6 @@ const Suggestions = ({ suggestionType = "boats" }) => {
         name: "SKIP sport 19",
         image: skip,
         path: "/plovila/skip-sport-19",
-      },
-      {
-        name: "Marino Gabry 550",
-        image: marino,
-        path: "/plovila/marino-gabry-550",
       },
       {
         name: "Teorema 20",

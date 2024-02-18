@@ -106,7 +106,7 @@ const Sportstar = () => {
     weight: 800,
     engineType: t.boatEquipment.outboardEngine,
     maxEnginePower: 260,
-    fuelTank: 215,
+    fuelTank: 180,
     waterTank: 70,
     maxPerson: 8,
     color: `${t.common.basic}: ${t.common.white}`,

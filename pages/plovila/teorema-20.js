@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
+import teoremaRemovedBg from "../../public/assets/images/boats/teorema20/teorema-5-removebg-preview.png";
 import teorema from "../../public/assets/images/boats/teorema20/teorema.jpg";
 import teorema1 from "../../public/assets/images/boats/teorema20/teorema-1.jpg";
 import teorema2 from "../../public/assets/images/boats/teorema20/teorema-2.jpg";
@@ -88,7 +89,7 @@ const Teorema = () => {
         boatImages={images}
         boatHeading="Teorema 20"
         boatAdditionalEquipment={equipment}
-        boatImageURL={teorema}
+        boatImageURL={teoremaRemovedBg}
         boatData={data}
       />
     </>

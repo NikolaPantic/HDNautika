@@ -8,8 +8,6 @@ import sportstar from "../../public/assets/images/boats/sportstar22/sportstar-bo
 import sportstar1 from "../../public/assets/images/boats/sportstar22/sportstar-3.jpg";
 import skip from "../../public/assets/images/boats/skip-sport-19/skip-sport-1.jpeg";
 import skip1 from "../../public/assets/images/boats/skip-sport-19/skip-sport-2.jpeg";
-import marino from "../../public/assets/images/boats/marino550/marino.jpg";
-import marino1 from "../../public/assets/images/boats/marino550/marino-1.jpg";
 import teorema from "../../public/assets/images/boats/teorema20/teorema-1.jpg";
 import teorema1 from "../../public/assets/images/boats/teorema20/teorema-3.jpg";
 import Suggestions from "../../components/Suggestions/Suggestions";
@@ -35,15 +33,6 @@ const Boats = () => {
       length: 5.7,
       numberOfPersons: 7,
       enginePower: "140",
-      price: t.tableData.priceValue,
-      available: t.tableData.available,
-    },
-  
-    marinoData: {
-      heading: "Marino Gabry 550",
-      length: 5.54,
-      numberOfPersons: 7,
-      enginePower: "120",
       price: t.tableData.priceValue,
       available: t.tableData.available,
     },
@@ -91,12 +80,6 @@ const Boats = () => {
               boatCardImageURL={skip}
               boatCardLink="/plovila/skip-sport-19"
             />
-          <BoatCard
-            boatCardData={boatsData.marinoData}
-            boatCardBackgroundImageURL={marino}
-            boatCardImageURL={marino1}
-            boatCardLink="/plovila/marino-gabry-550"
-          />
           <BoatCard
             boatCardData={boatsData.teoremaData}
             boatCardBackgroundImageURL={teorema}

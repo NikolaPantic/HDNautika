@@ -10,6 +10,7 @@ import SectionEquipment from "../components/sections/SectionEquipment/SectionEqu
 import SectionServices from "../components/sections/SectionServices/SectionServices";
 import en from "../locales/en";
 import sr from "../locales/sr";
+import SectionIcons from "../components/sections/SectionIcons/SectionIcons";
 
 export default function Home() {
   const { locale } = useRouter();
@@ -33,6 +34,7 @@ export default function Home() {
       <article className="landing-page">
         <SectionHero />
         <SectionBoats />
+        <SectionIcons/>
         <SectionServices />
         <SectionEngines />
         <SectionEquipment />
