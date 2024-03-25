@@ -1,5 +1,5 @@
 const sr = {
-  heading: "Za mirnu vodu, bezbedno plovilo i vaše zadovoljstvo",
+  heading: "Atraktivna plovila, sigurni motori i profesionalni servis",
   common: {
     aboutUs: "O nama",
     boats: "Plovila",

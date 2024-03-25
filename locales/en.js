@@ -1,5 +1,5 @@
 const en = {
-  heading: "For calm water, safe vessel and your satisfaction.",
+  heading: "Attractive vessels, safe engines and professional service",
   common: {
     aboutUs: "About us",
     boats: "Boats",
