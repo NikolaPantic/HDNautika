@@ -107,7 +107,7 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
-              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
+              const sanitizedValue = DOMPurify.sanitize(e.target.value);
 
               setFirstName((prevState) => ({
                 ...prevState,
@@ -140,7 +140,7 @@ const Form = () => {
                 }));
               }
 
-              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
+              const sanitizedValue = DOMPurify.sanitize(e.target.value);
               setLastName((prevState) => ({
                 ...prevState,
                 ["value"]: sanitizedValue,
@@ -226,7 +226,7 @@ const Form = () => {
                   ["invalid"]: false,
                 }));
               }
-              const sanitizedValue = DOMPurify.sanitize(e.target.value.trim());
+              const sanitizedValue = DOMPurify.sanitize(e.target.value);
               setMessage((prevState) => ({
                 ...prevState,
                 ["value"]: sanitizedValue,
