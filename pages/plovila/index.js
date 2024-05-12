@@ -6,7 +6,7 @@ import PageLayout from "../../layout/PageLayout/PageLayout";
 import background from "../../public/assets/images/boats/sportstar22/sportstar-page-background.jpg";
 import sportstar from "../../public/assets/images/boats/sportstar22/sportstar-boat-card.jpg";
 import sportstar1 from "../../public/assets/images/boats/sportstar22/sportstar-3.jpg";
-import skip from "../../public/assets/images/boats/skip-sport-19/skip-sport-1.jpeg";
+import skip from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-1.jpg";
 import skip1 from "../../public/assets/images/boats/skip-sport-19/skip-sport-2.jpeg";
 import teorema from "../../public/assets/images/boats/teorema20/teorema-1.jpg";
 import teorema1 from "../../public/assets/images/boats/teorema20/teorema-3.jpg";
@@ -74,19 +74,18 @@ const Boats = () => {
             boatCardHomemade={true}
             boatCardLink="/plovila/sportstar-22"
           />
-            <BoatCard
-              boatCardData={boatsData.skipSportData}
-              boatCardBackgroundImageURL={skip1}
-              boatCardImageURL={skip}
-              boatCardLink="/plovila/skip-sport-19"
-            />
+          <BoatCard
+            boatCardData={boatsData.skipSportData}
+            boatCardBackgroundImageURL={skip1}
+            boatCardImageURL={skip}
+            boatCardLink="/plovila/skip-sport-19"
+          />
           <BoatCard
             boatCardData={boatsData.teoremaData}
             boatCardBackgroundImageURL={teorema}
             boatCardImageURL={teorema1}
             boatCardLink="/plovila/teorema-20"
           />
-        
         </div>
         <Suggestions suggestionType="equipment" />
       </PageLayout>

@@ -11,51 +11,50 @@
     min-height: 270vh;
   }
 
-  &--sportstar{
+  &--sportstar {
     justify-content: flex-start;
     min-height: 280vh;
- 
-  
+
     @media only screen and (max-width: 1300px) {
       min-height: 200vh;
     }
-  
+
     @media only screen and (max-width: 600px) {
       min-height: 300vh;
     }
   }
 
-  &__about-and-image{
+  &__about-and-image {
     align-self: stretch;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
-    } 
+    }
   }
 
-&__about,&__image{
-  flex:0 0 45%;
-  @media only screen and (max-width: 600px) {
-    width: 95%;
-    margin:1rem 0;
+  &__about,
+  &__image {
+    flex: 0 0 45%;
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+      margin: 1rem 0;
+    }
   }
-}
 
   &__about {
     @include columnCenterContent;
 
-    p{
+    p {
       align-self: flex-start;
     }
   }
 
-  &__image{
-    
-    & img{
-      width:100%;
+  &__image {
+    & img {
+      width: 100%;
       height: auto;
     }
   }
@@ -169,6 +168,18 @@
     }
   }
 
+  &__color-picker {
+    button {
+      color: $color-primary-dark;
+      background-color: transparent;
+      margin: 20px;
+    }
+
+    button.active {
+      border-bottom: 2px solid $color-primary-dark;
+    }
+  }
+
   &__carousel {
     @include columnCenterContent;
     width: 60%;
@@ -183,14 +194,14 @@
     }
   }
 
-  &__video-gallery{
-    margin-top: 15vh;
+  &__video-gallery {
+    margin-top: 25vh;
     width: 100%;
     @include columnCenterContent;
 
-    &--videos{
+    &--videos {
       width: 100%;
-      display:flex;
+      display: flex;
       align-items: center;
       justify-content: space-evenly;
 
@@ -199,14 +210,14 @@
         flex-direction: column;
       }
 
-      & iframe{
-        flex:0 0 45%;
-        height:50vh;
+      & iframe {
+        flex: 0 0 45%;
+        height: 50vh;
 
         @media only screen and (max-width: 768px) {
           width: 95%;
-          margin:1rem 0;
-          flex:auto;
+          margin: 1rem 0;
+          flex: auto;
         }
       }
     }

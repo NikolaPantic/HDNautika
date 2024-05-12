@@ -32,18 +32,26 @@ const sr = {
     blue: "plava",
     white: "bela",
     basic: "osnovna varijanta",
-    videoPresentation:"Video prikaz našeg plovila",
-    yearsOfTrust:"18 godina poverenja",
-    weWereFounded2006:'Osnovani smo 2006. godine sa ciljem uspostavljanja standarda u svetu nautike i zadovoljstva mušterija.',
-    moreAboutUs:"Detaljnije o nama",
-    vesselOnCredit:"Plovilo na kredit",
-    possibilityOfBuyingVesselsOnCredit:"Nudimo mogućnost kupovine plovila i vanbrodskih motora na kredit, po najpovoljnijim kreditnim uslovima.",
-    sendInquiry:"Pošalji upit",
-    writtenWarranty:"Pisana garancija",
-    writtenWarantyOnOutboardEngines:'12 meseci pisane garancije na svaki polovni vanbrodski motor kupljen kod nas. Svaki motor je pregledan, servisiran i spreman za upotrebu.',
-    buyingVesselsOnCredit:"Kao odgovor na potražnju i vaše interesovanje, uveli smo i mogućnost kupovine plovila i vanbrodskih motora na kredit po najpovoljnijim uslovima.",
-    buyingEngineOnCredit:"Takođe, uveli smo mogućnost kupovine vanbrodskih motora na kredit.",
-    vesselAvailableWithCreditPayment:"Sva naša plovila se mogu kupiti na kredit po najpovoljnijim kreditnim uslovima."
+    videoPresentation: "Video prikaz našeg plovila",
+    yearsOfTrust: "18 godina poverenja",
+    weWereFounded2006:
+      "Osnovani smo 2006. godine sa ciljem uspostavljanja standarda u svetu nautike i zadovoljstva mušterija.",
+    moreAboutUs: "Detaljnije o nama",
+    vesselOnCredit: "Plovilo na kredit",
+    possibilityOfBuyingVesselsOnCredit:
+      "Nudimo mogućnost kupovine plovila i vanbrodskih motora na kredit, po najpovoljnijim kreditnim uslovima.",
+    sendInquiry: "Pošalji upit",
+    writtenWarranty: "Pisana garancija",
+    writtenWarantyOnOutboardEngines:
+      "12 meseci pisane garancije na svaki polovni vanbrodski motor kupljen kod nas. Svaki motor je pregledan, servisiran i spreman za upotrebu.",
+    buyingVesselsOnCredit:
+      "Kao odgovor na potražnju i vaše interesovanje, uveli smo i mogućnost kupovine plovila i vanbrodskih motora na kredit po najpovoljnijim uslovima.",
+    buyingEngineOnCredit:
+      "Takođe, uveli smo mogućnost kupovine vanbrodskih motora na kredit.",
+    vesselAvailableWithCreditPayment:
+      "Sva naša plovila se mogu kupiti na kredit po najpovoljnijim kreditnim uslovima.",
+    redVariant: "Crvena varijanta",
+    blueVariant: "Plava varijanta",
   },
   buttons: {
     boatsOffer: "Ponuda plovila",
@@ -181,14 +189,16 @@ const sr = {
       headingAbout: "O plovilu",
       headingTechnicalData: "Tehničke karakteristike",
       sportstarText:
-        "Gliser Sportstar 22 predstavlja plovilo sportskog i modernog dizajna. Odlikuje ga elegantna linija, lak prolaz oko centralne konzole i apsolutna udobnost. Platforma sa merdevinama na zadnjem delu doprinosi bezbednom ulasku, a sigurnost putnika se ogleda u vidu dubokog korita. Može se poručiti u crvenoj, plavoj i beloj boji.",
+        "Gliser Sportstar 22 predstavlja plovilo sportskog i modernog dizajna. Odlikuje ga elegantna linija, lak prolaz oko centralne konzole i apsolutna udobnost. Platforma sa merdevinama na zadnjem delu doprinosi bezbednom ulasku, a sigurnost putnika se ogleda u vidu dubokog korita. Može se poručiti u različitim bojama, i sa različitim dizajnom enterijera.",
       cerionText:
         "Gliser Cerion 27, 7 WA se ističe svojom izuzetno elegantnom linijom i sjajnim plovnim karakteristikama. Kreće se pomoću 2 motora Honda 150, a sa svojih 8.4 m dužine i 2.5 m širine, obezbeđuje potpuni komfort i udobnu plovidbu. Cerion 27,7 je idealan izbor za sve koji traže snažno, a u isto vreme i elegantno plovilo.",
       eoloText:
         "Eolo 710 je savršen model plovila za sve koji uživaju u dugim i mirnim plovidbama. Uz rezervoar goriva od 250 l, možete se prepustiti čarima duge plovidbe, a prostor za 8 putnika čini mogućim da se sasvim raskomotite i povedete društvo sa sobom. Zaplovite uz nove predele uz HD Nautiku.",
       teoremaText:
         "Potpuno novo kod nas na tržištu, gliser Teorema 20 predstavlja pravo oličenje sportskog dizajna. Projektovan za 7 odraslih osoba, svojim dubokim koritom obezbeđuje potpunu sigurnost svih putnika. U ponudi su open varijanta i varijanta sa kabinom. ",
-   skipText:"SKIP Sport 19 je idealan izbor za sve ljubitelje vodenih sportova i aktivnosti na vodi. Svojim izuzetnim navigacionim karakteristikama pruža sigurnost, ekonomičnost i udobnost na vodi, kako sa motorima male snage, tako i sa motorima do 140 konjskih snaga. Opremljen udobnim sedištem i prostranim prostorom za odlaganje opreme, pruža udobnost i praktičnost. Pored toga, lakoća rukovanja čini ga pogodnim za sve nivoe iskustva, bilo da ste početnik ili iskusan vozač"      },
+      skipText:
+        "SKIP Sport 19 je idealan izbor za sve ljubitelje vodenih sportova i aktivnosti na vodi. Svojim izuzetnim navigacionim karakteristikama pruža sigurnost, ekonomičnost i udobnost na vodi, kako sa motorima male snage, tako i sa motorima do 140 konjskih snaga. Opremljen udobnim sedištem i prostranim prostorom za odlaganje opreme, pruža udobnost i praktičnost. Pored toga, lakoća rukovanja čini ga pogodnim za sve nivoe iskustva, bilo da ste početnik ili iskusan vozač",
+    },
     services: {
       headingText:
         "Od usluga izdvajamo mehaničarske usluge, servis plovila, izradu svih vrsti enterijera i zimovnik motora i plovila.",
@@ -367,12 +377,10 @@ const sr = {
     cushions: "jastuci za spoljni deo i kabinu",
     ledLights: "LED osvetljenje",
     teleflexCable: "teleflex sajla",
-    seat:"sedište sa naslonom",
-    storageLocker:"ostava za stvari",
-    batterySwitch:"glavni prekidač za akumulator",
-    upholsteryComplete:"kompletan tapacirung (jastuci)"
-
-
+    seat: "sedište sa naslonom",
+    storageLocker: "ostava za stvari",
+    batterySwitch: "glavni prekidač za akumulator",
+    upholsteryComplete: "kompletan tapacirung (jastuci)",
   },
   metadata: {
     landingPage: {
@@ -406,7 +414,7 @@ const sr = {
       description:
         "Brzo i elegantno plovilo za vodene sportove. Udobno sedište, prostran prostor za opremu. Lako upravljanje, savršen za sve nivoe iskustva.",
     },
-  
+
     services: {
       title: "Usluge | HD Nautika",
       description:

@@ -12,13 +12,15 @@ import en from "../../locales/en";
 import sr from "../../locales/sr";
 
 const BoatLayout = ({
-  isSportstarBoat=false,
+  isSportstarBoat = false,
   boatImages = [],
   boatHeading = "",
   boatImageURL = "",
   boatDescription = "",
   boatAdditionalEquipment = [],
   boatData = {},
+  changeBoatColor = () => {},
+  isRedBoat,
 }) => {
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;
@@ -28,14 +30,20 @@ const BoatLayout = ({
       pageLayoutHeading={boatHeading}
       pageLayoutImageUrl={boatImageURL}
     >
-      <div className={isSportstarBoat? "boat-layout boat-layout--sportstar":"boat-layout"}>
+      <div
+        className={
+          isSportstarBoat ? "boat-layout boat-layout--sportstar" : "boat-layout"
+        }
+      >
         <div className="boat-layout__about-and-image">
-        <div className="boat-layout__about">
-          <h2 className="tertiary-heading">{t.pages.boats.headingAbout}</h2>
-          <p>{boatDescription}</p>
-          <p>{t.common.vesselAvailableWithCreditPayment}</p>
+          <div className="boat-layout__about">
+            <h2 className="tertiary-heading">{t.pages.boats.headingAbout}</h2>
+            <p>{boatDescription}</p>
+            <p>{t.common.vesselAvailableWithCreditPayment}</p>
           </div>
-          <div className="boat-layout__image"><Image src={boatImageURL} alt='image'/></div>
+          <div className="boat-layout__image">
+            <Image src={boatImageURL} alt="image" />
+          </div>
         </div>
         <div className="boat-layout__info">
           <div className="boat-layout__section">
@@ -141,6 +149,23 @@ const BoatLayout = ({
         <div className="boat-layout__carousel">
           <h2 className="tertiary-heading">{t.common.imageGallery}</h2>
 
+          {isSportstarBoat && (
+            <div className="boat-layout__color-picker">
+              <button
+                className={isRedBoat ? "active" : "text-link"}
+                onClick={() => changeBoatColor("red")}
+              >
+                {t.common.redVariant}
+              </button>
+              <button
+                className={!isRedBoat ? "active" : "text-link"}
+                onClick={() => changeBoatColor("blue")}
+              >
+                {t.common.blueVariant}
+              </button>
+            </div>
+          )}
+
           <Carousel
             images={boatImages}
             shouldMaximizeOnClick={true}
@@ -148,14 +173,27 @@ const BoatLayout = ({
           />
         </div>
 
-{isSportstarBoat && <div className="boat-layout__video-gallery">
-  <h2 className="tertiary-heading">{t.common.videoPresentation}</h2>
-  <div className="boat-layout__video-gallery--videos"> 
-  <iframe src="https://www.youtube.com/embed/HRIFgDDBx6I" title="Sportstar 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe src="https://www.youtube.com/embed/ynrgNtx3tIs" title="Sportstar 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  
-  </div>}
+        {isSportstarBoat && (
+          <div className="boat-layout__video-gallery">
+            <h2 className="tertiary-heading">{t.common.videoPresentation}</h2>
+            <div className="boat-layout__video-gallery--videos">
+              <iframe
+                src="https://www.youtube.com/embed/HRIFgDDBx6I"
+                title="Sportstar 22"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/ynrgNtx3tIs"
+                title="Sportstar 22"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        )}
       </div>
       <Suggestions suggestionType="equipment" />
     </PageLayout>

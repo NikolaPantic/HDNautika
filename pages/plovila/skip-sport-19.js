@@ -4,7 +4,7 @@ import BoatLayout from "../../layout/BoatLayout/BoatLayout";
 import en from "../../locales/en";
 import sr from "../../locales/sr";
 
-import skipTest from "../../public/assets/images/boats/skip-sport-19/skip-sport-1-removebg-preview.png";
+import skipTest from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-3.png";
 import skip1 from "../../public/assets/images/boats/skip-sport-19/skip-sport-1.jpeg";
 import skip2 from "../../public/assets/images/boats/skip-sport-19/skip-sport-2.jpeg";
 import skip3 from "../../public/assets/images/boats/skip-sport-19/skip-sport-3.jpeg";
@@ -30,13 +30,20 @@ import skip22 from "../../public/assets/images/boats/skip-sport-19/skip-sport-22
 import skip23 from "../../public/assets/images/boats/skip-sport-19/skip-sport-23.jpeg";
 import skip24 from "../../public/assets/images/boats/skip-sport-19/skip-sport-24.jpeg";
 import skip25 from "../../public/assets/images/boats/skip-sport-19/skip-sport-25.jpeg";
-
+import skip26 from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea.jpg";
+import skip27 from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-1.jpg";
+import skip28 from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-2.jpg";
+import skip29 from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-3.jpg";
 
 const Skip = () => {
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;
 
   const images = [
+    skip27,
+    skip29,
+    skip28,
+    skip26,
     skip1,
     skip2,
     skip3,
@@ -62,19 +69,17 @@ const Skip = () => {
     skip21,
     skip22,
     skip23,
-    
   ];
 
   const equipment = [
-      t.boatEquipment.navigationLights,
-      t.boatEquipment.bilgePump,
-      t.boatEquipment.batterySwitch,
-      t.boatEquipment.compass,
-      t.boatEquipment.ladder,
+    t.boatEquipment.navigationLights,
+    t.boatEquipment.bilgePump,
+    t.boatEquipment.batterySwitch,
+    t.boatEquipment.compass,
+    t.boatEquipment.ladder,
     t.boatEquipment.seat,
     t.boatEquipment.storageLocker,
     t.boatEquipment.upholsteryComplete,
-    
   ];
 
   const description = t.pages.boats.skipText;
@@ -85,8 +90,8 @@ const Skip = () => {
     weight: 600,
     engineType: t.boatEquipment.outboardEngine,
     maxEnginePower: "140",
-    fuelTank: '/',
-    waterTank: '/',
+    fuelTank: "/",
+    waterTank: "/",
     maxPerson: 7,
     color: t.common.white,
   };
@@ -99,14 +104,20 @@ const Skip = () => {
         <meta name="description" content={t.metadata.skip.description} />
         <meta property="og:title" content={t.metadata.skip.title} />
         <meta property="og:type" content="article" />
+        <meta property="og:description" content={t.metadata.skip.description} />
         <meta
-          property="og:description"
+          property="og:image"
+          content="/assets/images/boats/skip-sport-19/skip-sport-3.jpeg"
+        />
+        <meta name="twitter:title" content={t.metadata.skip.title} />
+        <meta
+          name="twitter:description"
           content={t.metadata.skip.description}
         />
-          <meta property="og:image" content='/assets/images/boats/skip-sport-19/skip-sport-3.jpeg'/>
-<meta name="twitter:title" content={t.metadata.skip.title}/>
- <meta name="twitter:description" content={t.metadata.skip.description}/>
- <meta name="twitter:image" content='/assets/images/boats/skip-sport-19/skip-sport-3.jpeg'/>
+        <meta
+          name="twitter:image"
+          content="/assets/images/boats/skip-sport-19/skip-sport-3.jpeg"
+        />
       </Head>
       <BoatLayout
         boatDescription={description}

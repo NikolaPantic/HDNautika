@@ -11,7 +11,13 @@ const SectionHero = () => {
 
   return (
     <section className="section-hero">
-      <video className="section-hero__video" autoPlay muted loop poster="../../../assets/images/boat-poster.jpg">
+      <video
+        className="section-hero__video"
+        autoPlay
+        muted
+        loop
+        poster="../../../assets/images/boat-poster.jpg"
+      >
         <source src="../../../assets/images/boat.mp4" type="video/mp4" />
       </video>
 

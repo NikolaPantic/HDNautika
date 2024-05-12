@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+
 import BoatLayout from "../../layout/BoatLayout/BoatLayout";
+
 import sportstar from "../../public/assets/images/boats/sportstar22/sportstar.jpg";
 import sportstar1 from "../../public/assets/images/boats/sportstar22/sportstar-1.jpg";
 import sportstar2 from "../../public/assets/images/boats/sportstar22/sportstar-2.jpg";
@@ -24,31 +27,55 @@ import sportstar19 from "../../public/assets/images/boats/sportstar22/sportstar-
 import sportstar20 from "../../public/assets/images/boats/sportstar22/sportstar-18.jpg";
 import sportstar21 from "../../public/assets/images/boats/sportstar22/sportstar-19.jpg";
 import sportstar22 from "../../public/assets/images/boats/sportstar22/sportstar-20.jpg";
-import sportstar23 from "../../public/assets/images/boats/sportstar22/sportstar-blue.jpg";
-import sportstar24 from "../../public/assets/images/boats/sportstar22/sportstar-blue-1.jpg";
-import sportstar25 from "../../public/assets/images/boats/sportstar22/sportstar-blue-2.jpg";
-import sportstar26 from "../../public/assets/images/boats/sportstar22/sportstar-blue-3.jpg";
-import sportstar27 from "../../public/assets/images/boats/sportstar22/sportstar-21.jpg";
-import sportstar28 from "../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
-import sportstar29 from "../../public/assets/images/boats/sportstar22/sportstar-23.jpg";
-import sportstar30 from "../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
-import sportstar31 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-1.jpg";
-import sportstar32 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-2.jpg";
-import sportstar33 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-3.jpg";
-import sportstar34 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-4.jpg";
+import sportstar24 from "../../public/assets/images/boats/sportstar22/sportstar-21.jpg";
+import sportstar25 from "../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
+import sportstar26 from "../../public/assets/images/boats/sportstar22/sportstar-23.jpg";
+import sportstarblue from "../../public/assets/images/boats/sportstar22/sportstar-blue-1.jpg";
+import sportstarblue1 from "../../public/assets/images/boats/sportstar22/sportstar-blue-2.jpg";
+import sportstarblue2 from "../../public/assets/images/boats/sportstar22/sportstar-blue-3.jpg";
+import sportstarblue3 from "../../public/assets/images/boats/sportstar22/sportstar-blue-4.jpg";
+import sportstarblue4 from "../../public/assets/images/boats/sportstar22/sportstar-blue-5.jpg";
+import sportstarblue5 from "../../public/assets/images/boats/sportstar22/sportstar-blue-6.jpg";
+import sportstarblue6 from "../../public/assets/images/boats/sportstar22/sportstar-blue-7.jpg";
+import sportstarblue7 from "../../public/assets/images/boats/sportstar22/sportstar-blue-8.jpg";
+import sportstarblue8 from "../../public/assets/images/boats/sportstar22/sportstar-blue-9.jpg";
+import sportstarblue9 from "../../public/assets/images/boats/sportstar22/sportstar-blue-10.jpg";
+import sportstarblue10 from "../../public/assets/images/boats/sportstar22/sportstar-blue-11.jpg";
+import sportstarblue11 from "../../public/assets/images/boats/sportstar22/sportstar-blue-12.jpg";
+import sportstarblue12 from "../../public/assets/images/boats/sportstar22/sportstar-blue-13.jpg";
+import sportstarblue13 from "../../public/assets/images/boats/sportstar22/sportstar-blue-14.jpg";
+import sportstarblue14 from "../../public/assets/images/boats/sportstar22/sportstar-blue-15.jpg";
+import sportstarblue15 from "../../public/assets/images/boats/sportstar22/sportstar-blue-16.jpg";
+import sportstarblue16 from "../../public/assets/images/boats/sportstar22/sportstar-blue-17.jpg";
+import sportstarblue17 from "../../public/assets/images/boats/sportstar22/sportstar-blue-18.jpg";
+import sportstarblue18 from "../../public/assets/images/boats/sportstar22/sportstar-blue-19.jpg";
+import sportstarblue19 from "../../public/assets/images/boats/sportstar22/sportstar-blue-20.jpg";
+import sportstarblue20 from "../../public/assets/images/boats/sportstar22/sportstar-blue-21.jpg";
+import sportstarblue21 from "../../public/assets/images/boats/sportstar22/sportstar-blue-22.jpg";
+import sportstarblue22 from "../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
+import sportstarblue23 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-2.jpg";
+import sportstarblue24 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-3.jpg";
+import sportstarblue25 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-4.jpg";
+import sportstarblue26 from "../../public/assets/images/boats/sportstar22/sportstar-blue.jpg";
+import sportstarblue27 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-1.jpg";
 
 import en from "../../locales/en";
 import sr from "../../locales/sr";
 
 const Sportstar = () => {
   const { locale } = useRouter();
+
+  const [boatColor, setBoatColor] = useState("red");
   const t = locale === "sr" ? sr : en;
 
-  const images = [
+  const changeBoatColor = (boatColor) => {
+    setBoatColor(boatColor);
+  };
+
+  const sportstarRedImages = [
     sportstar2,
     sportstar1,
     sportstar11,
-    sportstar27,
     sportstar3,
     sportstar4,
     sportstar,
@@ -69,17 +96,40 @@ const Sportstar = () => {
     sportstar20,
     sportstar21,
     sportstar22,
-    sportstar23,
     sportstar24,
     sportstar25,
     sportstar26,
-    sportstar28,
-    sportstar29,
-    sportstar30,
-    sportstar31,
-    sportstar32,
-    sportstar33,
-    sportstar34,
+  ];
+
+  const sportstarBlueImages = [
+    sportstarblue3,
+    sportstarblue4,
+    sportstarblue5,
+    sportstarblue6,
+    sportstarblue7,
+    sportstarblue8,
+    sportstarblue9,
+    sportstarblue10,
+    sportstarblue11,
+    sportstarblue12,
+    sportstarblue13,
+    sportstarblue14,
+    sportstarblue15,
+    sportstarblue16,
+    sportstarblue17,
+    sportstarblue18,
+    sportstarblue19,
+    sportstarblue20,
+    sportstarblue21,
+    sportstarblue22,
+    sportstarblue23,
+    sportstarblue24,
+    sportstarblue25,
+    sportstarblue26,
+    sportstarblue27,
+    sportstarblue,
+    sportstarblue1,
+    sportstarblue2,
   ];
 
   const equipment = [
@@ -106,7 +156,7 @@ const Sportstar = () => {
     weight: 800,
     engineType: t.boatEquipment.outboardEngine,
     maxEnginePower: 260,
-    fuelTank: 180,
+    fuelTank: 215,
     waterTank: 70,
     maxPerson: 8,
     color: `${t.common.basic}: ${t.common.white}`,
@@ -124,15 +174,25 @@ const Sportstar = () => {
           property="og:description"
           content={t.metadata.sportstar.description}
         />
-          <meta property="og:image" content='/assets/images/boats/sportstar22/sportstar-background.jpg'/>
-<meta name="twitter:title" content={t.metadata.sportstar.title}/>
- <meta name="twitter:description" content='/assets/images/boats/sportstar22/sportstar-background.jpg'/>
- <meta name="twitter:image" content={sportstar5}/>
+        <meta
+          property="og:image"
+          content="/assets/images/boats/sportstar22/sportstar-background.jpg"
+        />
+        <meta name="twitter:title" content={t.metadata.sportstar.title} />
+        <meta
+          name="twitter:description"
+          content="/assets/images/boats/sportstar22/sportstar-background.jpg"
+        />
+        <meta name="twitter:image" content={sportstar5} />
       </Head>
       <BoatLayout
         isSportstarBoat={true}
         boatData={data}
-        boatImages={images}
+        boatImages={
+          boatColor === "red" ? sportstarRedImages : sportstarBlueImages
+        }
+        changeBoatColor={changeBoatColor}
+        isRedBoat={boatColor === "red"}
         boatHeading="Sportstar 22"
         boatDescription={description}
         boatAdditionalEquipment={equipment}

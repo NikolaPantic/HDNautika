@@ -32,18 +32,26 @@ const en = {
     blue: "blue",
     white: "white",
     basic: "basic",
-    videoPresentation:"Video presentation of our vessel",
-    yearsOfTrust:"18 years of trust",
-    weWereFounded2006:'We were founded in 2006 with the aim of establishing standards in the world of nautical and customer satisfaction.',
-    moreAboutUs:"More about us",
-    vesselOnCredit:"Vessel on credit",
-    possibilityOfBuyingVesselsOnCredit:"We offer the possibility of buying vessels and outboard motors on credit, under the most favorable credit terms.",
-    sendInquiry:"Send inquiry",
-    writtenWarranty:"Written warranty",
-    writtenWarantyOnOutboardEngines:'12 months written warranty on every used outboard motor purchased from us. Every engine is inspected, serviced and ready to go.',
-    buyingVesselsOnCredit:"In response to demand and your interest, we have introduced the possibility of buying vessels and outboard motors on credit at the most favorable terms.",
-    buyingEngineOnCredit:"Also, we have introduced the possibility of buying outboard motors on credit.",
-    vesselAvailableWithCreditPayment:"All our vessels can be purchased on credit at the most favorable credit terms."
+    videoPresentation: "Video presentation of our vessel",
+    yearsOfTrust: "18 years of trust",
+    weWereFounded2006:
+      "We were founded in 2006 with the aim of establishing standards in the world of nautical and customer satisfaction.",
+    moreAboutUs: "More about us",
+    vesselOnCredit: "Vessel on credit",
+    possibilityOfBuyingVesselsOnCredit:
+      "We offer the possibility of buying vessels and outboard motors on credit, under the most favorable credit terms.",
+    sendInquiry: "Send inquiry",
+    writtenWarranty: "Written warranty",
+    writtenWarantyOnOutboardEngines:
+      "12 months written warranty on every used outboard motor purchased from us. Every engine is inspected, serviced and ready to go.",
+    buyingVesselsOnCredit:
+      "In response to demand and your interest, we have introduced the possibility of buying vessels and outboard motors on credit at the most favorable terms.",
+    buyingEngineOnCredit:
+      "Also, we have introduced the possibility of buying outboard motors on credit.",
+    vesselAvailableWithCreditPayment:
+      "All our vessels can be purchased on credit at the most favorable credit terms.",
+    redVariant: "Red variant",
+    blueVariant: "Blue variant",
   },
   buttons: {
     boatsOffer: "Boats offer",
@@ -187,15 +195,16 @@ const en = {
       headingAbout: "About boat",
       headingTechnicalData: "Technical data",
       sportstarText:
-        "Speedboat Sportstar 22 is a vessel with a sporty and modern design. It is characterized by an elegant line, easy passage around the central console and absolute comfort. A platform with a ladder at the rear contributes to safe entry, and the safety of passengers is reflected in the form of a deep trough. It can be ordered in red, blue and white.",
+        "Speedboat Sportstar 22 is a vessel with a sporty and modern design. It is characterized by an elegant line, easy passage around the central console and absolute comfort. A platform with a ladder at the rear contributes to safe entry, and the safety of passengers is reflected in the form of a deep trough. It can be ordered in different colors, with different interior designs.",
       cerionText:
         "Speedboat Cerion 27, 7 WA stands out with its extremely elegant line and great sailing characteristics. It is powered by 2 Honda 150 engines, and with its 8.4 m length and 2.5 m width, it ensures complete comfort and comfortable navigation. The Cerion 27.7 is the ideal choice for anyone looking for a strong and at the same time elegant boat.",
       eoloText:
         "The Eolo 710 is the perfect boat model for everyone who enjoys long and peaceful sailings. With a 250 l fuel tank, you can indulge in the charms of a long sailing, and the space for 8 passengers makes it possible to get completely comfortable and take your company with you. Sail with new landscapes with HD Nautica.",
       teoremaText:
         "Completely new on our market, the Teorema 20 speedboat is the true embodiment of sporty design. Designed for 7 adults, its deep bed ensures complete safety for all passengers. We offer an open variant and a variant with a cabin.",
-    skipText:"The SKIP Sport 19 boat is the ideal choice for all lovers of water sports and activities on the water. With its exceptional navigation characteristics, it provides safety, economy and comfort on the water, both with low-power engines and with engines up to 140 horsepower. Equipped with a comfortable seat and a spacious storage space for equipment, it provides comfort and practicality. In addition, the ease of handling makes it suitable for all experience levels, whether you are a beginner or an experienced rider."
-      },
+      skipText:
+        "The SKIP Sport 19 boat is the ideal choice for all lovers of water sports and activities on the water. With its exceptional navigation characteristics, it provides safety, economy and comfort on the water, both with low-power engines and with engines up to 140 horsepower. Equipped with a comfortable seat and a spacious storage space for equipment, it provides comfort and practicality. In addition, the ease of handling makes it suitable for all experience levels, whether you are a beginner or an experienced rider.",
+    },
     services: {
       headingText:
         "Among the services, we single out mechanical services, boat service, production of all types of interiors and engine and boat winterization.",
@@ -300,7 +309,8 @@ const en = {
 
   components: {
     suggestions: {
-      headingEquipment: "See the additional equipment of the boat from our offer:",
+      headingEquipment:
+        "See the additional equipment of the boat from our offer:",
       headingBoats: "See boats from our offer:",
     },
     equipmentLayout: {
@@ -375,10 +385,10 @@ const en = {
     cushions: "exterior and cabin cushions",
     ledLights: "LED lights",
     teleflexCable: "teleflex cable",
-    seat:"seat with backrest",
-    storageLocker:"storage locker",
-    batterySwitch:"main battery switch",
-    upholsteryComplete:"complete upholstery (pillows)"
+    seat: "seat with backrest",
+    storageLocker: "storage locker",
+    batterySwitch: "main battery switch",
+    upholsteryComplete: "complete upholstery (pillows)",
   },
   metadata: {
     landingPage: {
@@ -409,7 +419,9 @@ const en = {
     },
     skip: {
       title: "SKIP Sport 19 | HD Nautika",
-      description: "Fast and stylish water sports boat. Comfortable seat, spacious gear compartment. Easy handling, perfect for all experience levels.",},
+      description:
+        "Fast and stylish water sports boat. Comfortable seat, spacious gear compartment. Easy handling, perfect for all experience levels.",
+    },
     services: {
       title: "Services | HD Nautika",
       description:
