@@ -5,10 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import OvalButton from "../../../components/OvalButton/OvalButton";
 import { scrollToContact } from "../../../data/servicesData";
 
-import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar-background.jpg";
+import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar-blue-11.jpg";
 import sportstar1 from "../../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
 import sportstar2 from "../../../public/assets/images/boats/sportstar22/sportstar-2.jpg";
-import sportstar3 from "../../../public/assets/images/boats/sportstar22/sportstar-blue-3.jpg";
+import sportstar3 from "../../../public/assets/images/boats/sportstar22/sportstar-blue-4.jpg";
 import sportstar4 from "../../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
 
 import en from "../../../locales/en";
@@ -25,13 +25,28 @@ const SectionBoats = () => {
       <div className="section-boats__main">
         <div className="section-boats__info">
           <div className="section-boats__info--carousel">
-            <iframe
-              src="https://www.youtube.com/embed/HRIFgDDBx6I"
-              title="Sportstar 22 | HD Nautika"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <Carousel
+              className="section-about-us__content--carousel"
+              interval={5000}
+              autoPlay={true}
+              infiniteLoop={true}
+              showIndicators={false}
+              showStatus={false}
+              showThumbs={false}
+              emulateTouch={true}
+            >
+              {/* <iframe
+                src="https://www.youtube.com/embed/HRIFgDDBx6I"
+                title="Sportstar 22 | HD Nautika"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe> */}
+              <Image src={sportstar2} alt="HD Nautika" />
+              <Image src={sportstar3} alt="HD Nautika" />
+              <Image src={sportstar} alt="HD Nautika" />
+              <Image src={sportstar1} alt="HD Nautika" />
+            </Carousel>
           </div>
           <div className="section-boats__info--content">
             <h3 className="tertiary-heading">Sportstar 22</h3>
