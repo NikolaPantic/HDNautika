@@ -110,7 +110,7 @@ const SectionBoats = () => {
           <div className="section-boats__videos-container">
             <iframe
               height="300px"
-              src="https://www.youtube.com/embed/HRIFgDDBx6I"
+              src="https://www.youtube.com/embed/HH5ShHii2Zw"
               title="Sportstar 22 | HD Nautika"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
