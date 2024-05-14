@@ -57,6 +57,19 @@ import sportstarblue24 from "../../public/assets/images/boats/sportstar22/sports
 import sportstarblue25 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-4.jpg";
 import sportstarblue26 from "../../public/assets/images/boats/sportstar22/sportstar-blue.jpg";
 import sportstarblue27 from "../../public/assets/images/boats/sportstar22/sportstar-river-view-1.jpg";
+import sportstarblack from "../../public/assets/images/boats/sportstar22/sportstar-black.jpg";
+import sportstarblack1 from "../../public/assets/images/boats/sportstar22/sportstar-black-1.jpg";
+import sportstarblack2 from "../../public/assets/images/boats/sportstar22/sportstar-black-2.jpg";
+import sportstarblack3 from "../../public/assets/images/boats/sportstar22/sportstar-black-3.jpg";
+import sportstarblack4 from "../../public/assets/images/boats/sportstar22/sportstar-black-4.jpg";
+import sportstarblack5 from "../../public/assets/images/boats/sportstar22/sportstar-black-5.jpg";
+import sportstarblack6 from "../../public/assets/images/boats/sportstar22/sportstar-black-6.jpg";
+import sportstarblack7 from "../../public/assets/images/boats/sportstar22/sportstar-black-7.jpg";
+import sportstarblack8 from "../../public/assets/images/boats/sportstar22/sportstar-black-8.jpg";
+import sportstarblack9 from "../../public/assets/images/boats/sportstar22/sportstar-black-9.jpg";
+import sportstarblack10 from "../../public/assets/images/boats/sportstar22/sportstar-interior.jpg";
+import sportstarblack11 from "../../public/assets/images/boats/sportstar22/sportstar-interior-2.jpg";
+import sportstarblack12 from "../../public/assets/images/boats/sportstar22/sportstar-interior-3.jpg";
 
 import en from "../../locales/en";
 import sr from "../../locales/sr";
@@ -121,6 +134,19 @@ const Sportstar = () => {
     sportstar24,
     sportstar25,
     sportstar26,
+    sportstarblack7,
+    sportstarblack6,
+    sportstarblack,
+    sportstarblack1,
+    sportstarblack2,
+    sportstarblack3,
+    sportstarblack4,
+    sportstarblack5,
+    sportstarblack10,
+    sportstarblack11,
+    sportstarblack12,
+    sportstarblack8,
+    sportstarblack9,
   ];
 
   const equipment = [
