@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
@@ -65,12 +64,7 @@ import sr from "../../locales/sr";
 const Sportstar = () => {
   const { locale } = useRouter();
 
-  const [boatColor, setBoatColor] = useState("red");
   const t = locale === "sr" ? sr : en;
-
-  const changeBoatColor = (boatColor) => {
-    setBoatColor(boatColor);
-  };
 
   const sportstarImages = [
     sportstarblue3,
@@ -189,7 +183,7 @@ const Sportstar = () => {
         boatHeading="Sportstar 22"
         boatDescription={description}
         boatAdditionalEquipment={equipment}
-        boatImageURL={sportstarblue4}
+        boatImageURL={sportstar2}
       />
     </>
   );
