@@ -9,7 +9,7 @@ import sportstar from "../../../public/assets/images/boats/sportstar22/sportstar
 import sportstar1 from "../../../public/assets/images/boats/sportstar22/sportstar-22.jpg";
 import sportstar2 from "../../../public/assets/images/boats/sportstar22/sportstar-2.jpg";
 import sportstar3 from "../../../public/assets/images/boats/sportstar22/sportstar-blue-4.jpg";
-import sportstar4 from "../../../public/assets/images/boats/sportstar22/sportstar-river-view.jpg";
+import sportstar4 from "../../../public/assets/images/boats/sportstar22/sportstar-blue-21.jpg";
 
 import en from "../../../locales/en";
 import sr from "../../../locales/sr";
@@ -42,9 +42,10 @@ const SectionBoats = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe> */}
-              <Image src={sportstar2} alt="HD Nautika" />
-              <Image src={sportstar3} alt="HD Nautika" />
               <Image src={sportstar} alt="HD Nautika" />
+              <Image src={sportstar3} alt="HD Nautika" />
+              <Image src={sportstar4} alt="HD Nautika" />
+              <Image src={sportstar2} alt="HD Nautika" />
               <Image src={sportstar1} alt="HD Nautika" />
             </Carousel>
           </div>
@@ -110,6 +111,27 @@ const SectionBoats = () => {
                 ovalButtonPath="/plovila/sportstar-22"
               />
             </div>
+          </div>
+        </div>
+        <div className="section-boats__videos">
+          <h3>{t.common.videoPresentation}</h3>
+          <div className="section-boats__videos-container">
+            <iframe
+              height="300px"
+              src="https://www.youtube.com/embed/HRIFgDDBx6I"
+              title="Sportstar 22 | HD Nautika"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              height="300px"
+              src="https://www.youtube.com/embed/HRIFgDDBx6I"
+              title="Sportstar 22 | HD Nautika"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
         <OvalButton

@@ -168,18 +168,6 @@
     }
   }
 
-  &__color-picker {
-    button {
-      color: $color-primary-dark;
-      background-color: transparent;
-      margin: 20px;
-    }
-
-    button.active {
-      border-bottom: 2px solid $color-primary-dark;
-    }
-  }
-
   &__carousel {
     @include columnCenterContent;
     width: 60%;

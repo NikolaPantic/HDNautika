@@ -45,11 +45,6 @@
       flex: 0 0 60%;
       @include centerContent;
 
-      & iframe{
-        width:100%;
-        height:68vh;
-      }
-
       @media only screen and (max-width: 900px) {
         width: 95%;
       }
@@ -174,6 +169,32 @@
 
     &--single {
       flex: 1;
+    }
+  }
+
+  &__videos {
+    width: 100%;
+    margin: 30px 0;
+
+    h3 {
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+
+    .section-boats__videos-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      @media only screen and (max-width: 900px) {
+        grid-template-columns: auto;
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      iframe {
+        width: 100%;
+      }
     }
   }
 }

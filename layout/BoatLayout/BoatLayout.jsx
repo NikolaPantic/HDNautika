@@ -19,8 +19,6 @@ const BoatLayout = ({
   boatDescription = "",
   boatAdditionalEquipment = [],
   boatData = {},
-  changeBoatColor = () => {},
-  isRedBoat,
 }) => {
   const { locale } = useRouter();
   const t = locale === "sr" ? sr : en;
@@ -148,23 +146,6 @@ const BoatLayout = ({
 
         <div className="boat-layout__carousel">
           <h2 className="tertiary-heading">{t.common.imageGallery}</h2>
-
-          {isSportstarBoat && (
-            <div className="boat-layout__color-picker">
-              <button
-                className={isRedBoat ? "active" : "text-link"}
-                onClick={() => changeBoatColor("red")}
-              >
-                {t.common.redVariant}
-              </button>
-              <button
-                className={!isRedBoat ? "active" : "text-link"}
-                onClick={() => changeBoatColor("blue")}
-              >
-                {t.common.blueVariant}
-              </button>
-            </div>
-          )}
 
           <Carousel
             images={boatImages}

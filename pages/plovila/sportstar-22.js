@@ -72,36 +72,7 @@ const Sportstar = () => {
     setBoatColor(boatColor);
   };
 
-  const sportstarRedImages = [
-    sportstar2,
-    sportstar1,
-    sportstar11,
-    sportstar3,
-    sportstar4,
-    sportstar,
-    sportstar5,
-    sportstar6,
-    sportstar7,
-    sportstar8,
-    sportstar9,
-    sportstar10,
-    sportstar12,
-    sportstar13,
-    sportstar14,
-    sportstar15,
-    sportstar16,
-    sportstar17,
-    sportstar18,
-    sportstar19,
-    sportstar20,
-    sportstar21,
-    sportstar22,
-    sportstar24,
-    sportstar25,
-    sportstar26,
-  ];
-
-  const sportstarBlueImages = [
+  const sportstarImages = [
     sportstarblue3,
     sportstarblue4,
     sportstarblue5,
@@ -130,6 +101,32 @@ const Sportstar = () => {
     sportstarblue,
     sportstarblue1,
     sportstarblue2,
+    sportstar2,
+    sportstar1,
+    sportstar11,
+    sportstar3,
+    sportstar4,
+    sportstar,
+    sportstar5,
+    sportstar6,
+    sportstar7,
+    sportstar8,
+    sportstar9,
+    sportstar10,
+    sportstar12,
+    sportstar13,
+    sportstar14,
+    sportstar15,
+    sportstar16,
+    sportstar17,
+    sportstar18,
+    sportstar19,
+    sportstar20,
+    sportstar21,
+    sportstar22,
+    sportstar24,
+    sportstar25,
+    sportstar26,
   ];
 
   const equipment = [
@@ -188,15 +185,11 @@ const Sportstar = () => {
       <BoatLayout
         isSportstarBoat={true}
         boatData={data}
-        boatImages={
-          boatColor === "red" ? sportstarRedImages : sportstarBlueImages
-        }
-        changeBoatColor={changeBoatColor}
-        isRedBoat={boatColor === "red"}
+        boatImages={sportstarImages}
         boatHeading="Sportstar 22"
         boatDescription={description}
         boatAdditionalEquipment={equipment}
-        boatImageURL={sportstar5}
+        boatImageURL={sportstarblue4}
       />
     </>
   );

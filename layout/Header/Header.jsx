@@ -9,7 +9,7 @@ import serbian from "../../public/assets/svg/serbian.png";
 import english from "../../public/assets/svg/english.png";
 import instagram from "../../public/assets/svg/instagram.svg";
 import facebook from "../../public/assets/svg/facebook.svg";
-import sportstar from "../../public/assets/images/boats/sportstar22/sportstar-background-removebg-preview.png";
+import sportstar from "../../public/assets/images/boats/sportstar22/sportstar-blue-4-removed-background.png";
 import skip from "../../public/assets/images/boats/skip-sport-19/skip-sport-sea-3.png";
 import teorema from "../../public/assets/images/boats/teorema20/teorema-5-removebg-preview.png";
 
