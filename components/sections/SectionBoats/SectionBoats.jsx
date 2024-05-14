@@ -118,7 +118,7 @@ const SectionBoats = () => {
             ></iframe>
             <iframe
               height="300px"
-              src="https://www.youtube.com/embed/ynrgNtx3tIs"
+              src="https://www.youtube.com/embed/ORtBygcu2wE"
               title="Sportstar 22 | HD Nautika"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
