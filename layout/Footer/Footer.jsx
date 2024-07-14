@@ -23,8 +23,7 @@ const Footer = () => {
             {t.common.phone}: <a href="tel:+381637719973">+381 63 7719973</a>
           </span>
           <span>
-            E-mail:{" "}
-            <a href="mailto:e270@open.telekom.rs">e270@open.telekom.rs</a>
+            E-mail: <a href="mailto:e270@mts.rs">e270@mts.rs</a>
           </span>
         </FooterSection>
         <FooterSection footerSectionHeading={t.common.mainMenu}>

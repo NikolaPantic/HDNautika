@@ -51,9 +51,7 @@ const Contact = () => {
               </span>
               <span className="contact__address--row">
                 <Image src={mail} alt="mail" />:{" "}
-                <Link href="mailto:e270@open.telekom.rs">
-                  e270@open.telekom.rs
-                </Link>
+                <Link href="mailto:e270@mts.rs">e270@mts.rs</Link>
               </span>
             </address>
           </div>
