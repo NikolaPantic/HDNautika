@@ -47,7 +47,7 @@ const Contact = () => {
               </span>
               <span className="contact__address--row">
                 <Image src={phone} alt="phone" />:{" "}
-                <Link href="tel:+381637719973">+381 63 7719973</Link>
+                <Link href="tel:+38169722767">+381 69 722 767</Link>
               </span>
               <span className="contact__address--row">
                 <Image src={mail} alt="mail" />:{" "}

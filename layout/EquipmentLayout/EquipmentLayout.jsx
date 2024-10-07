@@ -32,7 +32,7 @@ const EquipmentLayout = ({
           <br />
           <p>
             {t.components.equipmentLayout.text1}{" "}
-            <Link href="tel:+381637719973" className="text-link">
+            <Link href="tel:+38169722767" className="text-link">
               {t.components.equipmentLayout.text2}
             </Link>{" "}
             {t.components.equipmentLayout.text3}{" "}

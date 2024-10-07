@@ -48,7 +48,7 @@ const MechanicService = () => {
               <br />
               <p>
                 {t.pages.mechanicService.text2}{" "}
-                <a className="text-link" href="tel:+381637719973">
+                <a className="text-link" href="tel:+38169722767">
                   {t.pages.mechanicService.text3}
                 </a>{" "}
                 {t.pages.mechanicService.text4}{" "}

@@ -45,7 +45,7 @@ const Winter = () => {
               <br />
               <p>
                 {t.pages.winterLog.text2}{" "}
-                <Link className="text-link" href="tel:+381637719973">
+                <Link className="text-link" href="tel:+38169722767">
                   {t.pages.winterLog.text3}
                 </Link>{" "}
                 {t.pages.winterLog.text4}{" "}

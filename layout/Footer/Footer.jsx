@@ -20,7 +20,7 @@ const Footer = () => {
           <span>11500, Obrenovac</span>
           <span>{t.common.taxID}: 109714376</span>
           <span>
-            {t.common.phone}: <a href="tel:+381637719973">+381 63 7719973</a>
+            {t.common.phone}: <a href="tel:+38169722767">+381 69 722 767</a>
           </span>
           <span>
             E-mail: <a href="mailto:e270@mts.rs">e270@mts.rs</a>
